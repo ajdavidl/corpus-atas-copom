@@ -1,0 +1,55 @@
+A) Atualização da conjuntura econômica e do cenário básico do Copom
+
+1. No cenário externo, a pandemia da Covid-19 está provocando uma desaceleração significativa do crescimento global, queda nos preços das commodities e aumento da volatilidade nos preços de ativos. Nesse contexto, apesar da provisão adicional de estímulos fiscal e monetário pelas principais economias, e de alguma moderação na volatilidade dos ativos financeiros, o ambiente para as economias emergentes segue desafiador, com saída de capitais significativamente superior à de episódios anteriores.
+
+2. Dados mensais de atividade econômica disponíveis até o mês de março repercutem apenas parcialmente os efeitos da pandemia da Covid-19 sobre a economia brasileira. Indicadores de maior frequência e tempestividade, referentes ao mês de abril, mostram que a contração da atividade econômica será significativamente superior à prevista na última reunião do Copom.
+
+3. Diversas medidas de inflação subjacente se encontram abaixo dos níveis compatíveis com o cumprimento da meta para a inflação no horizonte relevante para a política monetária.
+
+4. As expectativas de inflação para 2020, 2021 e 2022 apuradas pela pesquisa Focus encontram-se em torno de 2,0%, 3,3% e 3,5%, respectivamente.
+
+5. As projeções de curto prazo experimentaram revisões relevantes e incorporam a perspectiva de deflação significativa nos próximos meses. Houve recuo adicional no preço do petróleo e queda acentuada nos preços do produtor doméstico de combustíveis, que seguirão repercutindo, nas próximas semanas, sobre os preços ao consumidor. Os resultados mais recentes dos índices de preços evidenciaram efeitos desinflacionários significativos sobre preços de serviços e de bens industriais.
+
+6. As projeções de inflação e cenários foram impactadas por hipóteses sobre a trajetória futura do preço do petróleo, que tem oscilado em patamares historicamente baixos em razão de um choque expansionista de oferta e, principalmente, da queda na demanda global. Os cenários a seguir supõem que o preço do petróleo (Brent) subirá cerca de 40% entre a média na semana anterior à da reunião do Copom e o final de 2020.
+
+7. No cenário híbrido, com trajetória para a taxa de juros extraída da pesquisa Focus e taxa de câmbio constante a R$5,55/US$, as projeções do Copom situam-se em torno de 2,4% para 2020 e 3,4% para 2021. Esse cenário supõe trajetória de juros que encerra 2020 em 2,75% a.a. e se eleva até 3,75% a.a. em 2021. Nesse cenário, as projeções para a inflação de preços administrados são de 0,7% para 2020 e 3,9% para 2021.
+
+8. No cenário com taxa de juros constante a 3,75% a.a. e taxa de câmbio constante a R$5,55/US$, as projeções situam-se em torno de 2,3% para 2020 e 3,2% para 2021. Nesse cenário, as projeções para a inflação de preços administrados são de 0,7% para 2020 e 3,8% para 2021.
+
+B) Riscos em torno do cenário básico para a inflação
+
+9. O cenário básico do Copom para a inflação envolve fatores de risco em ambas as direções.
+
+10. Por um lado, o nível de ociosidade pode produzir trajetória de inflação abaixo do esperado. Esse risco se intensifica caso a pandemia provoque aumentos de incerteza e de poupança precaucional e, consequentemente, uma redução da demanda agregada com magnitude ou duração ainda maiores do que as estimadas.
+
+11. Por outro lado, políticas fiscais de resposta à pandemia que piorem a trajetória fiscal do país de forma prolongada, ou frustrações em relação à continuidade das reformas, podem elevar os prêmios de risco e gerar uma trajetória para a inflação acima do projetado no horizonte relevante para a política monetária.
+
+C) Discussão sobre a condução da política monetária
+
+12. Com relação à economia global, o Comitê entende que, assim como em outras crises internacionais, o aumento da aversão ao risco e a consequente realocação de ativos tornam o ambiente desafiador para os países emergentes. Em contraste com outras crises mais recentes, em que o epicentro estava localizado no Hemisfério Norte, nessa ele se desloca para todos os países, juntamente com a pandemia. Além disso, projeções apontam para uma recessão global com poucos precedentes históricos. Esses dois fatores ajudam a explicar uma saída de capitais de países emergentes significativamente superior à ocorrida em episódios anteriores. Entre os emergentes, aqueles com maior vulnerabilidade fiscal tendem a ser os mais prejudicados.
+
+13. Os membros do Copom discutiram a evolução da atividade econômica doméstica à luz dos indicadores e informações disponíveis. Avaliaram que, embora haja poucos dados disponíveis para o mês de abril, há evidência suficiente de que a economia sofrerá forte contração no segundo trimestre deste ano. Os membros também debateram sobre a velocidade da recuperação econômica. Refletiram que, a menos de avanços médicos no combate à pandemia, é plausível um cenário em que a retomada, além de mais gradual do que a considerada, seja caraterizada por idas e vindas. O cenário básico considerado pelo Copom passou a ser de uma queda forte do PIB na primeira metade deste ano, seguida de uma recuperação gradual a partir do terceiro trimestre deste ano.
+
+14. Os membros do Copom discutiram a respeito do nível de ociosidade na economia. Reafirmaram sua opinião de que o impacto da pandemia sobre a economia brasileira será desinflacionário e associado a forte aumento do nível de ociosidade dos fatores de produção. A elevação abrupta da incerteza sobre a economia deve resultar em aumento da poupança precaucional e consequente redução significativa da demanda agregada.
+
+15. O Comitê então discutiu a potencial existência de um limite efetivo mínimo para a taxa básica de juros brasileira. A maioria dos membros ponderou que o limite seria significativamente maior em economias emergentes do que em países desenvolvidos, devido à presença de um prêmio de risco. Foi ressaltado que esse prêmio tende a ser maior no Brasil, dadas a sua relativa fragilidade fiscal e as incertezas quanto à sua trajetória fiscal prospectiva. Nesse contexto, já estaríamos próximos do nível onde reduções adicionais na taxa de juros poderiam ser acompanhadas de instabilidade nos mercados financeiros e nos preços de ativos. Por outro lado, um membro argumentou que, em princípio, não há razão para a existência de tal limite mínimo operacional, já que os tradicionais canais da política monetária continuariam operantes, sem descontinuidades, embora, possivelmente, com um aumento do efeito de variações da taxa de juros básica sobre os preços de ativos financeiros. O Comitê como um todo reconheceu a importância de gradualismo na condução da política monetária para avaliação da resposta dos preços de ativos financeiros.
+
+16. Finalmente, refletiu-se sobre a taxa de juros estrutural da economia, que, na avaliação do Comitê, também espelha as expectativas dos agentes sobre a trajetória fiscal prospectiva. Para o Copom, a interação da deterioração do cenário externo com frustrações em relação à continuidade das reformas e possíveis alterações de caráter permanente no processo de ajuste das contas públicas pode ameaçar o processo de queda dos juros estruturais.
+
+17. Por outro lado, o Copom reconhece que, neste momento, o choque desinflacionário de demanda, ainda que associado a maior fragilidade fiscal, iniciou um processo de revisão para baixo nas expectativas de inflação, para níveis não compatíveis com as metas, em particular para o horizonte relevante da política monetária. Esse movimento ocorre tanto nas expectativas coletadas pela pesquisa Focus quanto nas expectativas implícitas nos títulos públicos. O Comitê reafirma seu compromisso com a meta para a inflação estabelecida pelo Conselho Monetário Nacional, que sempre foi e segue sendo o principal objetivo da política monetária.
+
+18. Dois membros do Comitê ponderaram que, mesmo com a possibilidade de elevação da taxa de juros estrutural, poderia ser oportuno prover todo o estímulo necessário de imediato, em conjunto com a sinalização de manutenção da taxa básica de juros pelos próximos meses, de modo a reduzir os riscos de não cumprimento da meta para a inflação de 2021.
+
+19. Entretanto, foi preponderante a avaliação de que, frente à conjuntura de elevada incerteza doméstica, o espaço remanescente para utilização da política monetária é incerto e pode ser pequeno. Assim, o Copom optou por uma provisão de estímulo mais moderada, com o benefício de acumular mais informação até sua próxima reunião.
+
+D) Decisão de política monetária
+
+20. Considerando o cenário básico, o balanço de riscos e o amplo conjunto de informações disponíveis, o Copom decidiu, por unanimidade, reduzir a taxa básica de juros em 0,75 ponto percentual, para 3,00% a.a. O Comitê entende que essa decisão reflete seu cenário básico e um balanço de riscos de variância maior do que a usual para a inflação prospectiva e é compatível com a convergência da inflação para a meta no horizonte relevante, que inclui o ano-calendário de 2021.
+
+21. O Copom avalia que perseverar no processo de reformas e ajustes necessários na economia brasileira é essencial para permitir a recuperação sustentável da economia. O Comitê ressalta, ainda, que questionamentos sobre a continuidade das reformas e alterações de caráter permanente no processo de ajuste das contas públicas podem elevar a taxa de juros estrutural da economia.
+
+22. O Copom entende que, neste momento, a conjuntura econômica prescreve estímulo monetário extraordinariamente elevado, mas reforça que há potenciais limitações para o grau de ajuste adicional. O Comitê avalia que a trajetória fiscal ao longo do próximo ano, assim como a percepção sobre sua sustentabilidade, serão decisivas para determinar o prolongamento do estímulo.
+
+23. Para a próxima reunião, condicional ao cenário fiscal e à conjuntura econômica, o Comitê considera um último ajuste, não maior do que o atual, para complementar o grau de estímulo necessário como reação às consequências econômicas da pandemia da Covid-19. No entanto, o Comitê reconhece que se elevou a variância do seu balanço de riscos e ressalta que novas informações sobre os efeitos da pandemia, assim como uma diminuição das incertezas no âmbito fiscal, serão essenciais para definir seus próximos passos.
+
+24. Votaram por essa decisão os seguintes membros do Comitê: Roberto Oliveira Campos Neto (presidente), Bruno Serra Fernandes, Carolina de Assis Barros, Fabio Kanczuk, Fernanda Feitosa Nechio, Maurício Costa de Moura, Otávio Ribeiro Damaso e Paulo Sérgio Neves de Souza.

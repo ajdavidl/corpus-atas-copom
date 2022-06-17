@@ -1,0 +1,49 @@
+A) Atualização da conjuntura econômica e do cenário de referência do Copom
+
+1. No cenário externo, o ambiente segue menos favorável. A maior persistência inflacionária aumenta o risco de um aperto monetário mais célere nos EUA, tornando as condições financeiras mais desafiadoras para economias emergentes. Além disso, a nova onda da Covid-19 adiciona incerteza quanto ao ritmo da atividade, ao mesmo tempo que pode postergar a normalização das cadeias globais de produção. Desde a última reunião, a maioria das commodities reverteu a queda observada no fim do ano e, em alguns casos, atingiram recordes recentes, reforçando o ambiente global de preços mais pressionados.
+
+2. Em relação à atividade econômica brasileira, indicadores relativos ao comércio e serviços mostraram evolução ligeiramente melhor que a esperada em novembro, enquanto a indústria apresentou recuperação em dezembro. Indicadores do mercado de trabalho mostraram recuperação consistente de empregos no último trimestre de 2021.
+
+3. Para 2022, se por um lado a elevação dos prêmios de risco e o aperto mais intenso das condições financeiras atuam desestimulando a atividade econômica, por outro, o Copom segue avaliando que o crescimento tende a ser beneficiado pelo desempenho da agropecuária e pelo processo remanescente de normalização da economia – particularmente no setor de serviços e no mercado de trabalho. Entretanto, os índices de confiança divulgados desde a última reunião seguem mostrando deterioração, e desenvolvimentos climáticos afetaram as projeções de importantes culturas agrícolas.
+
+4. A inflação ao consumidor segue elevada, com alta disseminada entre vários componentes, e segue se mostrando mais persistente que o antecipado. A alta nos preços dos bens industriais não arrefeceu e deve persistir no curto prazo, enquanto a inflação de serviços acelerou, ainda refletindo a gradual normalização da atividade no setor. As leituras recentes vieram acima do esperado e a surpresa ocorreu tanto nos componentes mais voláteis como, principalmente, nos mais associados à inflação subjacente.
+
+5. As diversas medidas de inflação subjacente apresentam-se acima do intervalo compatível com o cumprimento da meta para a inflação. As expectativas de inflação para 2022 e 2023 apuradas pela pesquisa Focus encontram-se em torno de 5,4% e 3,5%, respectivamente.
+
+6. No cenário de referência, com trajetória para a taxa de juros extraída da pesquisa Focus e taxa de câmbio partindo de USD/BRL 5,45, e evoluindo segundo a paridade do poder de compra (PPC), as projeções de inflação do Copom situam-se em torno de 5,4% para 2022 e 3,2% para 2023. Esse cenário supõe trajetória de juros que se eleva para 12% a.a. no primeiro semestre de 2022, termina o ano em 11,75% a.a. e reduz-se para 8,00% a.a. em 2023. Nesse cenário, as projeções para a inflação de preços administrados são de 6,6% para 2022 e 5,4% para 2023. Adota-se a hipótese de bandeira tarifária “vermelha patamar 1” em dezembro de 2022 e dezembro de 2023.
+
+7. Em relação aos preços administrados, a revisão se deveu majoritariamente ao forte avanço nas cotações do petróleo desde a última reunião do Comitê, assim como a itens administrados cujas variações devem se repetir ao longo do ano. Essas pressões foram apenas parcialmente compensadas pela mudança na hipótese de bandeira tarifária para o final de 2022, que refletiu a melhora do cenário hídrico.
+
+B) Riscos em torno do cenário de referência para a inflação
+
+8. O cenário de referência do Copom para a inflação envolve fatores de risco em ambas as direções.
+
+9. Por um lado, uma possível reversão, ainda que parcial, do aumento nos preços das commodities internacionais em moeda local produziria trajetória de inflação abaixo do cenário de referência.
+
+10. Por outro lado, políticas fiscais que impliquem impulso adicional da demanda agregada ou piorem a trajetória fiscal futura podem impactar negativamente preços de ativos importantes e elevar os prêmios de risco do país.
+
+11. Apesar do desempenho mais positivo das contas públicas, o Comitê avalia que a incerteza em relação ao arcabouço fiscal segue mantendo elevado o risco de desancoragem das expectativas de inflação, e, portanto, a assimetria altista no balanço de riscos. Isso implica maior probabilidade de trajetórias para inflação acima do projetado de acordo com o cenário de referência.
+
+C) Discussão sobre a condução da política monetária
+
+12. A incerteza em relação ao futuro do arcabouço fiscal atual resulta em elevação dos prêmios de risco e eleva o risco de desancoragem das expectativas de inflação. Isso implica atribuir maior probabilidade para cenários alternativos que considerem taxas neutras de juros mais elevadas. O Copom reitera que o processo de reformas e ajustes necessários na economia brasileira é essencial para o crescimento sustentável da economia. Esmorecimento no esforço de reformas estruturais e alterações de caráter permanente no processo de ajuste das contas públicas podem elevar a taxa de juros estrutural da economia. Adicionalmente, o Comitê nota que mesmo políticas fiscais que tenham efeitos baixistas sobre a inflação no curto prazo podem causar deterioração nos prêmios de risco, aumento das expectativas de inflação e, consequentemente, um efeito altista na inflação prospectiva.
+
+13. O Copom passou à discussão da implementação da política monetária, considerando não somente o cenário de referência como também o balanço de riscos para a inflação. De acordo com o cenário de referência, que utiliza a trajetória para a taxa de juros extraída da pesquisa Focus e o câmbio seguindo a paridade do poder de compra, as projeções de inflação estão acima do limite superior do intervalo de tolerância da meta para 2022 e ao redor da meta para 2023.
+
+14. Quanto ao balanço de riscos, o Comitê ponderou que o risco de desancoragem das expectativas para prazos mais longos, derivado dos desenvolvimentos no cenário fiscal, mantém o viés altista para as projeções do seu cenário de referência. Como consequência, o Copom avaliou que, considerado esse viés devido à assimetria de riscos, suas projeções se encontram acima da meta tanto para 2022 como para 2023. Diante desse resultado, novamente o Copom concluiu que o ciclo de aperto monetário deverá ser mais contracionista do que o utilizado no cenário de referência ao longo do horizonte relevante.
+
+15. A seguir, o Copom avaliou o ritmo apropriado de elevação dos juros. Para tal, analisou suas projeções de inflação utilizando simulações com trajetórias de política monetária com diferentes taxas terminais, ritmos de ajuste e duração do aperto monetário. Vale notar que os cenários considerados, consistentes com a convergência da inflação para suas metas, pressupunham trajetória da taxa de juros superior às utilizadas no cenário de referência.
+
+16. Com base nesses resultados, os membros do Copom debateram a estratégia mais apropriada. Concluiu-se que um novo ajuste de 1,50 ponto percentual, seguido de ajustes adicionais em ritmo menor nas próximas reuniões, é a estratégia mais adequada para atingir aperto monetário suficiente e garantir a convergência da inflação ao longo do horizonte relevante, assim como a ancoragem das expectativas de prazos mais longos.
+
+17. Finalmente, a incerteza particularmente elevada sobre preços de importantes ativos e commodities, assim como o estágio do ciclo, fez o Comitê considerar mais adequado, neste momento, não sinalizar a magnitude dos seus próximos ajustes.
+
+D) Decisão de política monetária
+
+18. Considerando o cenário de referência, o balanço de riscos e o amplo conjunto de informações disponíveis, o Copom decidiu, por unanimidade, elevar a taxa básica de juros em 1,50 ponto percentual, para 10,75% a.a. O Comitê entende que essa decisão reflete seu cenário de referência e um balanço de riscos de variância maior do que a usual para a inflação prospectiva e é compatível com a convergência da inflação para as metas ao longo do horizonte relevante, que inclui os anos-calendário de 2022 e, em grau maior, de 2023. Sem prejuízo de seu objetivo fundamental de assegurar a estabilidade de preços, essa decisão também implica suavização das flutuações do nível de atividade econômica e fomento do pleno emprego.
+
+19. O Copom considera que, diante do aumento de suas projeções e do risco de desancoragem das expectativas para prazos mais longos, é apropriado que o ciclo de aperto monetário avance significativamente em território contracionista. O Comitê enfatiza que irá perseverar em sua estratégia até que se consolide não apenas o processo de desinflação como também a ancoragem das expectativas em torno de suas metas.
+
+20. Em relação aos seus próximos passos, o Comitê antevê como mais adequada, neste momento, a redução do ritmo de ajuste da taxa básica de juros. Essa sinalização reflete o estágio do ciclo de aperto, cujos efeitos cumulativos se manifestarão ao longo do horizonte relevante. O Copom enfatiza que os passos futuros da política monetária poderão ser ajustados para assegurar a convergência da inflação para suas metas, e dependerão da evolução da atividade econômica, do balanço de riscos e das projeções e expectativas de inflação para o horizonte relevante da política monetária.
+
+21. Votaram por essa decisão os seguintes membros do Comitê: Roberto Oliveira Campos Neto (presidente), Bruno Serra Fernandes, Carolina de Assis Barros, Fernanda Magalhães Rumenos Guardado, João Manoel Pinho de Mello, Maurício Costa de Moura, Otávio Ribeiro Damaso e Paulo Sérgio Neves de Souza.
