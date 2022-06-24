@@ -1,0 +1,200 @@
+Evolução recente da inflação
+
+Os principais índices de preços mostraram aumento da inflação em janeiro. O Índice Nacional de Preços ao Consumidor Amplo (IPCA) variou 0,76%, ante 0,52% em dezembro, registrando três meses consecutivos de alta. O mesmo ocorreu com o Índice Geral de Preços - Disponibilidade Interna (IGP-DI), que, após registrar acréscimos de 0,48% em novembro e de 0,6% em dezembro, variou 0,8% em janeiro, influenciado pelos aumentos de 0,75% no Índice de Preços no Atacado - Disponibilidade Interna (IPA-DI) e de 1,08% no Índice de Preços ao Consumidor - Brasil (IPC-Br). Entretanto, as variações do IPCA, do IGP-DI e do IPA-DI acumuladas em períodos de doze meses mantiveram a tendência de queda em janeiro, alcançando taxas de 7,71%, 6,22% e 4,75%, respectivamente.
+
+
+No caso do IPC-Fipe, houve recuo da inflação, que passou de 0,65% em janeiro para 0,46% na primeira quadrissemana de fevereiro. Entretanto, essa queda acentuada captada pelo índice da Fipe não é necessariamente representativa da dinâmica do IPCA, uma vez que os índices têm abrangências geográficas, cestas e critérios de cálculo distintos, e têm apresentado comportamentos diferentes no passado recente. Nos últimos doze meses, o IPC-Fipe apresenta uma variação acumulada de 6,53%, inferior em 1,18 p.p. à variação acumulada do IPCA no mesmo período. A diferença do comportamento recente dos preços entre São Paulo e outras regiões também é detectado na decomposição regional do IPCA: nos últimos doze meses, a variação acumulada da parcela do IPCA referente a São Paulo foi de 6,26%, enquanto a parcela referente às demais regiões apresentou variação de 8,51%.
+
+
+No IPCA, as maiores contribuições individuais para o resultado de janeiro decorreram das pressões exercidas pelas tarifas de energia elétrica e pelos preços dos automóveis novos, alimentos in natura, arroz, gás de bujão e feijão, que responderam, em conjunto, por 0,28 p.p. da variação do índice. O grupo dos preços livres variou 0,73% no mês, respondendo por 0,52 p.p. da variação do IPCA, enquanto a elevação de 0,84% nos preços monitorados respondeu por 0,24 p.p. Destacaram-se, dentre os monitorados, as elevações nas tarifas de energia elétrica e nos preços do gás de bujão, da gasolina, do álcool e dos planos de saúde.
+
+
+No atacado, observou-se estabilidade na evolução do IPA, ao variar 0,75% em janeiro, ante 0,74% no mês anterior. Esse comportamento foi resultante do recuo nos preços agrícolas e da continuidade da elevação nos preços industriais. O IPA-agrícola registrou variação de -0,34% em janeiro, após alta de 0,58% em dezembro, refletindo, principalmente, as quedas nos preços do grupo animais e derivados (aves, bovinos, leite e ovos), que mais que compensaram as elevações nos itens alimentos in natura, café e feijão. A variação dos preços industriais atingiu 1,2%, ante 0,8% em dezembro, mostrando aceleração pelo terceiro mês consecutivo. Esse grupo é afetado pela elevação nos preços de commodities, movimento que se reflete na elevação do índice de preços no atacado tanto pelo seu efeito direto nos preços de bens de produção como pelo encarecimento dos produtos finais. Nesse sentido, destacaram-se no resultado do IPA industrial de janeiro as altas observadas na indústria metalúrgica (ferro, aço e derivados e metais não ferrosos), química (matérias plásticas, fertilizantes e outros) e material de transporte. No ramo tecidos, vestuário e calçados, a variação mensal estabilizou-se, mas continuou elevada pelo terceiro mês consecutivo, ainda refletindo os efeitos do aumento do preço do algodão.
+
+
+O núcleo de inflação para o IPCA, calculado por exclusão do item alimentos no domicílio e do grupo de preços monitorados, foi de 0,64% em janeiro, mostrando-se estável em relação ao 0,63% de dezembro, embora em patamar elevado. Itens dos grupos de transportes e despesas pessoais têm contribuído com maior intensidade para esse comportamento. Considerando a variação acumulada em doze meses, o núcleo medido por esse critério registrou 7,39% em janeiro, ante 8,17% em dezembro.
+
+
+A variação do núcleo de inflação para o IPCA em janeiro, calculado pelo método das médias aparadas, também mostrou-se estável em patamar alto, assinalando variação de 0,73% ante 0,72% em dezembro. A variação acumulada nos últimos doze meses atingiu 10,47%. A mesma medida, quando calculada sem o procedimento de suavização de itens preestabelecidos, apresentou aceleração pelo terceiro mês seguido, tendo variado 0,63% em janeiro ante 0,54% no mês anterior.
+
+
+A variação do núcleo de inflação para o IPC-Br, calculado pela Fundação Getúlio Vargas (FGV) pelo método das médias aparadas simétricas, elevou-se a 0,65% em janeiro, ante 0,46% em dezembro, acumulando alta de 8,95% nos últimos doze meses.
+
+
+O impacto do arrefecimento recente dos preços da alimentação - refletindo o início da safra e a desaceleração dos preços in natura - tende a atenuar os efeitos de pressões que ainda persistem sobre os índices de preços em fevereiro. Nos índices de preços no atacado, esse movimento já é percebido pelos resultados parciais divulgados até o momento, devendo a queda dos preços agrícolas intensificar-se ao longo do mês. Por outro lado, a evolução dos preços industriais deve continuar refletindo, principalmente, os reajustes de insumos utilizados pelo setor. Em relação ao IPCA, deverão contrapor-se à evolução favorável dos preços da alimentação, de maneira destacada, os efeitos dos reajustes de preços no grupo educação, dos planos de saúde e das tarifas de ligações telefônicas de fixo para móvel.
+
+
+Avaliação prospectiva das tendências da inflação
+
+Os choques identificados e os seus impactos foram reavaliados de acordo com as novas informações disponíveis. O cenário de referência considerado nas simulações contempla as seguintes hipóteses:
+
+
+as projeções para os reajustes de preços da gasolina e do gás de bujão em 2004 foram mantidas em 9,5% e 10%, respectivamente;
+
+
+em relação às tarifas de energia elétrica residencial, houve redução de 0,5 p.p. desde a última Reunião do Copom, passando de 6,8% para 6,3%. Nas projeções para os reajustes das tarifas de telefone fixo em 2004, houve pequena elevação de 0,2 p.p., alcançando 6,8%;
+
+
+considerando todos os itens administrados por contrato e monitorados, com peso total de 28,9% no IPCA de janeiro, o Copom manteve praticamente inalteradas suas projeções para 2004, passando de 7,8% na Reunião de janeiro para 7,7% atualmente;
+
+
+quanto à projeção dos reajustes do conjunto de itens administrados por contrato e monitorados para 2005, baseada no modelo de determinação endógena de preços administrados, ocorreu aumento de 5,4% para 6,0%. Esse modelo considera componentes sazonais, variações cambiais, inflação de preços livres e inflação medida pelo Índice Geral de Preços (IGP);
+
+
+a trajetória projetada para a taxa de juros de seis meses, baseada em um modelo VAR que utiliza as variáveis Selic e swap em níveis, parte dos valores vigentes nos dias que antecederam a Reunião do Copom e atinge 17,1% no quarto trimestre de 2005.
+
+Em relação à política fiscal, supõe-se o cumprimento da meta de superávit primário de 4,25% do Produto Interno Bruto (PIB) neste e nos próximos dois anos. São mantidas as demais hipóteses consideradas na reunião anterior.
+
+
+A partir das hipóteses do cenário de referência, que incluem a manutenção da taxa de juros em 16,5% ao ano e da taxa de câmbio em patamar próximo ao que prevalecia na véspera da reunião do Copom (R$2,91), verificou-se que as projeções de inflação estão abaixo da meta de 5,5% para 2004. Considerando o cenário de mercado, que incorpora as trajetórias para a taxa de câmbio e para a taxa Selic esperadas pelos agentes do mercado na véspera da Reunião do Copom, de acordo com os dados da pesquisa realizada pela Gerência-Executiva de Relacionamento com Investidores do Banco Central do Brasil (Gerin), as projeções de inflação se encontram acima da meta de 5,5% para 2004 e acima da meta de 4,5% para 2005.
+
+
+Implementação da política monetária
+
+Os principais índices de preços apresentaram aumento da inflação entre dezembro e janeiro. A inflação de 0,76% registrada pelo IPCA foi significativamente superior às projeções do mercado feitas no final de 2003: na véspera da reunião de dezembro do Copom, a mediana das expectativas de mercado para a inflação de janeiro era de 0,60%. A inflação dos três grandes grupos do IPCA - itens comercializáveis, não comercializáveis e administrados por contrato e monitorados - manteve-se elevada e/ou aumentou em janeiro. No caso dos itens comercializáveis, o resultado de janeiro foi semelhante ao de dezembro, em torno de 0,5%. As inflações dos preços dos itens não comercializáveis e administrados por contrato e monitorados partiram de um patamar já elevado em dezembro e aumentaram cerca de 0,4 p.p. em janeiro, atingindo 0,97% e 0,84%, respectivamente, o terceiro aumento mensal consecutivo de ambas as séries.
+
+
+Dos demais índices de preços ao consumidor, destaca-se a forte elevação do IPC-Br, cuja inflação atingiu 1,08% em janeiro, ante 0,43% em dezembro. A inflação medida pelos índices gerais de preços (IGP-M e IGP-DI) e pelo IPA-M também subiu em janeiro. Já a inflação mensurada pelo IPA-DI manteve-se praticamente estável entre dezembro e janeiro, porém em um patamar elevado, de 0,75%, embora tenha sido fortemente favorecida pela deflação de 0,34% dos preços agrícolas. O IPA-industrial subiu pelo terceiro mês consecutivo e atingiu 1,20% em janeiro, o maior valor da série desde março de 2003.
+
+
+Os núcleos de inflação do IPCA mantiveram-se praticamente estáveis em janeiro, em níveis incompatíveis com a trajetória das metas. O núcleo do IPCA calculado por exclusão de alimentos no domicílio e de preços administrados por contrato e monitorados atingiu 0,64% em janeiro, valor próximo ao de dezembro (0,63%), mas superior ao de novembro (0,38%). O núcleo do IPCA calculado pelo método de médias aparadas com a suavização de itens preestabelecidos apresentou comportamento semelhante: 0,56% em novembro, 0,72% em dezembro e 0,73% em janeiro. Já o núcleo do IPC-Br calculado pelo método de médias aparadas subiu de 0,46% em dezembro para 0,65% em janeiro. A proporção de itens no IPCA que tiveram reajuste positivo aumentou novamente, passando de 64,8% em dezembro para 70,9% em janeiro, o maior valor desde abril do ano passado.
+
+
+Os indicadores do nível de atividade continuam em linha com o cenário de recuperação da atividade econômica com o qual o Copom vem trabalhando nos últimos meses. Após sensível queda no primeiro semestre de 2003, a produção industrial apresentou forte crescimento no segundo semestre. De acordo com o Instituto Brasileiro de Geografia e Estatística (IBGE), a média móvel trimestral da série dessazonalizada da produção industrial acumulou, entre junho e dezembro, um crescimento de 5,1%. Vale destacar o crescimento verificado na produção de bens de consumo duráveis e de bens de capital, de 18,4% e 12,3% respectivamente, na mesma base de comparação.
+
+
+No mesmo período, o setor de bens de consumo semi e não duráveis, mais fortemente influenciado pelos rendimentos reais, registrou queda de 1,8% na média móvel trimestral. O Copom reitera a observação feita nas Notas da reunião de janeiro, de que a recuperação desse setor se dará naturalmente, como conseqüência da disseminação gradual do crescimento do restante da economia. Uma flexibilização excessiva da política monetária com o objetivo de impulsionar este setor específico teria somente o efeito, no curto prazo, de exacerbar as diferenças de velocidade de retomada entre setores e de dar margem a pressões inflacionárias nos setores líderes.
+
+
+Em dezembro, observou-se queda de 1% na produção industrial, em termos dessazonalizados, em relação ao mês anterior. Quando se consideram as médias móveis trimestrais, a queda em dezembro foi de apenas 0,1% em relação ao nível de novembro, tendo sido este praticamente igual ao nível mais alto já atingido pela série, em dezembro de 2000. Oscilações em torno da tendência subjacente de aumento da produção são naturais em períodos de retomada da atividade econômica, sobretudo em seguida a fases de incremento acelerado e à medida que os níveis de produção se aproximam do pico prévio. Tais oscilações não devem ser precipitadamente interpretadas como sinal de esgotamento do processo de retomada, ainda mais quando se leva em conta que os efeitos do relaxamento monetário observado ao longo do segundo semestre de 2003 ainda não tiveram tempo de se manifestar em sua totalidade.
+
+
+Além disso, em dezembro, de acordo com os indicadores de vendas da Confederação Nacional da Indústria (CNI) e da produção industrial do IBGE dessazonalizados pelo Banco Central do Brasil, o crescimento das vendas industriais superou o crescimento da produção pelo terceiro mês consecutivo. Comparativamente ao período imediatamente anterior, no segundo semestre de 2003 as vendas industriais cresceram 2,5 p.p. a mais que a produção, valor que se eleva para 4,3 p.p. no quarto trimestre daquele ano, o que prenuncia estímulo adicional para expansão da atividade da indústria no curto prazo, advindo inclusive da dinâmica de acumulação de estoques. Por fim, a elevação da demanda impulsionada pela recuperação progressiva dos rendimentos reais e pelo aumento do crédito e o aumento da confiança, captado pelo comportamento do Índice de Confiança do Empresariado Industrial (ICEI), calculado pela CNI, são outros fatores que ratificam a percepção de que as perspectivas para a recuperação da atividade continuam positivas.
+
+
+De acordo com dados do IBGE dessazonalizados pelo Banco Central do Brasil, a média móvel trimestral do volume de vendas no varejo cresceu 0,5% em dezembro em relação a novembro, e 2,9% em relação a junho. Assim como vem ocorrendo com a produção, o comércio varejista tem se expandido mais nos segmentos favorecidos pelo crédito, como móveis e eletrodomésticos (14,4% na média móvel trimestral da série dessazonalizada, entre junho e dezembro) e automóveis e motocicletas (16,2% na mesma base de comparação). O cenário mais provável é de continuidade de recuperação do consumo, tendo em vista os altos índices de intenções do consumidor, a queda da inadimplência e a perspectiva de elevação da massa salarial.
+
+
+Assim como nos meses anteriores, o desempenho das contas externas continua favorável. As exportações registraram, em janeiro de 2004, aumento de 26,5% em relação a janeiro de 2003, enquanto as importações aumentaram 20,9%, na mesma base de comparação. A balança comercial encerrou o mês com um superávit próximo a US$1,6 bilhão e o saldo em transações correntes, com um superávit de US$0,7 bilhão. Houve, no período, um aumento na percepção de risco em função, entre outros motivos, da expectativa de que haveria uma antecipação no aumento da taxa de juros nos Estados Unidos, com impactos negativos sobre a liquidez disponível para aplicação em mercados emergentes. Com isso, o risco-país medido pelo Embi+ do J.P. Morgan Chase aumentou quase 100 p.b. desde a reunião de janeiro, atingindo 520 p.b. na véspera da reunião do Copom de fevereiro, as captações externas se reduziram e a cotação do dólar norte-americano se elevou de R$2,84 para R$2,91 no período. Mesmo assim, o cenário externo permanece bastante positivo, com perspectiva de crescimento nas principais economias mundiais, de aumento de demanda pelas exportações brasileira e de condições favoráveis de liquidez internacional.
+
+
+As expectativas de inflação para o primeiro trimestre, segundo pesquisa da Gerin, vêm se deteriorando desde dezembro. O resultado de janeiro ficou acima do esperado e as informações preliminares de fevereiro sugerem que a inflação desse mês também será significativamente maior do que anteriormente antecipado. Considerando as vésperas das reuniões do Copom, a mediana das expectativas de inflação do primeiro trimestre das instituições com maior grau de acerto no curto prazo (instituições Top 5) subiu de 1,48% em dezembro para 1,68% em janeiro, e para 1,98% em fevereiro. Para o agregado do mercado, a mediana subiu de 1,51% para 1,90% no período. Apesar da maior projeção para o primeiro trimestre, a mediana das expectativas para 2004 e 2005 manteve-se estável, em 6,0% e 5,0%, respectivamente.
+
+
+As projeções de inflação do Banco Central de acordo com o cenário de referência, que supõe a manutenção da taxa Selic em 16,5% a.a. e da taxa de câmbio em R$2,91, apontam para uma inflação abaixo das metas de 5,5% em 2004 e de 4,5% em 2005. Comparativamente a janeiro, houve aumento da projeção para 2004, devido ao resultado acima do previsto para a inflação de janeiro e ao impacto da depreciação cambial. Para 2005, a projeção ficou praticamente inalterada. Segundo o cenário de mercado, que incorpora ao modelo a variação cambial e a trajetória para a taxa Selic esperadas pelo mercado na véspera da reunião do Copom, as projeções de inflação do Banco Central situam-se acima das metas para 2004 e para 2005.
+
+
+O Copom examinou também projeções produzidas segundo a mesma metodologia e segundo os mesmos cenários de referência e de mercado para as trajetórias de juros e câmbio, incorporando entretanto as expectativas de inflação para fevereiro e março das instituições Top 5 de curto prazo, e projetando, a partir daí, a inflação para os meses subseqüentes. Nesse exercício, a projeção de inflação para 2004 fica ligeiramente acima da meta mesmo no cenário de referência para juros e câmbio, embora a projeção para 2005 permaneça abaixo da meta. O mesmo procedimento para o cenário de mercado revela um aumento em relação a janeiro do distanciamento entre as inflações projetadas e as metas para 2004 e 2005.
+
+
+Considerando o período após a introdução do Plano Real, a inflação de janeiro tem sido a maior do primeiro trimestre do ano em 7 das 9 observações da série. É natural esperar, portanto, que esse padrão sazonal se repita e que a inflação em fevereiro mostre alguma reversão em relação à de janeiro. Desde a reunião de janeiro, entretanto, o Copom não identificou fatores que permitam descartar o cenário no qual a taxa de inflação permaneça elevada por um período mais longo que o indicado pelo padrão sazonal, capaz de colocar em risco o cumprimento da meta de 5,5% em 2004. Em primeiro lugar, os números do IPCA e dos núcleos de janeiro e as expectativas para fevereiro não mostram tendência significativa de arrefecimento da inflação. Sinais preliminares de uma tendência de queda podem ser detectados nos resultados parciais do IPC-S e do IPC-Fipe. No caso do IPC-S, entretanto, a inflação ainda se encontra em patamar elevado; já no caso do IPC-Fipe, a queda foi mais acentuada mas, pelos motivos descritos no parágrafo 2 acima, pode não ser inteiramente compartilhada pelo IPCA. Além disso, a inflação medida pelo IPA-industrial continuou elevada e em ascensão, influenciada pelo aumento do preço internacional de algumas commodities, pela maior demanda por insumos intermediários e pela recuperação de preços relativos que tem favorecido os setores que vêm sendo mais fortemente beneficiados pela recuperação da demanda. Cabe enfatizar que a maior inflação no atacado não será necessariamente transferida com igual intensidade para os consumidores, mas repasses maiores tornar-se-iam mais prováveis caso tomasse corpo a impressão de que contariam com leniência da política monetária em um cenário de exacerbação do otimismo com a recuperação da demanda em determinados setores.
+
+
+Mesmo que o comportamento recente da inflação possa ser explicado por fatores extraordinários ou sazonais, e que os resultados mensais da inflação retornem para valores compatíveis com as metas nos próximos meses, o cumprimento da meta de 5,5% em 2004 requererá maior cautela da política monetária do que anteriormente previsto, tendo em vista o resultado de janeiro e as expectativas para o curto prazo, que apontam para uma inflação próxima a 2% no primeiro trimestre, de acordo com a Gerin.
+
+
+Sendo assim, e à luz das dúvidas importantes que persistem acerca das defasagens e da magnitude dos impactos sobre a atividade econômica e sobre a inflação da redução de 10 p.p. na taxa básica de juros ocorrida entre junho e dezembro de 2003, o Copom mantém o diagnóstico expresso nas Notas da reunião de janeiro, de que há uma probabilidade concreta de que a inflação volte a se desviar da trajetória de metas, o que requer cautela adicional na condução da política monetária.
+
+
+O balanço entre os riscos de desvio da inflação em relação às metas e de interrupção do processo de recuperação da economia não se alterou significativamente desde janeiro. O retorno prematuro ao processo de flexibilização da política monetária, interrompido em janeiro, aumentaria significativamente o risco de que a inflação se desviasse da trajetória de metas e, portanto, de que se tornasse necessária uma mudança na política monetária no médio prazo, com fortes movimentos na taxa de juros e impactos significativos sobre a atividade. A manutenção da taxa básica de juros, por outro lado, embute um risco substancialmente menor de causar danos palpáveis ao processo em curso de recuperação da economia.
+
+
+Diante disso, o Copom decidiu, por unanimidade, manter a meta para a taxa Selic em 16,5% a.a. sem viés, no aguardo de sinais consistentes de que é suficientemente baixo o risco de que a inflação se desvie da trajetória das metas.
+
+
+Ao final da reunião, foi registrado que o Comitê voltaria a se reunir em 16 de março de 2004 para as apresentações técnicas e, no dia seguinte, para deliberar sobre a política monetária, conforme estabelecido pelo Comunicado 11.516, de 15.10.2003.
+
+
+SUMÁRIO DOS DADOS ANALISADOS PELO COPOM
+
+Atividade econômica
+
+Conforme a pesquisa do IBGE, o Índice do Volume de Vendas, referente ao desempenho do comércio varejista no país, diminuiu 0,3% em dezembro de 2003 em relação ao de novembro, uma vez feito o ajuste sazonal. Após doze quedas consecutivas na comparação com o mesmo mês do ano anterior, o índice de dezembro cresceu 3,2%. Na mesma base de comparação, somente os segmentos combustíveis e lubrificantes e demais artigos de uso pessoal e doméstico registraram recuos, de -0,5% e -0,1%, respectivamente. Dentre as demais atividades, continuaram tendo destaque as vendas de móveis e eletrodomésticos, com crescimento de 20,9%.
+
+
+As consultas ao cadastro da Associação Comercial de São Paulo (ACSP) para compras a crédito e ao sistema Usecheque registraram acréscimos de 4,6% e 0,2%, respectivamente, na primeira quinzena de fevereiro, em comparação com o mesmo período de 2003, sinalizando continuidade do movimento de expansão da atividade varejista.
+
+
+A pesquisa mensal da Fecomercio SP sobre a confiança do consumidor registrou queda de 0,5% no Índice de Intenções do Consumidor (IIC) em fevereiro, após alta expressiva nos três meses anteriores. No entanto, o resultado de 126,7, em escala que vai de 0 a 200, reflete a predominância do otimismo na percepção do consumidor, principalmente em relação às condições futuras de consumo.
+
+
+Quanto aos investimentos, em dezembro de 2003, pelo segundo mês consecutivo, houve recuo na absorção doméstica de bens de capital, comparativamente ao mês anterior, tendo a produção de máquinas e equipamentos e as importações de bens de capital declinado, respectivamente, 5,3% e 15,2%, consideradas as séries ajustadas sazonalmente. Também a fabricação de insumos da construção civil recuou em dezembro, 1,2%. A queda na fabricação de bens de capital atingiu todos os segmentos, exceto aqueles para construção, que aumentaram 6,8%.
+
+
+Segundo a pesquisa do IBGE referente à produção industrial brasileira, houve recuo de 1% no índice dessazonalizado de dezembro de 2003, ante o do mês anterior, interrompendo uma série de cinco resultados positivos. Dos vinte ramos pesquisados, quinze recuaram, assim como três das quatro categorias de uso. A produção de bens de capital declinou 5,3%, após cinco meses em crescimento, a de bens de consumo semi e não duráveis diminuiu 3,6%, enquanto a de consumo durável diminuiu 2,1%. A fabricação de bens intermediários, única categoria a registrar taxa positiva, cresceu 0,9%, mantendo trajetória ascendente por seis meses consecutivos. Em relação ao mesmo mês do ano anterior, a produção industrial variou 2,9% em dezembro, perfazendo quatro meses de taxas positivas nessa base de comparação. Em 2003, comparativamente ao ano anterior, a produção industrial cresceu 0,3%.
+
+
+As estatísticas da CNI sobre o desempenho da indústria de transformação em dezembro do ano passado mostraram continuidade da recuperação. As vendas reais variaram 1,3% no mês, após ajuste sazonal, crescendo pelo sexto mês consecutivo e acumulando expansão de 14,8% no período. Na comparação com igual mês de 2002, as vendas reais avançaram 10,9%, registrando a segunda taxa positiva consecutiva. Após cinco meses em ascensão, as horas trabalhadas recuaram 2,1% em dezembro, pelos índices ajustados sazonalmente. O nível de utilização da capacidade industrial instalada, por sua vez, cresceu ligeiramente, de 79,7% em novembro para 80,3% em dezembro.
+
+
+O Índice de Confiança do Empresário Industrial, divulgado pela CNI, elevou-se 12,4% em janeiro, comparativamente ao observado na pesquisa anterior, realizada em outubro. O resultado de 62,4, na escala de 0 a 100, refletiu maior otimismo dos empresários tanto em relação às condições atuais quanto em relação às expectativas para os próximos seis meses.
+
+
+No segmento automobilístico, a produção e as vendas externas de veículos em janeiro aumentaram 0,3% e 50,2%, respectivamente, em relação às do mês anterior, enquanto as vendas internas decresceram 2%, após ajustes sazonais.
+
+
+Mercado de trabalho
+
+O índice de emprego formal cresceu 0,1% em dezembro do ano passado, em relação ao mês anterior, na série dessazonalizada; e 3% quando considerada a média de 2003 em relação à de 2002, de acordo com informações do Ministério do Trabalho e Emprego (MTE). Segundo a Pesquisa Mensal do Emprego (PME), a taxa de desocupação medida pelo IBGE nas seis principais regiões metropolitanas do país passou de 12,2% em novembro, para 10,9% em dezembro, assinalando o segundo recuo consecutivo. Esse resultado foi gerado pela maior redução no número de pessoas desocupadas, relativamente à queda da População Economicamente Ativa (PEA). A mesma pesquisa do IBGE registrou que o rendimento médio real (deflacionado pelo INPC) efetivamente recebido pelas pessoas ocupadas em novembro cresceu 2,8%, ante o verificado em outubro, e recuou 13,1% relativamente ao percebido no mesmo mês de 2002.
+
+
+No setor industrial, houve recuo de 0,24% do pessoal empregado em dezembro de 2003, comparativamente ao mês anterior, conforme dados da CNI ajustados sazonalmente. A massa salarial real continuou na trajetória de recuperação, ao registrar aumento de 0,5% em dezembro de 2003 ante à de novembro, completando sete meses de crescimento na série dessazonalizada. Comparativamente a dezembro de 2002, observou-se acréscimo de 4% na massa salarial da indústria, a segunda taxa positiva consecutiva em 2003, nessa base de comparação.
+
+
+Crédito e inadimplência
+
+O saldo das operações de crédito com recursos livres do sistema financeiro cresceu 0,2% em janeiro. Essa evolução moderada refletiu comportamento sazonal do período, caracterizado pela menor necessidade de financiamento por parte das empresas. Refletindo a menor demanda sazonal, o saldo das carteiras destinadas a pessoas jurídicas com recursos internos recuou 1,6%, enquanto aquele vinculado a recursos externos registrou queda de 0,8%. Nas operações com pessoas físicas, observou-se expansão de 1,7%, refletindo maior demanda em função dos gastos com férias, pagamento de impostos e despesas escolares.
+
+
+A taxa média de juros em operações com recursos livres registrou nova queda em janeiro, de 0,4 p.p., atingindo 45,4% a.a. O resultado foi mais expressivo nas operações com pessoas físicas, com recuo de 1,2 p.p., para 65,4% a.a. Nas operações com pessoas jurídicas, a taxa média atingiu 30,1% a.a., praticamente estável ante à do mês anterior, 30,2% a.a. A inadimplência total da carteira de crédito com recursos livres das instituições financeiras subiu 0,1 p.p. em janeiro, atingindo 8%, como reflexo da elevação sazonal de 0,3 p.p. nas operações com pagamento em atraso das pessoas físicas. Nas operações com pessoas jurídicas, houve recuo de 0,1 p.p.
+
+
+Em relação à inadimplência no comércio, houve melhora nos indicadores em janeiro, comparativamente aos do mesmo mês de 2003. O número de novos carnês em atraso aumentou 1,2%, mas a quantidade de registros cancelados elevou-se 7,8%. Com isso, a taxa líquida de inadimplência calculada pela ACSP declinou para 4,7% em janeiro deste ano, ante 6,2% no mesmo mês do ano passado e 5,2% na média anual de 2003.
+
+
+Ambiente externo
+
+Indicadores mais recentes sobre o crescimento do PIB nas principais economias corroboraram a tese da recuperação econômica global. A taxa de crescimento nos EUA ficou em 4% no último trimestre do ano passado, acumulando 3,1% de expansão anual. em 2003. No segundo semestre, o investimento privado substituiu os gastos do governo como componente de maior crescimento. A Área do Euro cresceu 0,4% em 2003, após registrar expansão de 1,2% no último trimestre do ano, quando a Alemanha cresceu 0,2% e a França 0,5%.
+
+
+Nos EUA, os últimos indicadores confirmaram a tendência de crescimento, mesmo com o recuo de 0,3% nas vendas no varejo em janeiro. As vendas no atacado, em dezembro, elevaram-se pelo sétimo mês consecutivo, em 1%, acumulando 8% de acréscimo no ano, principalmente pelo desempenho das vendas de bens duráveis. A taxa de desemprego declinou para 5,6% em janeiro, mas cessaram as reduções no número de pedidos de auxílio-desemprego, estabilizado em 350 mil. Na Área do Euro, a taxa de desemprego permaneceu estável em 8,8%, enquanto no Japão e nos demais países da Organização para Cooperação e Desenvolvimento Econômico (OCDE) essa taxa continuou em queda.
+
+
+As expectativas empresariais nos EUA, no Japão e na Europa mantiveram-se em ascensão. Quanto às expectativas dos consumidores, houve queda nos EUA, alta no Japão e estabilidade na Área do Euro (exceto na Itália, pela influência do caso Parmalat), mas, em geral, ainda predomina a cautela por causa das condições não muito favoráveis nos respectivos mercados de trabalho.
+
+
+Na ausência de pressões inflacionárias, as taxas de juros básicas mantêm-se estáveis nas principais economias, com exceção do Reino Unido, onde ocorreu elevação de 25 pontos-base. O mercado de renda fixa nos EUA não tem reagido aos sinais de retomada econômica do país. No entanto, a alteração textual no comunicado do Fed em janeiro gerou reações negativas nos mercados de títulos soberanos, cambiais e de ações, afetando principalmente as economias emergentes, diante da interpretação de que haveria reversão na tendência de ampliação da liquidez internacional, ante uma eventual elevação das taxas de juros básicos nos EUA, mais cedo do que o previsto anteriormente.
+
+
+Nos mercados cambiais, há consenso em torno da continuidade da depreciação do dólar, devido aos crescentes déficits em conta corrente nos EUA. A depreciação do dólar, juntamente com o desequilíbrio nos mercados provocado pela demanda chinesa, vem afetando o preço das commodities, que atingiram níveis recordes em janeiro. O preço do petróleo voltou a subir em fevereiro, refletindo a decisão da Organização dos Países Exportadores de Petróleo (Opep) de cortar a produção em 1 milhão de barris/dia, a partir de primeiro de abril.
+
+
+Setor externo
+
+A balança comercial registrou superávit de US$1,6 bilhão em janeiro, o melhor resultado mensal já registrado para esse mês. As exportações cresceram 26,5% e as importações, 20,9%, comparativamente aos valores médios diários registrados nomesmo mês de 2003. Em fevereiro, até a segunda semana (dez dias úteis), o saldo comercial totalizou US$873 milhões, registrando-se expansão de 21,5% nas exportações e de 11,5% nas importações, comparativamente aos valores médios observados em fevereiro de 2003.
+
+
+Em janeiro, as exportações totalizaram US$5,8 bilhões, valor recorde para primeiro mês do ano, sendo que as três categorias de produtos, básicos, semimanufaturados e manufaturados, apresentaram cifras máximas históricas. As importações somaram US$4,2 bilhões, com crescimento em todas as categorias de produtos, destacando-se os aumentos de 49% nas compras de combustíveis e lubrificantes e de 24,2% nas de matérias-primas e bens intermediários.
+
+
+Ainda em janeiro, considerando-se o resultado acumulado em períodos de doze meses, o saldo comercial e as exportações atingiram cifras recordes, US$25,3 bilhões e US$74,1 bilhões, respectivamente. As três categorias de produtos atingiram valores recordes históricos para períodos de doze meses, destacando-se o patamar de US$40 bilhões registrado pelas exportações de manufaturados, principalmente por expansão das quantidades embarcadas. Por sua vez, para o crescimento das vendas de produtos básicos e semimanufaturados contribuíram os acréscimos de volume e a recuperação de preços de importantes produtos da pauta.
+
+
+O balanço de pagamentos registrou superávit em transações correntes de US$0,7 bilhão em janeiro de 2004. Nas contas de serviços e rendas, o déficit de US$1,2 bilhão situou-se no mesmo patamar daquele registrado em janeiro do ano anterior. O saldo da conta financeira aumentou significativamente, registrando superávit de US$3,8 bilhões, comparativamente a US$550 milhões em janeiro de 2003. Esse resultado expressa a melhora verificada nas taxas de rolagem, tanto nos empréstimos diretos (de 29% para 92%), como em títulos privados (de 4% para 326%). O ingresso líquido de investimentos estrangeiros diretos atingiu US$993 milhões, nível ligeiramente superior ao do mês equivalente de 2003, US$905 milhões. Ao final de janeiro, as reservas internacionais situaram-se em US$53,3 bilhões e as reservas líquidas ajustadas (conceito constante do acordo com o Fundo Monetário Internacional - FMI), em US$21,5 bilhões.
+
+
+Mercado monetário e operações de mercado aberto
+
+No período compreendido entre as reuniões do Copom de janeiro e de fevereiro, observou-se significativo aumento da volatilidade das taxas de juros futuros, com elevação das taxas para prazos de até dezoito meses. Entre os dias 21 de janeiro e 17 de fevereiro, as taxas de juros de três meses, de seis meses e de um ano elevaram-se em 0,27 p.p., 0,20 p.p. e 0,08 p.p., respectivamente, enquanto a de dois anos reduziu-se em 0,13 p.p. A taxa real de juros, medida pelo quociente entre a taxa nominal de um ano e a expectativa de inflação para os próximos doze meses, aumentou de 8,7% para 9,1%. Já a taxa real projetada para 2004 elevou-se de 8,7% para 8,9%.
+
+
+A exemplo do ocorrido no período anterior, o Banco Central não efetuou leilão de rolagem para o vencimento de títulos e swaps cambiais de 11 de fevereiro. Dessa forma, o resgate líquido de instrumentos cambiais, incluídos os vencimentos de juros, totaliza US$4,2 bilhões em fevereiro, e o acumulado neste ano já alcança US$7,6 bilhões.
+
+
+O Tesouro Nacional realizou quatro leilões de venda de LTN com vencimento em janeiro e em julho de 2005, correspondendo a um volume financeiro de R$10,5 bilhões. As taxas de colocação desses títulos oscilaram bastante, acompanhando a maior volatilidade da curva de juros. Foi efetuado, também, um leilão de venda de NTN-F com vencimento em 1º de janeiro de 2008, cujo volume financeiro alcançou R$427,6 milhões. Destaque-se que a taxa de colocação reduziu-se para 15,67%, ante 17,19% no evento anterior, em dezembro. No caso das LFT, houve apenas um leilão de venda, de título com vencimento em 2009, no montante de R$936,9 milhões. A emissão de títulos com rentabilidade atrelada a índices de preços (NTN-C e NTN-B) atingiu R$2,0 bilhões, sendo R$1,3 bilhão liquidado em moeda corrente.
+
+
+Nas suas intervenções no mercado aberto, tendo como objetivo ajustar a liquidez do mercado de reservas bancárias, o Banco Central manteve as operações compromissadas semanais pós-fixadas, com prazo de duas semanas, e prefixadas, com prazo de três meses, assim como as operações diárias de nivelamento da liquidez bancária, com prazo de dois dias úteis. Além disso, atuou em outras onze oportunidades por meio de operações compromissadas com prazo de um dia útil. No período, o excesso médio de liquidez bancária esterilizado pelas operações com prazo inferior a trinta dias alcançou R$57,0 bilhões.
+
+
+Em janeiro, a dívida pública mobiliária interna apresentou aumento de 0,8%, ou R$5,9 bilhões. A parcela exposta à variação cambial reduziu-se para 21,0%, menor nível desde julho de 2000.

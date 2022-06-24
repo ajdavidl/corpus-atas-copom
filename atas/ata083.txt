@@ -1,0 +1,120 @@
+Evolução recente da inflação
+
+Os principais índices de preços confirmaram o arrefecimento da inflação ao consumidor em março, porém com menor intensidade do que o apontado pelas estimativas do Banco Central e dos analistas. As variações mensais ainda se mantiveram em patamares relativamente elevados. No atacado, a despeito da desaceleração na variação dos preços agrícolas, observou-se aumento na taxa mensal, determinada pelo comportamento dos preços industriais.
+
+A variação do IPCA atingiu 1,23% em março, ante 1,57% no mês anterior, acumulando 5,13% no primeiro trimestre de 2003 e 16,57% nos últimos doze meses. A desaceleração no crescimento mensal do IPCA deveu-se à menor concentração de reajustes dos ônibus urbanos, ao esgotamento do impacto do reajuste sazonal das mensalidades escolares, à leve queda dos preços da gasolina e ao arrefecimento da alta dos preços do álcool, itens que haviam pressionado o índice no mês anterior.
+
+A inflação de preços administrados por contrato e monitorados atingiu 1,07% ante 2,71% em fevereiro. Os preços livres subiram 1,29%, comparativamente a 1,11% no mês anterior, principalmente pela aceleração da elevação nos preços dos alimentos, particularmente os in natura; dos remédios; dos produtos de higiene e limpeza; e do vestuário.
+
+O IGP-DI variou 1,66% em março, ante 1,59% em fevereiro, totalizando 5,52% no trimestre e 32,75% em doze meses. O resultado mensal do IGP-DI decorreu do comportamento dos preços no atacado, com alta de 1,93% comparativamente a 1,71% em fevereiro. O IPC recuou de 1,37% para 1,06% enquanto o aumento do INCC manteve-se praticamente estável.
+
+O IPA agrícola subiu 0,32%, pressionado pelos preços de legumes e frutas, em decorrência de problemas climáticos. Outros importantes itens como cereais e grãos, oleaginosas e lavouras para exportação acusaram queda nominal de preços, em razão da apreciação cambial e do comportamento dos preços no exterior. O IPA industrial aumentou 2,56%, frente a 1,91% em fevereiro, refletindo as elevações nos gêneros química (combustíveis e matérias-primas plásticas), metalúrgica (ferro, aço e derivados), produtos farmacêuticos (remédios e higiene) e matéria plástica (resinas).
+
+O núcleo de inflação para o IPCA, calculado por exclusão dos alimentos no domicílio e dos preços administrados e monitorados, atingiu 1,13% em março, ante 1,0% em fevereiro, interrompendo a desaceleração observada desde dezembro. A variação acumulada nos últimos doze meses atingiu 10,2%, ante 9,4% em fevereiro.
+
+O núcleo de inflação para o IPCA, calculado pelo método de médias aparadas, variou 1,23% em março, ante 0,93% no mês anterior. Nos últimos doze meses, o núcleo acumulou elevação de 10,8%, ante 10,1% em fevereiro.
+
+O núcleo de inflação do IPC-BR, calculado pelo método de médias aparadas simétricas, apresentou aumento de 1,07% em março, ante 0,93% em fevereiro, superando ligeiramente a taxa do índice cheio no mês, de 1,06%. No acumulado de doze meses, esse núcleo acumulou elevação de 10,6%, ante 9,94% em fevereiro.
+
+Em abril, a inflação deverá continuar recuando, refletindo o esgotamento dos efeitos do aumento recente dos remédios, o arrefecimento dos preços dos produtos agrícolas e o comportamento recente da taxa de câmbio, cuja influência já se faz notar nos preços do segmento atacadista, em especial dos agrícolas. Contudo, a desaceleração dos índices de preços deverá ser atenuada pelos novos reajustes de preços administrados por contrato e monitorados, em particular das tarifas de energia elétrica residencial, com altas previstas em Belo Horizonte, Fortaleza, Salvador, Recife e Porto Alegre.
+
+Avaliação prospectiva das tendências da inflação
+
+Os choques identificados e os seus impactos foram reavaliados de acordo com as novas informações disponíveis. O cenário considerado nas simulações contempla as seguintes hipóteses:
+
+As projeções para os reajustes de preços da gasolina e do gás de botijão em 2003 caíram desde a última reunião do Copom de 12,4% para 8,4% e de 4,2% para 1,6%, respectivamente. Essas projeções incorporam os reajustes já concedidos nos primeiros meses do ano e uma redução de preços da gasolina em maio.
+
+Em relação às tarifas de energia elétrica residencial, as projeções de reajuste diminuíram três pontos percentuais, atingindo 24,5%. Essa diminuição é resultado da apreciação cambial observada desde a reunião do Copom de março.
+
+Considerando todos os itens administrados por contrato e monitorados, com peso de 28,6% no IPCA de março, projeta-se aumento de 15,3% em 2003. A apreciação cambial, a conseqüente diminuição das projeções para os reajustes das tarifas de eletricidade, e a diminuição dos preços dos derivados de petróleo foram as maiores responsáveis pela queda de 1,5 p.p. em relação às projeções de março.
+
+Para 2004, a projeção de reajuste para o conjunto de bens cujos preços são administrados por contrato e monitorados é de 8,5%, 0,5 p.p. menor do que a da última reunião. Esse resultado é conseqüência da diminuição das expectativas de inflação sobre a variação do IGP-M para 2004.
+
+A projeção para o spread de seis meses sobre a taxa Selic, seguindo especificação do modelo VAR, utilizando as variáveis Selic e swap em níveis a partir dos valores vigentes nos dias que antecederam à reunião do Copom, encontra-se em 60 p.b. no terceiro trimestre de 2003 e se eleva gradualmente até o final de 2004.
+
+Em relação à política fiscal, supõe-se o cumprimento da meta de superávit primário de 4,25% do PIB neste e nos próximos dois anos. As demais hipóteses consideradas na reunião anterior foram mantidas.
+
+A projeção associada às hipóteses do cenário básico, que incluem a manutenção da taxa de juros em 26,5% ao ano e da taxa de câmbio em patamar próximo ao que prevalecia na véspera da reunião do Copom, resulta numa inflação acima da meta ajustada de 8,5%.
+
+Implementação da política monetária
+
+A inflação mantém-se em trajetória de queda. Não obstante, as taxas recentemente divulgadas situaram-se acima das projeções do Copom, da mediana das expectativas do mercado e dos previsores com maior índice de acerto em suas projeções. Os resultados correntes são importantes na medida em que fornecem informações sobre o grau de persistência inflacionária na economia, fator relevante para as perspectivas futuras de inflação.
+
+Em março, os preços livres elevaram-se em função de itens que ainda respondem a depreciações passadas da taxa de câmbio, como medicamentos e artigos de higiene e limpeza, e de aumentos nos preços de alimentos in natura. À exceção do grupo serviços, com peso de 20,6% no índice, todos os demais grupos do IPCA apresentaram inflação ainda em níveis elevados. Da mesma forma, a variação mensal do núcleo de inflação situou-se acima de 1%.
+
+Essa queda mais lenta da inflação indica a existência de um maior grau de inércia na formação de preços na economia, ainda que esse fenômeno possa vir a se mostrar temporário. O grau de inércia depende diretamente da sistemática de reajustes de preços e de salários. Nesse sentido, ainda existe o risco de que futuros reajustes de preços e salários se baseiem mais na inflação acumulada do que na inflação futura.
+
+Os demais fatores que determinam a variação de preços ao consumidor, como a taxa de câmbio e a atividade econômica, vêm contribuindo no sentido de acelerar a convergência da inflação para a trajetória de suas metas.
+
+As estatísticas recentes sobre o desempenho da atividade econômica, quando ajustadas para neutralizar as distorções provocadas pelo feriado de carnaval deste ano, mostram sinais de desaquecimento no decorrer do primeiro trimestre. Essa tendência tem prevalecido a despeito da manutenção do crescimento das exportações e da produção doméstica de bens substitutos dos importados, devido à retração da massa salarial real e das condições de financiamento ao consumidor. Indicadores antecedentes para março indicam que o nível de atividade deverá permanecer com essa tendência de desaquecimento.
+
+A taxa de câmbio nominal apreciou-se em torno de 12% no período que se seguiu à última reunião do Copom, em função da melhora no balanço de pagamentos. O saldo da balança comercial manteve-se em elevação, e as transações correntes, que apresentaram saldo superavitário no primeiro trimestre do ano, indicam a continuação do ajuste externo por que passa a economia brasileira. A consolidação desse processo, entretanto, está condicionada à convergência da inflação para níveis mais baixos, de forma a preservar a mudança de preços relativos ocorrida no ano passado.
+
+As condições de financiamento externo apresentaram melhora. O risco Brasil, medido pelo Embi+, recuou mais de 200 pontos desde a última reunião do Copom, em linha com o fechamento da curva de spread Brasil. As captações privadas seguem em retomada, com as taxas de rolagem de março de notes e de commercial papers atingindo 82% ante 65% no mesmo período de 2002. É importante, contudo, a continuidade do processo de melhora na qualidade do financiamento externo, com aumento de prazos e redução de custos. De fato, em abril, novas emissões foram anunciadas com os prazos das captações apresentando discreto alongamento. Da mesma forma, houve aumento na demanda por títulos domésticos, o que permitiu ao Tesouro Nacional emissões maiores de LTNs e LFTs e o alongamento de prazos.
+
+Esses fatores contribuíram para melhorar as perspectivas de inflação, mesmo levando em conta a resistência a uma queda mais acentuada nos recentes índices de inflação mensais. Diante disso, o Copom decidiu manter a meta para a taxa Selic em 26,5%.
+
+Além disso, o Copom decidiu retirar o viés de alta, que permitiria ao presidente do Banco Central do Brasil elevar a taxa de juros no interstício entre as reuniões mensais do Copom sem a necessidade de se convocar uma reunião extraordinária. Ainda permanecem dúvidas quanto à velocidade de queda da inflação e quanto ao caráter temporário da elevação do grau de persistência inflacionária. No entanto, no quadro atual, essas dúvidas não serão esclarecidas no ínterim das reuniões, mas num prazo mais prolongado.
+
+Ao final da reunião, foi registrado que o Comitê voltaria a reunir-se em 20 de maio de 2003 para as apresentações técnicas e, no dia seguinte, para deliberar sobre a política monetária, conforme estabelecido pelo Comunicado 10.187, de 2.10.2002.
+
+SUMÁRIO DOS DADOS ANALISADOS PELO COPOM
+Atividade econômica
+
+Os indicadores referentes à produção e a vendas em fevereiro mostraram crescimento comparativamente ao mês anterior, nas séries dessazonalizadas, e em relação a fevereiro de 2002. Ressalte-se que esses resultados devem ser analisados com cautela, uma vez que, neste ano, os feriados do carnaval ocorreram em março, diferentemente do que aconteceu em 2002. Assim, o maior número de dias úteis em fevereiro (20), frente ao ano passado (18), faz com que as comparações mensais e anuais dos fluxos de produção e vendas contenham distorções estatísticas, não eliminadas pelos critérios usuais de dessazonalização, que tendem a majorar os resultados de fevereiro deste ano e minorar os resultados de março.
+
+Segundo o IBGE, o Índice do Volume de Vendas do comércio varejista do país recuou 1,98% em fevereiro, na comparação com o do mesmo mês do ano passado, ante declínio de 4,87% observado em janeiro, na mesma base de comparação. Esse resultado também está influenciado pelo efeito calendário, que atenua a queda. Considerada a média diária do volume de vendas nos dias úteis do mês, a queda teria atingido 6,1% em fevereiro. No primeiro bimestre de 2003, o volume de vendas no varejo reduziu-se em 3,47%, acumulando, nos últimos doze meses, variação negativa de 1,02%. Por atividades, mais uma vez o segmento de hipermercados, supermercados, produtos alimentícios, bebidas e fumo foi o principal responsável pelo resultado negativo do setor, refletindo o poder de compra dos assalariados vis-à-vis a evolução dos preços dos alimentos e dos produtos de higiene e limpeza.
+
+A produção industrial cresceu 0,7% em fevereiro em relação à do mês anterior, na série livre de influências sazonais, e 4,1% ante a de fevereiro de 2002, segundo a pesquisa mensal do IBGE. Descontado o efeito calendário, a produção industrial teria apresentado quedas de 0,7% e 1,1% em fevereiro, respectivamente. A expansão mensal atingiu 10 dos 20 ramos pesquisados e, mais uma vez, destacou-se o maior incremento da produção extrativa mineral, 2,4%, comparativamente ao de 0,6% da indústria de transformação. Sob a ótica das categorias de uso, a fabricação de bens intermediários ficou estável, enquanto as demais registraram acréscimos: 1,1% em bens de capital, 1,2% em bens de consumo duráveis e 5,1% em bens de consumo semiduráveis e não-duráveis.
+
+As estatísticas divulgadas pela CNI referentes à indústria de transformação indicaram recuperação da atividade industrial em fevereiro, comparativamente à do mês anterior, com acréscimos de 7,4% nas vendas reais e de 0,7% nas horas trabalhadas na produção, nas séries dessazonalizadas. Esses mesmos indicadores, quando comparados com os registrados no mesmo mês do ano passado, apresentaram acréscimos de 11,7% e 3,3%, respectivamente.
+
+No segmento automobilístico, as estatísticas referentes à produção e às vendas em março revelaram quedas próximas a 20% na comparação com as referentes a fevereiro, resultado que, em parte, reflete o mencionado efeito calendário.
+
+Os indicadores de investimento revelaram nova expansão em fevereiro, principalmente aqueles referentes à produção e importação de bens de capital. A produção doméstica de máquinas e equipamentos e o quantum das importações e das exportações de bens de capital registraram crescimentos de 1,1%, 35,4% e 26,3% no mês, respectivamente, nas séries dessazonalizadas. A fabricação de insumos da construção civil, entretanto, registrou recuo de 2%, na mesma base de comparação.
+
+A pesquisa mensal da Fecomércio-SP mostrou melhora da confiança do consumidor em abril, com o IIC atingindo 100,3, ante 97,8 pontos em março, em escala de 0 a 200. Registraram-se altas nos dois componentes do indicador, sendo de 6,2% nas intenções atuais e de 0,8% nas intenções futuras de consumo. Destaque-se que essa recuperação, após dois meses de quedas, decorreu da melhora nas expectativas com os fatores internos, como desemprego, inflação e cenário político, a despeito do aumento das preocupações com o cenário externo.
+
+Mercado de Trabalho
+
+O índice de emprego formal cresceu 0,2% em fevereiro, ante o apurado em janeiro, na série dessazonalizada, e 3,5% em relação ao de fevereiro de 2002, de acordo com informações do Ministério do Trabalho e Emprego. Segundo a nova metodologia da PME, a taxa de desocupação medida pelo IBGE nas seis principais regiões metropolitanas do país atingiu 11,6% em fevereiro, ante 11,2% em janeiro.
+
+Ainda segundo a PME, o rendimento real médio recebido pelas pessoas ocupadas em janeiro de 2003 situou-se 8,3% abaixo daquele percebido no mesmo mês de 2002 (deflacionada pelo INPC). No âmbito do setor industrial, conforme estatísticas da CNI, a massa salarial real em fevereiro deste ano situou-se 7,2% abaixo da observada em fevereiro de 2002.
+
+Crédito e inadimplência
+
+O saldo das operações de crédito com recursos livres registrou crescimento moderado em março, com variação de 0,3%, respondendo à desaceleração da atividade econômica e às elevações das taxas de juros. Os empréstimos para pessoas jurídicas com recursos internos mostraram expansão de 1,5%, enquanto o saldo das carteiras vinculadas ao crédito externo recuou 2,1%, principalmente pela apreciação cambial de 5,9% no mês. O volume de crédito destinado às pessoas físicas aumentou 0,7%, refletindo a maior necessidade de recursos observada nos primeiros meses do ano, em função da concentração de pagamentos relacionados a tributos e despesas escolares. Adicionalmente, a queda da renda real das famílias também estaria contribuindo para elevar seu endividamento, notadamente em operações de curto prazo.
+
+A inadimplência da carteira de crédito com recursos livres das instituições financeiras subiu 0,6 p.p. em março, situando-se em 8,7%. Nos empréstimos voltados para as pessoas físicas o percentual de atraso aumentou 0,8 p.p., atingindo 15,7%, enquanto nas operações com empresas o percentual de atraso aumentou 0,3 p.p., atingindo 4,5%. A taxa média de juros das operações de crédito contratadas em março subiu 1,3 p.p., atingindo 57,8% a.a., o maior valor da série desde junho de 2000.
+
+Em relação à inadimplência no comércio, as estatísticas da ACSP revelam que, em março, o número de novos registros negativos e de registros cancelados cresceram 18,8% e 10,5%, respectivamente, ante os de fevereiro, elevando a taxa líquida de inadimplência para 7,2%, comparativamente à de 6,8% em fevereiro. O volume de cheques devolvidos por insuficiência de fundos em relação ao total de cheques compensados atingiu 5,9% em março. Esse percentual foi o mais alto registrado nos últimos dez anos, dado que ratifica a tendência de crescimento da inadimplência.
+
+Ambiente externo
+
+Após o início do conflito militar no Iraque, reduziram-se as tensões no cenário internacional, ante os indícios de que a guerra seria breve e de que não ocorreriam maiores danos nos campos iraquianos de produção de petróleo. Todavia, após uma relativa melhora no cenário financeiro internacional, as incertezas quanto ao desempenho futuro da economia global voltaram a emergir.
+
+A recuperação econômica global permanece na dependência do desempenho da economia dos EUA. Até o momento, não há sinais concretos sobre a intensidade da recuperação, e os indicadores mais recentes foram contaminados pelas incertezas em relação à guerra no Iraque.
+
+Com o fim da guerra, as expectativas de consumidores e empresários podem registrar melhora em curto prazo, permitindo alguma recuperação das vendas no varejo, redução dos níveis de estoques e retomada da produção industrial, com reflexos no mercado de trabalho.
+
+A estabilização nos preços do petróleo pode reverter as pressões inflacionárias recentes observadas nas economias da OECD, embora ainda seja prematuro inferir uma tendência para os preços do produto, dado o anúncio recente de cortes da produção por parte dos membros da Opep, e as incertezas sobre o ritmo de retomada das exportações do Iraque.
+
+Finalmente, a disseminação da Sars tornou-se novo objeto de preocupação para a economia mundial, podendo reduzir significativamente o crescimento da China e dos países do sudeste asiático, regiões que registraram, em 2002, as taxas mais elevadas de crescimento do PIB.
+
+Comércio exterior
+
+A balança comercial alcançou superávit de US$1,5 bilhão em março, acumulando US$3,8 bilhões no primeiro trimestre de 2003 e US$15,9 bilhões em doze meses. Considerando-se a média diária, as exportações cresceram 29,4% em março e 24,5% no trimestre, comparativamente aos valores registrados nos mesmos períodos de 2002. As importações elevaram-se 8% e 2,2%, respectivamente, nos mesmos períodos em comparação. Em abril, até a terceira semana (treze dias úteis), o saldo comercial totalizou US$1,1 bilhão, com as exportações crescendo 29,7% e as importações 1%, comparativamente aos valores médios observados em abril de 2002.
+
+A expansão das exportações no primeiro trimestre ocorreu em todas as categorias de produtos e para todos os principais mercados consumidores, principalmente pela elevação das quantidades embarcadas, observando-se, entretanto, discreto movimento de alta nos preços de importantes produtos da pauta. O aumento do valor das importações decorreu, sobretudo, da expansão do preço de combustíveis e lubrificantes.
+
+Mercado monetário e operações de mercado aberto
+
+Após a reunião do Copom em março, a curva de juros elevou-se tendo os spreads das taxas de um e de seis meses em relação à meta para a taxa Selic subido de 5 e 22 p.b. para 25 e 69 p.b., respectivamente. Posteriormente, com a redução do risco país, as novas captações externas, o expressivo recuo da taxa de câmbio e o rápido desfecho da guerra no Iraque, a curva de juros sofreu forte redução em todos os seus vértices, passando a apresentar inclinação negativa até janeiro de 2004. No dia 22 de abril, os spreads das taxas de um e de seis meses eram, respectivamente, de -40 e -168 p.b.
+
+Os vencimentos de títulos e de swaps cambiais ocorridos desde a última reunião foram integralmente rolados por meio da contratação de swaps. O vencimento de US$3,1 bilhões de 1º de abril foi rolado com contratos de 2 a 58 meses de prazo, com média de 9 meses. Já para o vencimento de US$0,9 bilhão de 17 de abril, foram contratados swaps de prazo entre 6 e 57 meses, com média de 18 meses. Foi realizada também, no período, a rolagem de US$1,1 bilhão de instrumentos cambiais com vencimento em 23 de abril, mediante contratos com prazo entre 4 e 57 meses (média de quinze meses).
+
+Desde a reunião do Copom em março, o Tesouro Nacional realizou cinco leilões de LTN, com volume financeiro total de R$5,8 bilhões. A maior demanda por esses títulos permitiu o aumento das quantidades ofertadas e o alongamento, para até quinze meses, do prazo das emissões. Além disso, a redução da inclinação da curva de juros propiciou a colocação a taxas inferiores às observadas no período anterior. As emissões de LFT, no período, também foram feitas com prazos mais longos.
+
+As liquidações financeiras realizadas entre 20 de março e 23 de abril tiveram impacto monetário expansionista de R$5,8 bilhões, em conseqüência dos resgates líquidos de R$8,8 bilhões em títulos cambiais e de R$6,3 bilhões em LTN, parcialmente compensados pelas colocações líquidas de R$9,4 bilhões em LFT.
+
+No mesmo período, nas suas intervenções no mercado aberto, o Banco Central realizou, semanalmente, operações compromissadas de uma semana e de um mês, assim como operações diárias de nivelamento da liquidez bancária, com prazo de dois dias úteis. Essas operações, em conjunto, retiraram do mercado de reservas o excesso de liquidez, que esteve, em média, em R$69,3 bilhões.

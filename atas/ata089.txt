@@ -1,0 +1,180 @@
+Evolução recente da inflação
+
+Os principais índices de preços mostraram taxas mais altas em setembro, refletindo pressões oriundas da reversão no comportamento dos preços dos alimentos, principalmente pelo efeito da entressafra, e dos reajustes de preços administrados por contrato e monitorados ao longo do mês.
+
+
+O Índice Nacional de Preços ao Consumidor Amplo (IPCA) variou 0,78% em setembro, ante 0,34% no mês anterior, acumulando 8,05% no ano e 15,14% em doze meses. O Índice Geral de Preços - Disponibilidade Interna (IGP-DI) cresceu 1,05%, após alta de 0,62% em agosto, influenciado pelas elevações de 1,29% no Índice de Preços no Atacado - Disponibilidade Interna (IPA-DI) e de 0,76% no Índice de Preços ao Consumidor - Brasil (IPC-Br).
+
+
+Em relação ao IPCA, a alta de 1,44% nos preços administrados por contrato e monitorados contribuiu com 0,41 p.p. da variação mensal do índice, enquanto o aumento de 0,51% nos preços livres respondeu pelos 0,37 p.p. restantes. Dentre os preços monitorados, destacaram-se os reajustes das taxas de água e esgoto, das tarifas de telefone fixo e de energia elétrica e dos preços dos combustíveis. Quanto aos produtos com preços livres, o principal impacto decorreu da reversão do comportamento dos alimentos, com acréscimo de 0,78% em setembro ante queda de 0,27% em agosto. Tal reversão deveu-se aos efeitos da entressafra, que encareceu a carne bovina, com reflexos altistas também na carne de frango. Ressalte-se o aumento das exportações desses produtos ao longo do ano, fato que também tem concorrido para sustentar a elevação de preços. Deve-se destacar, ainda dentre os alimentos, a evolução dos preços dos itens in natura que se mantiveram praticamente estáveis no mês (-0,07%), após queda acumulada de 16,5% no trimestre junho-agosto.
+
+
+No atacado, tanto os preços agrícolas como os industriais registraram maiores taxas em setembro. O IPA-agrícola variou 3,55%, ante 1,77% em agosto, refletindo o impacto das altas nos preços de carnes (bovina, suína e de aves) e do milho, pelo efeito da entressafra, e da soja, pela elevação do preço no mercado internacional. Os preços industriais subiram 0,40%, após alta de 0,29% em agosto, destacando-se os aumentos em produtos alimentares (principalmente, carnes e pescados e óleos e gorduras), máquinas agrícolas e produtos da extrativa mineral.
+
+
+O núcleo de inflação para o IPCA, obtido pela exclusão dos itens de alimentação no domicílio e dos monitorados, variou 0,37% em setembro, repetindo, novamente, o resultado do mês anterior. A variação acumulada nos últimos doze meses atingiu 10,54%.
+
+
+O núcleo de inflação para o IPCA, calculado pelo método das médias aparadas, subiu 0,86% em setembro, ante 0,58% em agosto. A variação acumulada nos últimos doze meses atingiu 12,68%, ainda refletindo os efeitos da alta nos preços no final de 2002. A mesma medida, quando calculada sem o procedimento de suavização de itens preestabelecidos, alcançou 0,60% no mês e 11,51% em doze meses.
+
+
+O núcleo de inflação para o IPC-Br, calculado pela Fundação Getulio Vargas (FGV), utilizando-se o método das médias aparadas simétricas, elevou-se 0,67% em setembro, acumulando alta de 12,43% nos últimos doze meses.
+
+
+Em outubro, os índices de preços no atacado e ao consumidor devem registrar variações menores. No atacado, espera-se o arrefecimento na evolução dos preços agrícolas, tendência observada nos resultados das prévias do IGP-M, divulgadas pela FGV. Para o consumidor, a desaceleração dos preços decorrerá sobretudo dos menores reajustes dos itens administrados e monitorados. No segmento dos preços livres, tendem a persistir pressões sobre os preços da alimentação, decorrentes ainda do período de entressafra, além de aumentos de ordem sazonal sobre os preços dos artigos de vestuário.
+
+
+Avaliação prospectiva das tendências da inflação
+
+Os choques identificados e os seus impactos foram reavaliados de acordo com as novas informações disponíveis. O cenário considerado nas simulações contempla as seguintes hipóteses:
+
+
+houve revisão nas projeções de reajustes para gasolina em 2003. As novas projeções acumulam 1,3% em todo o ano, 0,9 p.p. menor que a previsão de setembro. Em relação ao gás de botijão, as projeções para reajuste em todo 2003 reduziram-se de 5,4% para 5,3%;
+
+
+em relação às tarifas de energia elétrica residencial, a projeção de reajuste para 2003 elevou-se ligeiramente de 20,8% em setembro para 21,2% em outubro. Já as projeções para os reajustes das tarifas de telefonia fixa em 2003 reduziram-se 0,2 p.p., retornando ao valor de 25,5% projetado em julho e agosto.
+
+
+para todos os itens administrados por contrato e monitorados, com peso total de 28,75% no IPCA de setembro, a projeção de inflação em 2003 reduziu-se em 0,1 p.p., para 13,9%, em conseqüência, principalmente, da redução das projeções dos reajustes da gasolina e do álcool;
+
+
+para os reajustes do conjunto de itens administrados por contrato e monitorados em 2004, o Copom passou a trabalhar com projeções específicas para cada item, em substituição ao modelo de determinação endógena de preços administrados utilizado entre as reuniões de julho e setembro. O novo procedimento justifica-se porque, à medida que se aproxima 2004, torna-se possível obter informações mais precisas a respeito de reajustes de itens específicos para aquele ano, notadamente para os itens decididos em nível estadual e municipal. Tendo por base esse procedimento, a projeção de administrados em 2004 foi elevada em 0,6 p.p., atingindo 8,9% em outubro;
+
+
+a projeção para o spread de seis meses sobre a taxa Selic, seguindo especificação do modelo VAR que utiliza as variáveis Selic e swap em níveis a partir dos valores vigentes nos dias que antecederam a reunião do Copom, encontra-se em -190 p.b. no quarto trimestre de 2003 e se eleva trimestre a trimestre até atingir 85 p.b. no final de 2004.
+
+Em relação à política fiscal, supõe-se o cumprimento da meta de superávit primário de 4,25% do Produto Interno Bruto (PIB) neste e nos próximos dois anos. São mantidas as demais hipóteses consideradas na reunião anterior.
+
+
+A partir das hipóteses do cenário básico, que incluem a manutenção da taxa de juros em 20,0% ao ano e da taxa de câmbio em patamar próximo ao que prevalecia na véspera da reunião do Copom (R$2,85), as projeções de inflação estão acima da meta ajustada de 8,5% para 2003 e abaixo da meta de 5,5% para 2004.
+
+
+Implementação da política monetária
+
+A inflação de setembro medida pelo IPCA atingiu 0,78%, 0,44 p.p. acima da inflação de agosto. A inflação maior em setembro foi observada em todos os componentes do IPCA, a saber, itens não comercializáveis, comercializáveis e administrados, sobretudo nos dois últimos grupos. A inflação medida por outros índices de preço ao consumidor, como o IPC-Fipe, IPC-Br e INPC, também aumentou entre agosto e setembro, assim como a inflação medida pelos IGPs e IPAs. Neste último caso, destaca-se o aumento do IPA agrícola, que, por refletir mais intensamente o impacto da entressafra e da elevação do preço de commodities, passou de 1,8% em agosto para 3,6% em setembro.
+
+
+A inflação medida pelos núcleos também subiu, com exceção do núcleo calculado pelo método de exclusão de preços administrados e alimentos no domicílio. A variação desse núcleo manteve-se estável em 0,37% pelo terceiro mês consecutivo. Por sua vez, entre agosto e setembro, a inflação medida pelos núcleos de médias aparadas aumentou de 0,58% para 0,86% no cálculo com suavização e de 0,35% para 0,60% no cálculo sem suavização, interrompendo uma tendência de queda que vinha sendo observada desde abril. Quando se encadeia o núcleo de médias aparadas com suavização do IPCA com o do núcleo correspondente do IPCA-15, observa-se uma elevação gradual desde agosto e, com o resultado do IPCA-15 de outubro, a série apresentou o quarto aumento quinzenal consecutivo. O comportamento da variação do núcleo do IPC-Br foi semelhante, com elevação em setembro, após quatro meses consecutivos de queda. Por fim, a proporção de itens do IPCA que registraram reajustes positivos também aumentou, de 56,4% para 63,5% entre agosto e setembro, superando os valores observados nos três meses anteriores.
+
+
+O Copom mantém sua avaliação apresentada em Notas anteriores, de que o aumento da inflação em setembro correspondeu somente a um repique temporário, associado a problemas de entressafra, ao aumento do preço internacional de algumas commodities, como a soja, e a reajustes de preços administrados. Tendo em vista que os efeitos da entressafra ainda não se esgotaram, pode haver pressão sobre a inflação no curto prazo. Entretanto, o Copom continuará atuando de forma que os ganhos obtidos no combate à inflação até o momento sejam permanentes e, para tanto, acompanhará nos próximos meses a evolução da inflação e das diferentes medidas do seu núcleo, discriminando entre reajustes pontuais e reajustes persistentes ou generalizados de preços.
+
+
+Os indicadores referentes ao nível de atividade divulgados desde a reunião do Copom de setembro confirmam o cenário de recuperação da economia com que o Copom vinha trabalhando nos últimos meses. Segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), a produção industrial aumentou 1,5% entre julho e agosto, em termos dessazonalizados. Esse aumento foi mais abrangente, com maior número de segmentos industriais registrando reversão da tendência de produção decrescente que predominou no primeiro semestre do ano. Outros indicadores apontam para a recuperação da produção, como as vendas industriais que aumentaram 5% entre julho e agosto segundo a CNI, e a carga própria de energia elétrica em São Paulo, cujo aumento foi de 0,8% no mesmo período e de 1,6% em setembro. O índice de confiança do empresário industrial, divulgado trimestralmente pela FGV, também aumentou em outubro, comparativamente a julho, e encontra-se em 56, acima do valor de referência de 50, o que indica perspectivas de melhora.
+
+
+O quadro de retomada na produção industrial deverá se consolidar nos próximos meses em função das perspectivas favoráveis para a recuperação das vendas reais do comércio. Dentre os fatores que justificam esse prognóstico, destacam-se a queda da inadimplência, a recuperação da massa salarial real e a tendência ao aumento do crédito para empresas e consumidores - este último reforçado pela introdução de mecanismos de desconto em folha de salários que deverão resultar não só em aumento da oferta de crédito bem como na redução das taxas cobradas. Embora ainda se encontre em níveis inferiores aos verificados no fim de 2002, a massa salarial real na indústria de transformação vem se recuperando progressivamente há vários meses. Com a perspectiva de estabilização da inflação em níveis compatíveis com a trajetória das metas, os rendimentos reais tendem a se elevar. Além disso, apesar da manutenção da taxa de desemprego em torno de 13% em função do aumento continuado da População Economicamente Ativa (PEA), o nível de ocupação tem crescido nos últimos meses. A recuperação mais lenta do consumo, comparativamente à produção, reforça a percepção de que a retomada da atividade continuará a ocorrer de forma balanceada, sobretudo em um contexto de baixa utilização de capacidade instalada.
+
+
+As contas externas continuam mantendo o desempenho favorável verificado ao longo do ano. Em setembro, o saldo da balança comercial foi superavitário em US$2,7 bilhões, valor muito próximo do recorde registrado em agosto. O saldo acumulado no ano até setembro é de US$17,8 bilhões, mais que o dobro daquele verificado em igual período de 2002, e deve-se mais ao aumento das exportações, de 21,3% em comparação com o mesmo período do ano anterior, do que à queda das importações, de 1,8%. Registre-se ainda que o crescimento das exportações no período deveu-se majoritariamente a um aumento do quantum, embora tenha sido beneficiado também por uma melhora dos termos de troca e pela depreciação do dólar norte-americano frente às principais moedas. Por fim, o crescimento das exportações deveu-se ainda a uma diversificação dos mercados, com destaque para o mercado chinês, e à recuperação de mercados tradicionais, como o da Argentina. Em conseqüência do maior saldo da balança comercial, a conta de transações correntes acumula superávit no ano.
+
+
+Desde a reunião de setembro do Copom, houve queda da volatilidade da taxa de câmbio e o real se apreciou moderadamente, com a cotação do dólar norte-americano passando de patamares próximos a R$2,90 para valores próximos a R$2,85. Nesse período, o risco país medido pelo Emerging Market Bond Index Plus (Embi+) do J.P. Morgan Chase caiu de cerca de 650 p.b. para 607 p.b. na véspera da reunião de outubro. Além disso, a República captou US$1,5 bilhão em bônus, pagando taxas mais baixas do que aquelas verificadas em emissões anteriores. Tendo em vista o cenário prevalecente, mesmo que se observe algum retrocesso no que diz respeito à velocidade de retomada das economias industrializadas ou alguma deterioração nas condições de liquidez internacional ou no apetite por risco, o Copom avalia que o cenário externo nos próximos meses permanecerá significativamente mais favorável para a economia brasileira do que o observado em anos recentes.
+
+
+A redução do risco atribuído à economia brasileira, a estabilidade cambial e o bom desempenho das contas externas são conseqüências da consistência da política macroeconômica e da conjuntura internacional favorável, caracterizada por uma perspectiva de crescimento econômico dos Estados Unidos e da Ásia e pelo aumento da liquidez. O progresso continuado nas reformas estruturais, que aumentará a flexibilidade da economia e melhorará a composição do gastos e das receitas públicas, trará benefícios no médio prazo à execução da política monetária, ajudará a reduzir ainda mais os prêmios de risco e fará com que a capacidade de reação da economia brasileira a choques continue evoluindo favoravelmente.
+
+
+Após relativa estabilidade entre agosto e setembro, a mediana das expectativas de inflação para o próximo ano coletadas pela Gerência-Executiva de Relacionamento com Investidores (Gerin) voltou a cair em outubro. Para os próximos doze meses, a mediana das expectativas reduziu-se de 6,50% para 6,25%, valor estipulado pela trajetória das metas para a inflação acumulada nos doze meses que se encerram em setembro de 2004. Para 2004, a mediana das expectativas caiu de 6,2% para 6,0%. Esses resultados mostram que a política monetária tem sido capaz de coordenar as expectativas de inflação de modo que elas convirjam para a trajetória das metas e sugerem que os agentes econômicos interpretaram o aumento de inflação ocorrido em setembro como um episódio isolado. Houve deterioração somente para a inflação esperada para 2003, que passou de 9,6% para 9,8%, refletindo o fato de se ter observado em setembro uma inflação maior do que a antecipada.
+
+
+As projeções de inflação do Banco Central, supondo manutenção da taxa Selic em 20% a.a. e da taxa de câmbio em R$2,85, continuam apontando para uma inflação acima da meta ajustada de 8,5% em 2003. Com essas mesmas hipóteses de taxa de câmbio e juros, as projeções do Banco Central para os próximos doze meses, a partir de outubro, e para o ano de 2004 estão abaixo da meta. Em comparação com setembro, as projeções se elevaram levemente, principalmente pelo impacto do maior reajuste de preços administrados previsto para o próximo ano. Mesmo com a elevação das projeções de inflação, a trajetória projetada para os próximos meses encontra-se abaixo daquela apresentada na Carta Aberta enviada pelo Presidente do Banco Central do Brasil ao Ministro da Fazenda em 21.1.2003.
+
+
+Nas Notas da reunião de setembro, o Copom mencionou os reajustes resultantes de importantes dissídios coletivos entre os riscos envolvidos nas projeções para a trajetória futura de inflação. As negociações ocorridas desde então, bem como as perspectivas para os próximos dissídios, sugerem que a recomposição salarial vem se dando em níveis inferiores à inflação acumulada nos doze meses anteriores, embora acima da inflação projetada para os doze meses seguintes. Dessa forma, vem se consolidando a perspectiva de aumentos moderados dos rendimentos reais, compatíveis com a retomada da atividade econômica, sem a reinstituição de práticas generalizadas de indexação.
+
+
+O Copom baseia suas projeções de inflação em modelos que, por sua própria natureza, embutem incertezas quanto à magnitude e à defasagem dos mecanismos de transmissão da política monetária. Cabe lembrar que os principais impactos sobre a atividade econômica das reduções na taxa de juros básica ocorridas no terceiro trimestre deste ano ainda estão começando a se materializar. A retomada da atividade que vem sendo observada desde o terceiro trimestre deve-se, sobretudo, à melhoria das condições de risco da economia brasileira e aos efeitos da política monetária sobre a estrutura a termo dos juros de mercado em trimestres anteriores. Por esse motivo, o Copom seguirá acompanhando atentamente o processo de recuperação da atividade econômica, para que ele continue a ocorrer de forma balanceada, sem a geração de pressões inflacionárias. Esse monitoramento é importante em função da variação ocorrida nas taxas de juros reais ao longo dos últimos meses. Entretanto, com a consolidação progressiva das perspectivas favoráveis observadas recentemente para a inflação no médio prazo, o Copom avalia que deverá continuar havendo espaço para quedas adicionais da taxa Selic no futuro.
+
+
+Tendo em vista que as projeções de inflação para os próximos doze meses e para 2004 permanecem abaixo da meta, que as expectativas de inflação continuam convergindo para a trajetória das metas e que o cenário externo favorável vem contribuindo para a estabilidade de preços, o Copom decidiu reduzir a meta para a taxa Selic para 19,0% a.a., dando continuidade ao processo de flexibilização da política monetária.
+
+
+Ao final da reunião, foi registrado que o Comitê voltaria a se reunir em 18 de novembro de 2003 para as apresentações técnicas e, no dia seguinte, para deliberar sobre a política monetária, conforme estabelecido pelo comunicado 10.187, de 2.10.2002.
+
+
+SUMÁRIO DOS DADOS ANALISADOS PELO COPOM
+
+Atividade econômica
+
+A atividade do comércio varejista mostra melhor desempenho nos últimos meses, apesar de seguir apresentando queda em relação ao ano passado. Dados da Federação do Comércio do Estado de São Paulo (Fecomercio SP), ajustados sazonalmente, mostram crescimento de 1,3% nas vendas físicas entre julho e setembro, em relação ao trimestre imediatamente anterior. Em setembro, considerando dados ainda preliminares, as vendas físicas mostraram relativa estabilidade (variação de -0,3%), após o forte incremento de 4,8% observado em agosto.
+
+
+Pesquisa mais abrangente realizada pelo IBGE - Pesquisa Mensal do Comércio (PMC) - tem mostrado recuperação moderada das vendas do comércio nos últimos meses. Considerando dados ajustados sazonalmente1, observou-se crescimento médio de 2,2% no período de três meses encerrado em agosto, em relação aos três meses imediatamente anteriores. Esse desempenho merece ser destacado, sobretudo se considerada a tendência decrescente das vendas delineada no segundo semestre de 2002 e início de 2003, que determinou patamares diferentes para o nível de atividade varejista entre o ano passado e este ano. Tal comportamento tem resultado em variações negativas elevadas quando comparados os dois períodos (-5,9% em agosto sobre agosto de 2002 e -5,5% no período de janeiro a agosto de 2003, em relação a igual período do ano passado).
+
+
+Indicadores da Associação Comercial de São Paulo (ACSP) também evidenciam a tendência de recuperação do comércio nos últimos meses. As consultas ao cadastro para compras a crédito e com cheques registraram acréscimos de 9,1% e 1,9%, respectivamente, na primeira quinzena de outubro, comparativamente às observadas no mesmo período de 2002.
+
+
+A pesquisa mensal da Fecomercio SP sobre a confiança do consumidor registrou em outubro queda de 2,6% no Índice de Intenções do Consumidor (IIC), que atingiu 99,5, em escala que vai de 0 a 200. Esse resultado decorreu principalmente do novo recuo, de 4%, no índice de intenções futuras, enquanto o índice das intenções atuais acusou alta de 0,2%.
+
+
+Em relação aos indicadores de investimentos, em agosto registrou-se acréscimo mensal de 1,5% na série dessazonalizada da produção de bens de capital. Entretanto, no ano até agosto, a produção de bens de capital recuou 2,6% em relação àquela observada no mesmo período de 2002. Destaque-se, adicionalmente, que a parcela da produção de bens de capital voltada para as exportações aumentou 5,4% e que o quantum importado de bens de capital recuou 34,7%, levando à estimativa de recuo de 15% na absorção doméstica de bens de capital em 2003, até agosto, comparativamente ao observado no mesmo período de 2002. A produção de insumos da construção civil caiu 1,3% em agosto, ante a de julho, na série dessazonalizada, e acumulou retração de 8% no ano, até agosto. Outro indicador da conjuntura desfavorável aos investimentos no mesmo período é o declínio de 31%, no volume acumulado no ano, de financiamentos para investimentos de médio e longo prazos concedidos pelo Banco Nacional de Desenvolvimento Econômico e Social (BNDES).
+
+
+No segmento industrial, o nível de atividade mostra sinais inequívocos de recuperação. Segundo a Pesquisa Industrial Mensal do IBGE, a produção da indústria brasileira cresceu 1,5% em agosto, após a alta de 0,9% registrada em julho, na série dessazonalizada. Por categorias de uso, o desempenho favorável no mês atingiu a produção de bens de consumo duráveis, de capital e intermediários, com acréscimos respectivos de 5,2%, 1,5% e 1,2%. Apenas a produção de bens de consumo semi e não-duráveis registrou queda, de 0,8%. Ressalte-se que parte crescente dos segmentos industriais mostra sinais de reversão da tendência de produção decrescente que predominou no primeiro semestre do ano. No acumulado do ano até agosto, comparativamente ao mesmo período de 2002, a produção industrial recuou 0,5%, refletindo o desempenho da indústria de transformação (-0,8%), enquanto a produção extrativa mineral cresceu 2%.
+
+
+As estatísticas divulgadas pela Confederação Nacional da Indústria (CNI) sobre o desempenho da atividade da indústria de transformação em agosto também apontaram recuperação, sendo que as vendas reais registraram crescimento de 5%, na série dessazonalizada. As horas trabalhadas na produção recuaram 0,14% no mês, também na série dessazonalizada. No acumulado do ano, até agosto, esses dois indicadores registraram variações negativas de 0,38% e 0,07%, respectivamente.
+
+
+Quanto às perspectivas empresariais, pesquisa trimestral realizada pela CNI mostrou que o índice de confiança do empresário industrial atingiu 55,7 em outubro, ante 51,9 em julho, em escala que varia de 0 a 100, com melhora na avaliação das condições atuais e das expectativas para os próximos seis meses.
+
+
+Ainda segundo a CNI, o indicador de estoques de produtos finais recuou para 51,4 pontos no terceiro trimestre, ante 54,2 pontos no trimestre anterior, sendo maior nas grandes empresas, 53,1, e de 50,5 nas pequenas e médias empresas. Para matérias-primas, o indicador de estoques passou de 47,4 para 48,2 entre o segundo e o terceiro trimestres. Valores acima de 50 significam estoques acima do planejado. No âmbito do comércio varejista, pesquisa da Fecomercio SP, realizada no final de setembro, apontou que apenas cerca de 12% das empresas estavam com estoques acima do desejado.
+
+
+No segmento automobilístico, em setembro, a produção, as vendas internas e as vendas externas de veículos aumentaram 8,9%, 11,3% e 21,1%, respectivamente, considerando dados dessazonalidados. No ano, até setembro, ante o mesmo período de 2002, a produção aumentou 2,3%, principalmente pela expansão de 37,2% nas vendas externas, pois as vendas internas recuaram 7,3%.
+
+
+Mercado de trabalho
+
+O índice de emprego formal cresceu 0,5% em setembro, ante o de agosto, na série dessazonalizada, e 3% na média dos nove primeiros meses do ano em relação a igual período de 2002, de acordo com informações do Ministério do Trabalho e Emprego (MTE). Segundo a Pesquisa Mensal do Emprego (PME), a taxa de desocupação medida pelo IBGE nas seis principais regiões metropolitanas do país atingiu 12,9% em setembro, ante 13% em agosto. Destaque-se que essa redução decorreu do crescimento de 1,2% no número de trabalhadores ocupados. No mês, a população economicamente ativa também cresceu, 1,1%. Embora a taxa de desemprego registre crescimento em relação a setembro de 2002, quando registrou 11,5%, houve crescimento de 4,3% no número de ocupados no período. Comparações com bases anteriores a 2002 não são possíveis, haja vista mudanças de ordem metodológica implementadas na pesquisa a partir daquele ano.
+
+
+Ainda segundo a PME, o rendimento real médio recebido pelas pessoas ocupadas em agosto de 2003 situou-se 1,6% abaixo do verificado no mês anterior, e 14,2% abaixo daquele percebido no mesmo mês de 2002. No setor industrial, conforme estatísticas da CNI, em agosto deste ano a massa salarial real recuperou-se pelo quinto mês consecutivo, mas ainda permaneceu 3,9% abaixo da observada no mesmo mês de 2002. No ano, até agosto, a massa salarial real na indústria de transformação registrou recuo de 6,1% ante a média do mesmo período do ano anterior.
+
+
+Crédito e inadimplência
+
+O saldo das operações de crédito do sistema financeiro cresceu 1,2% em setembro, refletindo acréscimo de 1% nas operações com recursos livres e de 1,9% naquelas com recursos direcionados. Entre as primeiras, observou-se expansão de 1,7% no saldo das carteiras destinadas a pessoas físicas, principalmente nas operações de financiamento de veículos e crédito pessoal, resultante das condições mais favoráveis de crédito nos últimos meses, em especial pela queda das taxas de juros. As operações com pessoas jurídicas expandiram-se 0,6%, com um crescimento de 2,2% nas operações vinculadas à moeda nacional, frente ao recuo de 2,1% no saldo dos empréstimos vinculados a recursos externos, evidenciando crescimento sazonal da demanda por crédito por parte das empresas. Quanto aos créditos direcionados, destaque-se o acréscimo mensal de 4,8% nas operações de crédito rural, fruto do aumento da demanda por crédito para custeio, destinado à aquisição de insumos agrícolas.
+
+
+A taxa média de juros das operações com recursos livres registrou nova queda em setembro, de 2,9 p.p., atingindo 49,8% a.a., reflexo do processo de redução da taxa Selic e da diminuição do recolhimento compulsório. O resultado foi mais expressivo nas operações com pessoas físicas, com recuo de 3,8 p.p., para 70,7% a.a., devido principalmente às modalidades cheque especial e crédito pessoal. Nas operações com pessoas jurídicas, a taxa média atingiu 34% a.a., diminuindo 2,3 p.p. ante à do mês anterior. Em setembro, a inadimplência total da carteira de crédito com recursos livres das instituições financeiras situou-se em 8,7%, ante 8,5% em agosto, com incremento de 0,3 p.p. na inadimplência das pessoas jurídicas e diminuição de 0,1 p.p. na das pessoas físicas.
+
+
+Em relação à inadimplência no comércio, houve nova melhora em setembro, sobretudo pela redução de 0,7% no número de novos registros de carnês em atraso. O número de cancelamento de registros cresceu 0,1% no mês e acumulou alta de 8,1% no ano, até setembro, indicando a disposição para renegociação por parte de credores e devedores. As estatísticas da ACSP mostraram que a taxa de inadimplência permaneceu em 4% em setembro e em 5,6% na média de 2003 até setembro, comparativamente à taxa média de 6,4% registrada no ano passado.
+
+
+Setor externo
+
+A balança comercial apresentou superávit de US$2,7 bilhões em setembro, totalizando US$17,8 bilhões no período de janeiro a setembro de 2003 e US$23,1 bilhões em doze meses, estabelecendo assim novos recordes. Considerando-se os valores médios diários, as exportações cresceram 7% em setembro e 22% no acumulado do ano, comparativamente aos valores registrados nos mesmos períodos de 2002. As importações aumentaram 10% em setembro, mas diminuíram 1,4% no acumulado do ano, também na comparação com as médias dos mesmos períodos do ano passado. Em outubro, até a terceira semana (treze dias úteis), o saldo comercial totalizou US$1,6 bilhão, registrando-se expansão de 20,9% nas exportações e de 15,8% nas importações, comparativamente às médias observadas em outubro de 2002.
+
+
+Em setembro, as vendas externas totalizaram US$7,3 bilhões, registrando recorde histórico. Esse resultado foi influenciado pela expansão das exportações de produtos manufaturados, cujo valor de US$3,8 bilhões também se constituiu em recorde histórico mensal. As vendas de produtos básicos, de US$2,3 bilhões, e as de produtos semimanufaturados, de US$1 bilhão, constituíram-se no segundo maior valor mensal no histórico de cada grupo. Destaque-se o crescimento expressivo nas três categorias, tanto nas exportações de bens tradicionais como na lista daqueles com menor participação, indicando a continuidade do processo de diversificação da pauta brasileira. Com relação aos mercados compradores, em setembro as exportações se ampliaram para todas as regiões, exceto para a Ásia. As vendas para o Oriente Médio mostraram-se estáveis e a queda observada nos embarques para a Ásia foi atribuída, em grande parte, à base de comparação elevada, uma vez que em setembro de 2002 houve regularização de registros de embarques de meses anteriores. As exportações para o Mercosul continuaram aumentando em setembro, principalmente pela recuperação das vendas para a Argentina, que cresceram 112,7%, atingindo US$479 milhões. Os Estados Unidos permaneceram como principal país comprador de produtos brasileiros em 2003, com participação de 24% no total exportado pelo Brasil no período de janeiro a setembro.
+
+
+Quanto às importações, o aumento de 10% na média diária em setembro, comparativamente ao mesmo mês de 2002, decorreu do crescimento das aquisições de produtos de todas as categorias de uso, com destaque para as matérias-primas e bens intermediários, com aumento de 16,8%. No acumulado até setembro, o recuo de 1,4% pela média diária foi influenciado, sobretudo, pela queda de 18,9% na média das importações de bens de capital.
+
+
+As transações correntes do balanço de pagamentos registraram superávit de US$1,3 bilhão em setembro, ante US$1,2 bilhão em setembro de 2002. O déficit nas contas de serviços e rendas alcançou US$1,6 bilhão e as transferências unilaterais foram superavitárias em US$225 milhões. O resultado em transações correntes, acumulado no ano até setembro, atingiu US$3,9 bilhões. A conta financeira do balanço de pagamentos registrou ingresso líquido de investimentos estrangeiros diretos de US$739 milhões em setembro, acumulando US$6,5 bilhões em 2003. Ao final de setembro, as reservas internacionais situaram-se em US$52,7 bilhões e as reservas líquidas ajustadas, em US$16,2 bilhões.
+
+
+Mercado monetário e operações de mercado aberto
+
+No período compreendido entre as reuniões do Copom de setembro e outubro, as taxas de juros futuros mantiveram a trajetória de queda. Os principais fatores que influenciaram favoravelmente foram a divulgação de alguns índices de inflação abaixo das expectativas do mercado, as projeções apresentadas no "Relatório de Inflação" do Banco Central e a melhora do risco país. Entre 17 de setembro e 21 de outubro, as taxas de juros de um mês e de um ano apresentaram reduções de 0,98 p.p. e 0,92 p.p., respectivamente.
+
+
+Em razão da significativa redução da demanda por instrumentos cambiais, a taxa média de rolagem dos títulos e swaps cambiais no período foi de 7,1% do principal vincendo: 13% para o vencimento de 1º de outubro; zero para o vencimento do dia 15 e 3,2% para o vencimento de 3 de novembro próximo. Com isso, o resgate líquido de instrumentos cambiais acumulado no ano atingiu US$14,8 bilhões.
+
+
+O Tesouro Nacional realizou cinco leilões de Letras do Tesouro Nacional (LTN), totalizando R$13,5 bilhões. Em função da significativa demanda pelos títulos e do movimento de queda da curva de juros, as taxas de colocação voltaram a apresentar redução. Houve, ainda, cinco leilões de Letras Financeiras do Tesouro (LFT) com vencimento em 2007, cujo volume financeiro alcançou R$3,6 bilhões, sendo que o deságio desses títulos atingiu o menor nível do ano. Dando seqüência a colocação das Notas do Tesouro Nacional, série B (NTN-B), o Tesouro Nacional realizou em outubro dois leilões, sendo ofertados títulos com vencimentos em 2006, 2009, 2015 e 2024. Destaque-se que as taxas apuradas para os dois primeiros vencimentos recuaram de 10,79% em setembro para 9,98% em outubro. O total da emissão atingiu R$1,8 bilhão, sendo R$946 milhões liquidados em moeda corrente e o restante mediante troca por outros títulos.
+
+
+As liquidações financeiras realizadas entre 18 de setembro e 22 de outubro acarretaram impacto monetário contracionista de R$2,9 bilhões, em razão, principalmente, das colocações líquidas de R$7,5 bilhões em LTN e de R$2,1 bilhões em NTN-B e NTN-C, parcialmente compensadas por resgates líquidos de R$3,3 bilhões em LFT e de R$2,2 bilhões em títulos cambiais.
+
+
+Nas suas intervenções no mercado aberto, o Banco Central realizou semanalmente operações compromissadas com prazo de duas semanas e manteve as operações diárias de nivelamento da liquidez bancária. Essas operações, em conjunto, retiraram do mercado de reservas bancárias o excesso de liquidez, cuja média foi de R$56,7 bilhões no período.
+
+
+Em setembro, a dívida pública mobiliária interna registrou aumento de 1,7%. A parcela prefixada elevou-se de 7,4% em agosto para 9,0%, mantendo sua trajetória crescente ao longo de 2003. Já a parcela vinculada à variação cambial reduziu-se de 28,1% para 26,5%, a menor participação no ano.
