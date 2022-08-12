@@ -11,7 +11,7 @@ git clone https://github.com/ajdavidl/corpus-atas-copom.git
 cd corpus-atas-copom
 ```
 
-Um exemplo simples de exploração do corpus está no notebook "corpus-exploration-in-python.ipynb".
+Exemplos de exploração do corpus se encontram no diretório "notebooks".
 
 ## Links
 
