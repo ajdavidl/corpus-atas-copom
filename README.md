@@ -11,7 +11,7 @@ git clone https://github.com/ajdavidl/corpus-atas-copom.git
 cd corpus-atas-copom
 ```
 
-Exemplos de exploração do corpus se encontram no diretório "notebooks".
+Exemplos de exploração do corpus se encontram nos diretórios "notebooks" e "scripts".
 
 ## Links
 
