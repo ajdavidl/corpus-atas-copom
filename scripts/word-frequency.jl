@@ -39,30 +39,6 @@ prepare!(crps, strip_punctuation)
 update_lexicon!(crps)
 update_inverse_index!(crps)
 
-#char frequency
-
-dict_char = Dict{Char,Int}()
-for txt in corpus
-    for char in string(txt)
-        if haskey(dict_char, char)
-            dict_char[char] += 1
-        else
-            dict_char[char] = 1
-        end
-    end
-end
-
-chars = [];
-frequency = [];
-for (key, value) in dict_char
-    push!(chars, key)
-    push!(frequency, value)
-end
-char_df = DataFrame(Dict("Char" => chars, "n" => frequency));
-sort!(char_df, [:n, :Char], rev=[true, false])
-println(char_df[1:20, :])
-#display(bar(char_df[1:10, 1], char_df[1:10, 2], title="char frequency", orientation=:horizontal))
-
 #word frequency
 #with stop words
 
