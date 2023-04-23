@@ -1,5 +1,7 @@
 # Corpus de atas do Copom
 
+[English version](README_English.md)
+
 Corpus das atas das reuniões do Comitê de Política Monetária (Copom) do Banco Central do Brasil.
 
 ## Utilização
