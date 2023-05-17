@@ -1,4 +1,4 @@
-# Copom minutes corpus
+# Corpus of Copom minutes
 
 Minutes of the Monetary Policy Committee (Copom) of the Banco Central do Brasil in Portuguese language.
 
