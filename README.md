@@ -6,14 +6,14 @@ Corpus das atas das reuniões do Comitê de Política Monetária (Copom) do Banc
 
 ## Utilização
 
-Basta clonar o repositório. Os textos das atas estão dentro da pasta "atas".
+Basta clonar o repositório. Os textos das atas estão dentro da pasta "[atas](atas)".
 
 ```shell
 git clone https://github.com/ajdavidl/corpus-atas-copom.git
 cd corpus-atas-copom
 ```
 
-Exemplos de exploração do corpus se encontram nos diretórios "notebooks" e "scripts".
+Exemplos de exploração do corpus se encontram no diretório "[scripts](scripts)".
 
 ## Links
 

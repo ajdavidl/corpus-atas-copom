@@ -4,13 +4,13 @@ Minutes of the Monetary Policy Committee (Copom) of the Banco Central do Brasil 
 
 ## Usage
 
-Clone the repository. The texts are inside the "atas" folder.
+Clone the repository. The texts are inside the "[atas](atas)" folder.
 
 ```shell
 git clone https://github.com/ajdavidl/corpus-atas-copom.git
 cd corpus-atas-copom
 ```
-Examples of the corpus exploration are in "notebooks" and "scripts" folders.
+Examples of the corpus exploration are in "[scripts](scripts)" folder.
 
 ## Links
 
