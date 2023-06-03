@@ -344,3 +344,27 @@ parameters_ = {'alpha': (0.0, 0.5, 1.0)}
 print("\n", nome, " - TF-IDF VECTORS")
 MultinomialNaiveBayes = train_model(
     MultinomialNaiveBayes, X_train_tfidf, y_train, X_test_tfidf, y_test, parameters=parameters_)
+
+print('Gaussian Naive Bayes')
+# GAUSSIAN NAIVE BAYES
+nome = "GaussianNB"
+GaussianNaiveBayes = naive_bayes.GaussianNB()
+parameters_ = None
+
+# TF IDF Vectors
+print("\n", nome, " - TF-IDF VECTORS")
+GaussianNaiveBayes = train_model(
+    GaussianNaiveBayes, X_train_tfidf.toarray(), y_train, X_test_tfidf.toarray(), y_test, parameters=parameters_)
+
+print('KNN')
+# KNN
+nome = "KNeighbors"
+KNeighbors = neighbors.KNeighborsClassifier()
+parameters_ = {'n_neighbors': (1, 3, 5, 7, 9),
+               'weights': ('uniform', 'distance'),
+               'p': (1, 2)}
+
+# TF IDF Vectors
+print("\n", nome, " - TF-IDF VECTORS")
+KNeighbors = train_model(
+    KNeighbors, X_train_tfidf, y_train, X_test_tfidf, y_test, parameters=parameters_)
