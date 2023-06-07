@@ -29,7 +29,7 @@ colnames(df) <- c("doc_id", "selic", "decision", "text")
 df$selic <- NULL
 
 # pre-processing ----------------------------------------------------------
-
+docs <- Corpus(DataframeSource(df))
 toSpace <- content_transformer(function(x, pattern) gsub(pattern, " ", x))
 docs <- tm_map(docs, toSpace, "\n")
 docs <- tm_map(docs, toSpace, "\r")
