@@ -368,3 +368,25 @@ parameters_ = {'n_neighbors': (1, 3, 5, 7, 9),
 print("\n", nome, " - TF-IDF VECTORS")
 KNeighbors = train_model(
     KNeighbors, X_train_tfidf, y_train, X_test_tfidf, y_test, parameters=parameters_)
+
+
+print("Stochastic Gradient Descent (SGD)")
+nome = "SGDClassifier"
+SGDModel = linear_model.SGDClassifier()
+parameters_ = {'penalty': ('l1', 'l2', 'elasticnet')}
+
+# TF IDF Vectors
+print("\n", nome, " - TF-IDF VECTORS")
+SGDModel = train_model(SGDModel, X_train_tfidf, y_train,
+                       X_test_tfidf, y_test, parameters=parameters_)
+
+print("Perceptron")
+nome = "Perceptron"
+perceptronModel = linear_model.Perceptron()
+parameters_ = {'penalty': ('l1', 'l2', 'elasticnet'),
+               'class_weight': ('balanced', None)}
+
+# TF IDF Vectors
+print("\n", nome, " - TF-IDF VECTORS")
+perceptronModel = train_model(perceptronModel, X_train_tfidf, y_train,
+                              X_test_tfidf, y_test, parameters=parameters_)
