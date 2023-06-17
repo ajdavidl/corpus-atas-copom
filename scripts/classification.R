@@ -83,6 +83,8 @@ model_decisionTree = caret::train(decision ~ .,
 print(model_decisionTree)
 rattle::fancyRpartPlot(model_decisionTree$finalModel)
 modelLookup('rpart')
+pred_decicionTree <- predict(model_decisionTree, newdata = dataTest)
+confusionMatrix(pred_decicionTree, as.factor(dataTest$decision))
 
 grid.search = expand.grid(cp = seq(0, 1, length.out = 5))
 model_decisionTree2 = caret::train(decision ~ .,
@@ -94,6 +96,8 @@ model_decisionTree2 = caret::train(decision ~ .,
 
 print(model_decisionTree2)
 rattle::fancyRpartPlot(model_decisionTree2$finalModel)
+pred_decicionTree2 <- predict(model_decisionTree2, newdata = dataTest)
+confusionMatrix(pred_decicionTree2, as.factor(dataTest$decision))
 
 # SVM ---------------------------------------------------------------------
  
@@ -112,6 +116,8 @@ model_svm = caret::train(decision ~ .,
                          method       = 'svmRadial')
 
 print(model_svm)
+pred_svm <- predict(model_svm, newdata = dataTest)
+confusionMatrix(pred_svm, as.factor(dataTest$decision))
 
 grid.search = expand.grid(C = seq(8, 128, length.out =  4),
                           sigma = seq(0, 0.1, length.out = 4))
@@ -124,3 +130,29 @@ model_svm2 = caret::train(decision ~ .,
                           tuneGrid     = grid.search)
 
 print(model_svm2)
+pred_svm2 <- predict(model_svm2, newdata = dataTest)
+confusionMatrix(pred_svm2, as.factor(dataTest$decision))
+
+# Define the control parameters for the algorithms
+ctrl <- trainControl(method = "cv", number = 10)
+
+# Logistic Regression
+# fit_glm <- train(decision ~ ., data = dataTrain, method = "glm", trControl = ctrl)
+# pred_glm <- predict(fit_glm, newdata = dataTest)
+# confusionMatrix(pred_glm, as.factor(dataTest$decision))
+
+# K-Nearest Neighbors
+fit_knn <- train(decision ~ ., data = dataTrain, method = "knn", trControl = ctrl)
+pred_knn <- predict(fit_knn, newdata = dataTest)
+confusionMatrix(pred_knn, as.factor(dataTest$decision))
+
+# Naive Bayes
+fit_nb <- train(decision ~ ., data = dataTrain, method = "naive_bayes", trControl = ctrl)
+pred_nb <- predict(fit_nb, newdata = dataTest)
+confusionMatrix(pred_nb, as.factor(dataTest$decision))
+
+# Support Vector Machine (SVM)
+fit_svm <- train(decision ~ ., data = dataTrain, method = "svmRadial", trControl = ctrl)
+pred_svm <- predict(fit_svm, newdata = dataTest)
+confusionMatrix(pred_svm, as.factor(dataTest$decision))
+
