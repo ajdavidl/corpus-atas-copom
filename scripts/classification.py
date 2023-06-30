@@ -4,6 +4,7 @@ import os
 import nltk
 import numpy as np
 import spacy
+import xgboost
 #import eli5
 from sklearn import model_selection, preprocessing, linear_model, naive_bayes, metrics, svm, tree, neural_network, neighbors, ensemble
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -390,3 +391,14 @@ parameters_ = {'penalty': ('l1', 'l2', 'elasticnet'),
 print("\n", nome, " - TF-IDF VECTORS")
 perceptronModel = train_model(perceptronModel, X_train_tfidf, y_train,
                               X_test_tfidf, y_test, parameters=parameters_)
+
+# EXTREME GRADIENT BOOSTING
+print("Extreme Gradient Boosting")
+nome = "xgboost.XGBC"
+XGBoostModel = xgboost.XGBClassifier(seed=100, random_state=100)
+parameters_ = None
+
+# TF IDF Vectors
+print("\n", nome, " - TF-IDF VECTORS")
+XGBoostModel = train_model(XGBoostModel, X_train_tfidf,
+                           y_train, X_test_tfidf, y_test, parameters=parameters_)
