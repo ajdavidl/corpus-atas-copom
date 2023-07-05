@@ -339,7 +339,7 @@ print('Multinomial Naive Bayes...')
 # MULTINOMIAL NAIVE BAYES
 nome = "MultinomialNB"
 MultinomialNaiveBayes = naive_bayes.MultinomialNB()
-parameters_ = {'alpha': (0.0, 0.5, 1.0)}
+parameters_ = {'alpha': (1.0e-10, 0.5, 1.0)}
 
 # TF IDF Vectors
 print("\n", nome, " - TF-IDF VECTORS")
@@ -402,3 +402,13 @@ parameters_ = None
 print("\n", nome, " - TF-IDF VECTORS")
 XGBoostModel = train_model(XGBoostModel, X_train_tfidf,
                            y_train, X_test_tfidf, y_test, parameters=parameters_)
+
+print("Multi-Layer Perceptron")
+nome = "MLPClassifier"
+MLPModel = neural_network.MLPClassifier(random_state=100, max_iter=1000)
+parameters_ = {'activation': ('relu', 'logistic')}
+
+# TF IDF Vectors
+print("\n", nome, " - TF-IDF VECTORS")
+MLPModel = train_model(MLPModel, X_train_tfidf,
+                       y_train, X_test_tfidf, y_test, parameters=parameters_)
