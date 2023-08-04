@@ -5,6 +5,8 @@ import numpy as np
 from load_texts import *  # return_data_frame() and Mystopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity, pairwise_distances
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 df = return_data_frame()
 
@@ -29,6 +31,20 @@ cos_sim = cosine_similarity(df_vectors)
 print(cos_sim.shape)
 pair_dist = pairwise_distances(df_vectors, metric='cosine')
 print(pair_dist.shape)
+
+
+nr_docs_to_show = 15
+labels = [i for i in df.index[-nr_docs_to_show:]]
+
+sns.heatmap(cos_sim[-nr_docs_to_show:, -nr_docs_to_show:],
+            xticklabels=labels, yticklabels=labels)
+plt.title("Cosine similarity")
+plt.show()
+
+sns.heatmap(pair_dist[-nr_docs_to_show:, -nr_docs_to_show:],
+            xticklabels=labels, yticklabels=labels)
+plt.title("Pair wise distance")
+plt.show()
 
 
 def similar_ata(nr_ata):
