@@ -132,3 +132,52 @@ def similar_ata2(nr_ata):
 similar_ata2(250)
 similar_ata2(258)
 similar_ata2(100)
+
+print("FastText")
+max_epochs = 10
+vec_size = 100
+model_FT = FastText(corpus, vector_size=vec_size,
+                    window=3, min_count=1, epochs=max_epochs)
+
+
+vec = model_FT.wv[ corpus[0] ]
+vec.shape = (1, vec_size)
+df_vectors3 = pd.DataFrame(vec, columns=['V'+str(i) for i in range(vec_size)], index=[21])
+for i in range(1, len(corpus)):
+    vec = model_FT.wv[ corpus[i] ]
+    vec.shape = (1, vec_size)
+    df_aux = pd.DataFrame(vec, columns=['V'+str(j) for j in range(vec_size)], index=[i+21])
+    df_vectors3 = pd.concat([df_vectors3, df_aux])
+
+cos_sim3 = cosine_similarity(df_vectors3)
+print(cos_sim3.shape)
+pair_dist3 = pairwise_distances(df_vectors3, metric='cosine')
+print(pair_dist3.shape)
+
+
+nr_docs_to_show = 15
+labels = [i for i in df.index[-nr_docs_to_show:]]
+
+sns.heatmap(cos_sim3[-nr_docs_to_show:, -nr_docs_to_show:],
+            xticklabels=labels, yticklabels=labels)
+plt.title("Cosine similarity fastText")
+plt.show()
+
+sns.heatmap(pair_dist3[-nr_docs_to_show:, -nr_docs_to_show:],
+            xticklabels=labels, yticklabels=labels)
+plt.title("Pair wise distance fastText")
+plt.show()
+
+def similar_ata3(nr_ata):
+    print("similar docs to", nr_ata, ":")
+    index_ata = nr_ata - 21
+    col = cos_sim3[:, index_ata]
+    x = np.argsort(col, axis=-1)
+    for i in x[-10:]:
+        print(i+21)
+    print()
+
+
+similar_ata3(255)
+similar_ata3(258)
+similar_ata3(100)
