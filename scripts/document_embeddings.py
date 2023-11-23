@@ -44,12 +44,12 @@ labels = [i for i in df.index[-nr_docs_to_show:]]
 
 sns.heatmap(cos_sim[-nr_docs_to_show:, -nr_docs_to_show:],
             xticklabels=labels, yticklabels=labels)
-plt.title("Cosine similarity")
+plt.title("Cosine similarity - TD-IDF")
 plt.show()
 
 sns.heatmap(pair_dist[-nr_docs_to_show:, -nr_docs_to_show:],
             xticklabels=labels, yticklabels=labels)
-plt.title("Pair wise distance")
+plt.title("Pair wise distance - TF-IDF")
 plt.show()
 
 
@@ -64,9 +64,7 @@ def similar_ata(nr_ata):
 
 
 similar_ata(255)
-
-similar_ata(250)
-
+similar_ata(258)
 similar_ata(100)
 
 print("Doc2vec")
@@ -95,6 +93,36 @@ for epoch in range(max_epochs):
     # fix the learning rate, no decay
     model_D2V.min_alpha = model_D2V.alpha
 
+vec = model_D2V.dv[0]
+vec.shape = (1, vec_size)
+print(vec.shape)
+df_vectors2 = pd.DataFrame(vec, columns=['V'+str(i) for i in range(vec_size)], index=[21])
+for i in range(22, len(corpus)):
+    vec = model_D2V.dv[i]
+    vec.shape = (1, vec_size)
+    df_aux = pd.DataFrame(vec, columns=['V'+str(j) for j in range(vec_size)], index=[i])
+    df_vectors2 = pd.concat([df_vectors2, df_aux])
+
+
+cos_sim2 = cosine_similarity(df_vectors2)
+print(cos_sim2.shape)
+pair_dist2 = pairwise_distances(df_vectors2, metric='cosine')
+print(pair_dist2.shape)
+
+
+nr_docs_to_show = 15
+labels = [i for i in df.index[-nr_docs_to_show:]]
+
+sns.heatmap(cos_sim2[-nr_docs_to_show:, -nr_docs_to_show:],
+            xticklabels=labels, yticklabels=labels)
+plt.title("Cosine similarity doc2vec")
+plt.show()
+
+sns.heatmap(pair_dist[-nr_docs_to_show:, -nr_docs_to_show:],
+            xticklabels=labels, yticklabels=labels)
+plt.title("Pair wise distance doc2vec")
+plt.show()
+
 def similar_ata2(nr_ata):
     similar_doc = model_D2V.dv.most_similar(str(nr_ata))
     print("similar docs to "+str(nr_ata)+":")
@@ -104,3 +132,4 @@ def similar_ata2(nr_ata):
 
 similar_ata2(250)
 similar_ata2(258)
+similar_ata2(100)
