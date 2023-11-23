@@ -95,12 +95,11 @@ for epoch in range(max_epochs):
 
 vec = model_D2V.dv[0]
 vec.shape = (1, vec_size)
-print(vec.shape)
 df_vectors2 = pd.DataFrame(vec, columns=['V'+str(i) for i in range(vec_size)], index=[21])
-for i in range(22, len(corpus)):
+for i in range(1, len(corpus)):
     vec = model_D2V.dv[i]
     vec.shape = (1, vec_size)
-    df_aux = pd.DataFrame(vec, columns=['V'+str(j) for j in range(vec_size)], index=[i])
+    df_aux = pd.DataFrame(vec, columns=['V'+str(j) for j in range(vec_size)], index=[i+21])
     df_vectors2 = pd.concat([df_vectors2, df_aux])
 
 
@@ -118,7 +117,7 @@ sns.heatmap(cos_sim2[-nr_docs_to_show:, -nr_docs_to_show:],
 plt.title("Cosine similarity doc2vec")
 plt.show()
 
-sns.heatmap(pair_dist[-nr_docs_to_show:, -nr_docs_to_show:],
+sns.heatmap(pair_dist2[-nr_docs_to_show:, -nr_docs_to_show:],
             xticklabels=labels, yticklabels=labels)
 plt.title("Pair wise distance doc2vec")
 plt.show()
