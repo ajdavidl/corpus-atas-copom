@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from nltk.tokenize import word_tokenize
 from gensim.models import FastText, Doc2Vec
 from gensim.models.doc2vec import TaggedDocument
-#from sentence_transformers import SentenceTransformer, util
+from sentence_transformers import SentenceTransformer, util
 
 df = return_data_frame()
 
@@ -134,6 +134,7 @@ similar_ata2(258)
 similar_ata2(100)
 
 print("FastText")
+corpus = df.text.to_list()
 max_epochs = 10
 vec_size = 100
 model_FT = FastText(corpus, vector_size=vec_size,
@@ -181,3 +182,61 @@ def similar_ata3(nr_ata):
 similar_ata3(255)
 similar_ata3(258)
 similar_ata3(100)
+
+print("SBert")
+corpus = df.text.to_list()
+model_sbert = SentenceTransformer('paraphrase-multilingual-mpnet-base-v2')
+tensors = model_sbert.encode(corpus)
+#print(type(tensors))
+#print(tensors.shape)
+df_vectors4 = pd.DataFrame(tensors, index=range(21,len(corpus)+21))
+#print(df_vectors4.shape)
+
+cos_sim4 = cosine_similarity(df_vectors4)
+print(cos_sim4.shape)
+pair_dist4 = pairwise_distances(df_vectors4, metric='cosine')
+print(pair_dist4.shape)
+
+
+nr_docs_to_show = 15
+labels = [i for i in df.index[-nr_docs_to_show:]]
+
+sns.heatmap(cos_sim4[-nr_docs_to_show:, -nr_docs_to_show:],
+            xticklabels=labels, yticklabels=labels)
+plt.title("Cosine similarity SBert")
+plt.show()
+
+sns.heatmap(pair_dist4[-nr_docs_to_show:, -nr_docs_to_show:],
+            xticklabels=labels, yticklabels=labels)
+plt.title("Pair wise distance SBert")
+plt.show()
+
+def similar_ata4(nr_ata):
+    print("similar docs to", nr_ata, ":")
+    index_ata = nr_ata - 21
+    col = cos_sim4[:, index_ata]
+    x = np.argsort(col, axis=-1)
+    for i in x[-10:]:
+        print(i+21)
+    print()
+
+
+similar_ata4(255)
+similar_ata4(258)
+similar_ata4(100)
+
+def similar_ata_sbert(nr_ata):
+    txt = corpus[nr_ata-21]
+    queryTensor = model_sbert.encode(txt)
+    similarities = util.cos_sim(queryTensor, tensors)
+    similarities = similarities.argsort(descending=True).tolist()
+    similarities = similarities[0][:10]
+    listdocs = [i+21 for i in similarities]
+    print("similar docs to", nr_ata, ":")
+    for d in listdocs:
+        print(d)
+    print()
+
+similar_ata_sbert(255)
+similar_ata_sbert(258)
+similar_ata_sbert(100)
