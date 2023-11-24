@@ -1,5 +1,3 @@
-# Documents embeddings using TFIDF vectors
-
 import pandas as pd
 import numpy as np
 from load_texts import *  # return_data_frame() and Mystopwords
@@ -25,13 +23,7 @@ matrix = matrix.todense()
 terms = vectorizer.get_feature_names_out()
 docs = df.index.values
 
-#print(matrix.shape)
-#print(terms.shape)
-#print(docs.shape)
-
 df_vectors = pd.DataFrame(matrix, columns=terms, index=docs)
-#print(df_vectors.info())
-#print(df_vectors.sample(2))
 
 cos_sim = cosine_similarity(df_vectors)
 print(cos_sim.shape)
@@ -187,10 +179,7 @@ print("SBert")
 corpus = df.text.to_list()
 model_sbert = SentenceTransformer('paraphrase-multilingual-mpnet-base-v2')
 tensors = model_sbert.encode(corpus)
-#print(type(tensors))
-#print(tensors.shape)
 df_vectors4 = pd.DataFrame(tensors, index=range(21,len(corpus)+21))
-#print(df_vectors4.shape)
 
 cos_sim4 = cosine_similarity(df_vectors4)
 print(cos_sim4.shape)
