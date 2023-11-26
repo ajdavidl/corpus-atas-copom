@@ -8,22 +8,13 @@ from gensim.models.doc2vec import TaggedDocument
 from nltk.tokenize import word_tokenize
 import matplotlib.pyplot as plt
 
-print("Loading data...")
-AtasFolder = "../atas"
-listAtas = os.listdir(AtasFolder)
-corpus = []
-meeting = []
-for ata in listAtas:
-    meeting.append(int(re.search("[0-9]+", ata).group()))
-    with open(AtasFolder + "/" + ata, 'rt', encoding='utf-8') as f:
-        lines = f.readlines()
-        if lines:
-            lines = ' '.join(lines).lower()
-            corpus.append(lines)
+from load_texts import *  # return_data_frame() and Mystopwords
 
+print("Loading data...")
+dfCorpus = return_data_frame()
+dfCorpus.text = dfCorpus.text.apply(lambda x : x.lower())
+corpus = dfCorpus.text.to_list()
 print(len(corpus), "atas")
-dfCorpus = pd.DataFrame(corpus, index=meeting, columns=["corpus"])
-del meeting
 
 
 def display_pca_scatterplot(model, words=None, sample=0):
