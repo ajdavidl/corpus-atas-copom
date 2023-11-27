@@ -5,17 +5,12 @@ import re
 import os
 from collections import Counter
 
-print("Loading data...")
-AtasFolder = "../atas"
-listAtas = os.listdir(AtasFolder)
-corpus = []
-for ata in listAtas:
-    with open(AtasFolder + "/" + ata, 'rt', encoding='utf-8') as f:
-        lines = f.readlines()
-        if lines:
-            lines = ' '.join(lines).lower()
-            corpus.append(lines)
+from load_texts import *  # return_data_frame() and Mystopwords
 
+print("Loading data...")
+dfCorpus = return_data_frame()
+dfCorpus.text = dfCorpus.text.apply(lambda x : x.lower())
+corpus = dfCorpus.text.to_list()
 print(len(corpus), "minutes")
 
 for i in range(0, len(corpus)):
