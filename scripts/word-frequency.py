@@ -6,18 +6,14 @@ import matplotlib.pyplot as plt
 import numpy as np
 import wordcloud
 
-listAtas = os.listdir("../atas")
+from load_texts import *  # return_data_frame() and Mystopwords
 
-corpus = []
+print("Loading data...")
+dfCorpus = return_data_frame()
+dfCorpus.text = dfCorpus.text.apply(lambda x : x.lower())
+corpus = dfCorpus.text.to_list()
+print(len(corpus), "minutes")
 
-for ata in listAtas:
-    with open("../atas/" + ata, 'rt', encoding='utf-8') as f:
-        lines = f.readlines()
-        if lines:
-            lines = ' '.join(lines)
-            corpus.append(lines)
-
-print(len(corpus), "atas")
 corpusJoined = ' '.join(corpus)
 corpusJoined = corpusJoined.lower()
 for i in range(0, len(corpus)):
