@@ -20,10 +20,6 @@ for i in range(0, len(corpus)):
     corpus[i] = corpus[i].lower()
     corpus[i] = re.sub('\n', '', corpus[i])  # remove newline character
 
-Mystopwords = ['ainda', 'ante', 'p', 'r', 'sobre'] + ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro',
-                                                      'outubro', 'novembro', 'dezembro', 'mês', 'meses', 'ano', 'anos'] + [str(i) for i in range(10)] + nltk.corpus.stopwords.words('portuguese')
-
-
 def frequencyPlot(listText, number_of_words=20, stopwords=None, ngramRange=(1, 1), vocabulary=None):
     count_vect = CountVectorizer(
         analyzer='word',
