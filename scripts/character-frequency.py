@@ -6,16 +6,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import wordcloud
 
-listAtas = os.listdir("../atas")
+from load_texts import read_text_files
 
-corpus = []
-
-for ata in listAtas:
-    with open("../atas/" + ata, 'rt', encoding='utf-8') as f:
-        lines = f.readlines()
-        if lines:
-            lines = ' '.join(lines)
-            corpus.append(lines)
+corpus = read_text_files()[0]
 
 print(len(corpus), "atas")
 
