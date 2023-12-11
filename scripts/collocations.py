@@ -2,17 +2,10 @@ import nltk
 from nltk.collocations import *
 import os
 
-print("Loading data...")
-AtasFolder = "../atas"
-listAtas = os.listdir(AtasFolder)
-corpus = []
-for ata in listAtas:
-    with open(AtasFolder + "/" + ata, 'rt', encoding='utf-8') as f:
-        lines = f.readlines()
-        if lines:
-            lines = ' '.join(lines).lower()
-            corpus.append(lines)
+from load_texts import read_text_files
 
+print("Loading data...")
+corpus = read_text_files()[0]
 print(len(corpus), "minutes")
 
 str_por = ' '.join(corpus)
