@@ -1,15 +1,10 @@
 library(dplyr)
 library(tidytext)
 library(tidyr)
+source("load_texts.R")
 
-listAtas <- list.files(path="../atas", pattern=".txt", all.files=TRUE, full.names=TRUE)
+corpus <- read_text_files()
 
-corpus <- c()
-for(ata in listAtas){
-  lines <- readLines(con = ata, encoding = "UTF-8")
-  lines <- paste(lines, collapse = " ")
-  corpus <- c(corpus,lines)
-}
 print(paste(length(corpus),"atas"))
 
 df <- data.frame(sentence = corpus, stringsAsFactors = FALSE)
