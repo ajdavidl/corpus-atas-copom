@@ -6,6 +6,7 @@ df = return_data_frame()
 # print(df.info())
 
 print('removing stop words...')
+Mystopwords = Mystopwords + ["12","banco","central","copom","doze","membros","meses","os"]
 corpus = df['text'].to_list()
 
 for i in range(0, len(corpus)):
