@@ -6,7 +6,7 @@ df = return_data_frame()
 # print(df.info())
 
 print('removing stop words...')
-Mystopwords = Mystopwords + ["12","banco","central","copom","doze","membros","meses","os"]
+Mystopwords = Mystopwords + ["12","banco","central","copom","doze","membros","meses","os","se"]
 corpus = df['text'].to_list()
 
 for i in range(0, len(corpus)):
@@ -25,14 +25,18 @@ topic_model = BERTopic(language='multilingual',
                                 min_topic_size=10)
 topics, probs = topic_model.fit_transform(corpus)
 
-print(topic_model.get_topic_info())
-
-print(topic_model.get_topics())
+topic_info = topic_model.get_topic_info()
+print(topic_info[["Topic","Count","Representation"]])
 
 for i in range(len(topic_model.get_topics())):
-    print('Topic %.0f' % i)
-    print([n for n, p in topic_model.get_topic(i)])
-    # print(topic_model.get_representative_docs(topic=i))
+    if i < topic_info.shape[0]-1:
+        print('Topic %.0f' % i)
+        print([n for n, p in topic_model.get_topic(i)])
+        # print(topic_model.get_representative_docs(topic=i))
     print()
 
-print(topic_model.get_document_info(corpus))
+doc_info = topic_model.get_document_info(corpus)
+
+print(doc_info[["Document","Topic","Probability","Top_n_words"]])
+
+topic_model.visualize_barchart(top_n_topics=12, n_words=10, height=500)
