@@ -7,7 +7,7 @@ print("Loading data...")
 corpus = read_text_files()[0]
 print(len(corpus), "minutes")
 
-atas = np.arange(20, 20+len(corpus), 1)
+atas = np.arange(21, 21+len(corpus), 1)
 # Calculate indexes
 ari = np.zeros(atas.shape)
 cli = np.zeros(atas.shape)
