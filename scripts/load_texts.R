@@ -11,7 +11,7 @@ read_text_files <- function(){
   return(listText)
 }
 
-return_data_frama <- function(){
+return_data_frame <- function(){
   listText <- read_text_files()
   df <- read.csv2("../decisions.csv", sep = ",")
   df[df$meeting == 45 & df$decision == "keep", "meeting"] <- NA
@@ -28,3 +28,5 @@ return_data_frama <- function(){
   rm(df2)
   return(df)
 }
+
+Mystopwords <- c("ainda", "ante", "doze", "enquanto" "p", "r", "relação", "sobre", "janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "mês", "meses", "ano", "anos", as.character(0:9), tm::stopwords("pt"))
