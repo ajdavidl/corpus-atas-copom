@@ -38,8 +38,9 @@ summary(corp)
 
 # wordcloud ---------------------------------------------------------------
 
-corp %>% 
-  dfm(remove = Mystopwords, remove_punct = TRUE) %>%
+corp %>% tokens() %>%
+  dfm(remove_punct = TRUE) %>%
+  dfm_remove(Mystopwords) %>%
   dfm_trim(min_termfreq = 10, verbose = FALSE) %>% 
   textplot_wordcloud()
 
@@ -68,25 +69,25 @@ kwic(tokens(corp_subset), pattern = "inflação") %>%
   textplot_xray()
 
 g <- textplot_xray(
-  kwic(corp_subset, pattern = "incerteza"),
-  kwic(corp_subset, pattern = "juros"),
-  kwic(corp_subset, pattern = "câmbio")
+  kwic(tokens(corp_subset), pattern = "incerteza"),
+  kwic(tokens(corp_subset), pattern = "juros"),
+  kwic(tokens(corp_subset), pattern = "câmbio")
 )
 g
 
 g <- textplot_xray(
-  kwic(corp_subset, pattern = "atividade"),
-  kwic(corp_subset, pattern = "preços"),
-  kwic(corp_subset, pattern = "taxa"),
+  kwic(tokens(corp_subset), pattern = "atividade"),
+  kwic(tokens(corp_subset), pattern = "preços"),
+  kwic(tokens(corp_subset), pattern = "taxa"),
   scale = "absolute"
 )
 g
 
 
 g <- textplot_xray(
-  kwic(corp_subset, pattern = "copom"),
-  kwic(corp_subset, pattern = "produção"),
-  kwic(corp_subset, pattern = "crescimento")
+  kwic(tokens(corp_subset), pattern = "copom"),
+  kwic(tokens(corp_subset), pattern = "produção"),
+  kwic(tokens(corp_subset), pattern = "crescimento")
 )
 g + aes(color = keyword) + 
   scale_color_manual(values = c("blue", "red", "green")) +
@@ -179,7 +180,7 @@ textplot_keyness(result_keyness)
 # wordscores --------------------------------------------------------------
 
 # Transform corpus to dfm
-corp_dfm <- dfm(corp)
+corp_dfm <- dfm(tokens(corp))
 
 # Set reference scores
 refscores <- seq ( from = -round(length(listAtas)/2,0), length.out=length(listAtas))
