@@ -45,6 +45,7 @@ def frequencyPlot(listText, number_of_words=20, stopwords=None, ngramRange=(1, 1
     plt.xlabel('Frequency')
     plt.ylabel('Tokens')
     plt.title('Frequency of tokens')
+    plt.gca().invert_yaxis()
     plt.show()
 
 
