@@ -6,38 +6,27 @@ library(ggplot2)
 library(tm)
 library(wordcloud)
 
-listAtas <- list.files(path = "../atas", pattern = ".txt", all.files = TRUE, full.names = TRUE)
-print(paste(length(listAtas), "atas"))
+source("load_texts.R", encoding = "UTF-8")
 
-corpus <- c()
-for (ata in listAtas) {
-    lines <- readLines(con = ata, encoding = "UTF-8")
-    lines <- paste(lines, collapse = " ")
-    corpus <- c(corpus, lines)
-}
-print(paste(length(corpus), "atas"))
-
-df <- data.frame(sentence = corpus, stringsAsFactors = FALSE)
-
-Mystopwords <- c("ainda", "ante", "p", "r", "sobre", "janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "mês", "meses", "ano", "anos", as.character(0:9), tm::stopwords("pt"))
+df <-return_data_frame()
 
 numberOfWords <- 20
 
 print("Word frequency with stop words")
 
 wordsFreq <- df %>%
-    unnest_tokens(word, sentence) %>%
+    unnest_tokens(word, text) %>%
     count(word, sort = TRUE) %>%
     ungroup()
 print(wordsFreq[1:numberOfWords, ])
 
 ggplot(wordsFreq[1:numberOfWords, ], aes(x = reorder(word, n), n)) +
     geom_bar(stat = "identity") +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     ylab("Frequency") +
     xlab("words") +
     ggtitle("Word frequencies with stop words") +
     theme_bw() +
+    theme(text = element_text(size = 20)) +
     coord_flip()
 
 wordcloud(
@@ -54,11 +43,11 @@ print(wordsFreq2[1:numberOfWords, ])
 
 ggplot(wordsFreq2[1:numberOfWords, ], aes(x = reorder(word, n), n)) +
     geom_bar(stat = "identity") +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     ylab("Frequency") +
     xlab("words") +
     ggtitle("Word frequencies without stop words") +
     theme_bw() +
+    theme(text = element_text(size = 20)) +
     coord_flip()
 
 wordcloud(
@@ -72,18 +61,18 @@ print("Bigram frequency with stop words")
 numberOfBigram <- 20
 
 bigramFreq <- df %>%
-    unnest_tokens(word, sentence, token = "ngrams", n = 2) %>%
+    unnest_tokens(word, text, token = "ngrams", n = 2) %>%
     count(word, sort = TRUE) %>%
     ungroup()
 print(bigramFreq[1:numberOfBigram, ])
 
 ggplot(bigramFreq[1:numberOfBigram, ], aes(x = reorder(word, n), n)) +
     geom_bar(stat = "identity") +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     ylab("Frequency") +
     xlab("bigrams") +
     ggtitle("Bigram frequencies with stop words") +
     theme_bw() +
+    theme(text = element_text(size = 20)) +
     coord_flip()
 
 wordcloud(
@@ -108,6 +97,15 @@ bigramFreq2 <- bigramFreq2 %>%
     unite(word, word1, word2, sep = " ")
 print(bigramFreq2[1:numberOfBigram, ])
 
+ggplot(bigramFreq2[1:numberOfBigram, ], aes(x = reorder(word, n), n)) +
+    geom_bar(stat = "identity") +
+    ylab("Frequency") +
+    xlab("bigrams") +
+    ggtitle("Bigram frequencies without stop words") +
+    theme_bw() +
+    theme(text = element_text(size = 20)) +
+    coord_flip()
+
 wordcloud(
     words = bigramFreq2$word, freq = bigramFreq2$n, min.freq = 200,
     random.order = FALSE, max.words = 500, rot.per = 0,
@@ -119,18 +117,18 @@ print("Trigram frequency with stop words")
 numberOfTrigram <- 20
 
 trigramFreq <- df %>%
-    unnest_tokens(word, sentence, token = "ngrams", n = 3) %>%
+    unnest_tokens(word, text, token = "ngrams", n = 3) %>%
     count(word, sort = TRUE) %>%
     ungroup()
 print(trigramFreq[1:numberOfTrigram, ])
 
 ggplot(trigramFreq[1:numberOfTrigram, ], aes(x = reorder(word, n), n)) +
     geom_bar(stat = "identity") +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     ylab("Frequency") +
     xlab("trigrams") +
     ggtitle("Trigram frequencies with stop words") +
     theme_bw() +
+    theme(text = element_text(size = 20)) +
     coord_flip()
 
 wordcloud(
@@ -157,11 +155,11 @@ print(trigramFreq2[1:numberOfTrigram, ])
 
 ggplot(trigramFreq2[1:numberOfTrigram, ], aes(x = reorder(word, n), n)) +
     geom_bar(stat = "identity") +
-    theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
     ylab("Frequency") +
     xlab("trigrams") +
     ggtitle("Trigram frequencies without stop words") +
     theme_bw() +
+    theme(text = element_text(size = 20)) +
     coord_flip()
 
 wordcloud(
