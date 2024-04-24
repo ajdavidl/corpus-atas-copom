@@ -29,7 +29,8 @@ return_data_frame <- function(){
   return(df)
 }
 
-Mystopwords <- c("ainda", "ante", "após", "dessa", "dessas", "desse", "desses", "disso",
+Mystopwords <- c("ainda", "ante", "após", "assim", "contra", 
+                 "dessa", "dessas", "desse", "desses", "disso",
                  "dez", "doze", "é", "enquanto", "p", "r", "respectivamente", "relação", "sobre", "isa",
                  "janeiro", "fevereiro", "março", "abril", "maio", "junho", 
                  "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", 
