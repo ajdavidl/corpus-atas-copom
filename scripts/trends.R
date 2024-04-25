@@ -1,49 +1,16 @@
-library(lubridate)
 library(dplyr)
 library(tidytext)
-library(tokenizers)
 library(tidyr)
-library(tm)
 library(ggplot2)
 library(scales)
-library(pracma)
-
-# Mystopwords <- c("ainda", "ante", "p", "r", "sobre", "janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "mês", "meses", "ano", "anos", as.character(0:9), as.character(1990:2023), tm::stopwords("pt"))
-# Mystopwords <- c(Mystopwords, "inflação", "preço", "preços", "taxa", "comitê", "copom", "anterior", "política", "monetária", "economia", "relação", "doze", "membro", "cenário")
+source("load_texts.R", encoding = "UTF-8")
 
 # loading corpus ----------------------------------------------------------
+print("Loading files ...")
+df <-return_data_frame()
+print(paste(as.character(dim(df)[1]), "atas"))
 
-listAtas <- list.files(path = "../atas", pattern = ".txt", all.files = TRUE, full.names = TRUE)
-print(paste(length(listAtas), "atas"))
-
-listText <- c()
-for (ata in listAtas) {
-  lines <- readLines(con = ata, encoding = "UTF-8")
-  lines <- paste(lines, collapse = " ")
-  listText <- c(listText, lines)
-}
-print(paste(length(listText), "atas"))
-
-df <- read.csv2("../decisions.csv", sep = ",")
-df[df$meeting == 45 & df$decision == "keep", "meeting"] <- NA
-df <- df %>% na.omit()
-df <- df %>% arrange(meeting)
-
-df$text <- listText
-colnames(df) <- c("meeting", "selic", "decision", "text")
-df$selic <- NULL
-
-df2 <- read.csv2("../copom_dates.csv", sep = ",", stringsAsFactors = FALSE)
-colnames(df2) <- c("meeting", "begin_date", "end_date", "publish_date")
-df2$begin_date <- NULL
-df2$end_date <- NULL
-
-df <- df %>% left_join(df2, by = "meeting")
-
-rm(df2)
-
-dim(df)[1]
-
+print("Counting ngrams ...")
 for (i in 1:dim(df)[1]) {
   # UNIGRAMS ---------------------------------------------------------------
 
@@ -53,11 +20,8 @@ for (i in 1:dim(df)[1]) {
   unigrams$text <- gsub("º", " ", unigrams$text)
   unigrams$text <- gsub("ª", " ", unigrams$text)
   # transform in tidy dataset one-token-per-row format
-  unigrams <- unigrams %>% unnest_tokens(word, text, to_lower = TRUE)
-  # remove stop words
-  # unigrams<-unigrams %>% filter(!word %in% Mystopwords)
-  # word frequency
-  unigrams <- unigrams %>% count(word, sort = TRUE)
+  unigrams <- unigrams %>% unnest_tokens(word, text, to_lower = TRUE) %>% 
+    count(word, sort = TRUE)
 
 
   # bigrams ----------------------------------------------------------------
@@ -105,6 +69,7 @@ for (i in 1:dim(df)[1]) {
 rm(unigrams, bigrams, trigrams)
 
 # Plots -------------------------------------------------------------------
+print("Plotting ...")
 
 aux <- df_trend %>%
   group_by(date) %>%
@@ -142,16 +107,19 @@ trends <- function(words, date_min = as.Date("1998-01-01", format = "%Y-%m-%d"))
 }
 
 trends("inflação")
-trends("preços")
+trends(c("preço","preços"))
 trends(c("câmbio", "dólar"))
 trends(c("pib", "atividade"))
 trends("incerteza")
 trends("guerra")
 trends(c("selic", "juros"))
 trends("taxa de juros")
-trends(c("covid", "coronavírus", "pandemia"))
+trends(c("covid", "coronavírus", "pandemia"), date_min = as.Date("2020-01-01"))
 trends("preços administrados")
 trends("livres")
-trends("fiscal")
+trends(c("fiscal","dívida líquida","dívida bruta","superávit primário"))
 trends("política monetária")
 trends("hiato")
+trends(c("risco","riscos"))
+trends(c("energia","bandeira","bandeiras","energética","energético"))
+trends(c("focus","expectativa","expectativas"))
