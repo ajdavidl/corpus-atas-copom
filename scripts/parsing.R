@@ -1,18 +1,14 @@
 library(udpipe)
 library(dplyr)
 library(ggplot2)
+library(scales)
+source("load_texts.R", encoding = "UTF-8")
 
-listAtas <- list.files(path = "../atas", pattern = ".txt", all.files = TRUE, full.names = TRUE)
-
-corpus <- c()
-for (ata in listAtas) {
-    lines <- readLines(con = ata, encoding = "UTF-8")
-    lines <- paste(lines, collapse = " ")
-    corpus <- c(corpus, lines)
-}
-print(paste(length(corpus), "atas"))
-
-df <- data.frame(sentence = corpus, stringsAsFactors = FALSE)
+# loading corpus ----------------------------------------------------------
+print("Loading files ...")
+df <-return_data_frame()
+print(paste(as.character(dim(df)[1]), "atas"))
+corpus <- df$text
 
 # udpipe_download_model("portuguese-bosque")
 model <- udpipe_load_model(file = "portuguese-bosque-ud-2.5-191206.udpipe")
@@ -31,20 +27,78 @@ parse <- function(txt) {
     return(df)
 }
 
-Nr_sentences <- length(corpus)
+formality <- function(df_parsed){
+    # df_parsed is the return of parse function
+    tags <- df_parsed$UPOSTAG
+    NOUN <- sum(tags == "NOUN")
+    PROPN <- sum(tags == "PROPN")
+    ADJ <- sum(tags == "ADJ")
+    DET <- sum(tags == "DET")
+    PRON <- sum(tags == "PRON")
+    ADV <- sum(tags == "ADV")
+    VERB <- sum(tags == "VERB")
+    AUX <- sum(tags == "AUX")
+    INTJ <- sum(tags == "INTJ")
+    CONJ <- sum(tags == "CONJ")
+    CCONJ <- sum(tags == "CCONJ")
+    SCONJ <- sum(tags == "SCONJ")
+    F = NOUN + PROPN + ADJ + DET
+    C = PRON + ADV + VERB + AUX + INTJ
+    N = F + C + CONJ + CCONJ + SCONJ
+    if (N == 0) return(0)
+    else {
+        formality = 50 * ((F - C)/N + 1)
+        return(formality)
+    }
+}
+
+lexical_density <- function(df_parsed){
+    # df_parsed is the return of parse function
+    tags <- df_parsed$UPOSTAG
+    NOUN <- sum(tags == "NOUN")
+    PROPN <- sum(tags == "PROPN")
+    ADJ <- sum(tags == "ADJ")
+    ADP <- sum(tags == "ADP")
+    DET <- sum(tags == "DET")
+    PRON <- sum(tags == "PRON")
+    ADV <- sum(tags == "ADV")
+    VERB <- sum(tags == "VERB")
+    AUX <- sum(tags == "AUX")
+    INTJ <- sum(tags == "INTJ")
+    CONJ <- sum(tags == "CONJ")
+    CCONJ <- sum(tags == "CCONJ")
+    SCONJ <- sum(tags == "SCONJ")
+    NUM <- sum(tags == "NUM")
+    PART <- sum(tags == "PART")
+    N = ADJ + ADP + ADV + AUX + CONJ + CCONJ + DET + INTJ + NOUN + NUM + PART + PRON + PROPN + SCONJ + VERB
+    if (N == 0) return(0)
+    else{
+        lex_den = (NOUN + PROPN + ADJ + ADV + VERB + AUX)/N
+        return(lex_den)
+    }
+}
+
+Nr_docs <- length(corpus)
 # cria lista de matrizes com o resultado do parse
-lista_parse <- vector("list", Nr_sentences)
-for (i in 1:Nr_sentences) {
+lista_parse <- vector("list", Nr_docs)
+formality_ <- vector("list", Nr_docs)
+lexical_density_ <- vector("list", Nr_docs)
+
+print("parsing ...")
+for (i in 1:Nr_docs) {
     corpus[i] <- stringr::str_replace(pattern = "\"", replacement = " ", string = corpus[i])
     corpus[i] <- stringr::str_replace(pattern = "'", replacement = " ", string = corpus[i])
     corpus[i] <- stringr::str_replace(pattern = "\"", replacement = " ", string = corpus[i])
     corpus[i] <- stringr::str_replace(pattern = "'", replacement = " ", string = corpus[i])
     corpus[i] <- stringr::str_replace(pattern = "%", replacement = " ", string = corpus[i])
     lista_parse[[i]] <- parse(txt = corpus[i])
+    formality_[[i]] <- formality(lista_parse[[i]])
+    lexical_density_[[i]] <- lexical_density(lista_parse[[i]])
+    if (i %% 25 == 0) print(paste(as.character(i),"documents parsed."))
 }
 
 matriz_parse <- lista_parse[[1]]
-for (i in 2:Nr_sentences) {
+for (i in 2:Nr_docs) {
     matriz_parse <- rbind(matriz_parse, lista_parse[[i]])
 }
 df_parse <- as.data.frame(matriz_parse)
@@ -277,10 +331,7 @@ ggplot(aux[1:10, ], aes(x = reorder(FORM, -tot), tot)) +
     theme_bw() +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-
 # Punctuation frequencies -------------------------------------------------
-
-
 
 print("PUNCTUATION")
 aux <- df_parse %>% filter(UPOSTAG %in% c("PUNCT"))
@@ -305,7 +356,6 @@ ggplot(aux[1:10, ], aes(x = reorder(FORM, -tot), tot)) +
     theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 # Number frequencies ------------------------------------------------------
-
 
 print("NUMERALS")
 aux <- df_parse %>% filter(UPOSTAG %in% c("NUM"))
@@ -362,3 +412,34 @@ if (nrow(aux) < 10) {
         theme_bw() +
         theme(axis.text.x = element_text(angle = 45, hjust = 1))
 }
+
+
+# Formality ---------------------------------------------------------------
+df$formality <- unlist(formality_)
+
+ggplot(df, aes(x = publish_date, y = formality)) +
+    geom_line(size = 1.75) +
+    ggtitle("Formality") +
+    ylab("formality") +
+    xlab("year") +
+    geom_smooth(method = "loess", size = 1.75) +
+    theme_bw() +
+    scale_x_date(labels = date_format("%Y"), date_breaks = "1 year") +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.1, hjust = 1),
+          text = element_text(size = 18))
+    
+
+# Lexical Distance --------------------------------------------------------
+df$lexical_density <- unlist(lexical_density_)
+
+ggplot(df, aes(x = publish_date, y = lexical_density)) +
+    geom_line(size = 1.75) +
+    ggtitle("Lexical Density") +
+    ylab("lexical density") +
+    xlab("year") +
+    geom_smooth(method = "loess", size = 1.75) +
+    theme_bw() +
+    scale_x_date(labels = date_format("%Y"), date_breaks = "1 year") +
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.1, hjust = 1),
+          text = element_text(size = 18))
+    
