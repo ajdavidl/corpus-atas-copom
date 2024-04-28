@@ -26,11 +26,13 @@ return_data_frame <- function(){
   
   df <- df %>% left_join(df2, by = "meeting")
   rm(df2)
+  df$begin_date <- as.Date(df$begin_date)
+  df$end_date <- as.Date(df$end_date)
+  df$publish_date <- as.Date(df$publish_date)
   return(df)
 }
 
-Mystopwords <- c("ainda", "ante", "após", "assim", "contra", 
-                 "dessa", "dessas", "desse", "desses", "disso",
+Mystopwords <- c("ainda", "ante", "após", "dessa", "dessas", "desse", "desses", "disso",
                  "dez", "doze", "é", "enquanto", "p", "r", "respectivamente", "relação", "sobre", "isa",
                  "janeiro", "fevereiro", "março", "abril", "maio", "junho", 
                  "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", 
