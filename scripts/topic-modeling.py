@@ -1,48 +1,41 @@
-import matplotlib.pyplot as plt
+import os
+import re
 import gensim
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import nltk
-import gzip
 
 from scipy import linalg
 from gensim.models import CoherenceModel, LdaModel, LsiModel, HdpModel
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn import decomposition
 
-import os
-import re
-import operator
+from load_texts import return_data_frame, Mystopwords
 
-listAtas = os.listdir("../atas")
+print("loading texts ...")
+df = return_data_frame()
 
-corpus = []
+corpus = df.text.to_list()
 
-for ata in listAtas:
-    with open("../atas/" + ata, 'rt', encoding='utf-8') as f:
-        lines = f.readlines()
-        if lines:
-            lines = ' '.join(lines)
-            corpus.append(lines)
+PARAGRAPHS = True
 
-print(len(corpus), "atas")
-corpusJoined = ' '.join(corpus)
-corpusJoined = corpusJoined.lower()
+if PARAGRAPHS:
+    corpusJoined = '\n'.join(corpus)
+    corpusJoined = re.sub('\n \n', '\n', corpusJoined) 
+    corpus = corpusJoined.split('\n')
+    print(len(corpus), "paragraphs")
+
 for i in range(0, len(corpus)):
     corpus[i] = corpus[i].lower()
     corpus[i] = re.sub('\n', '', corpus[i])  # remove newline character
-
-Mystopwords = ['ainda', 'ante', 'p', 'r', 'sobre'] + ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro',
-                                                      'outubro', 'novembro', 'dezembro', 'mês', 'meses', 'ano', 'anos'] + [str(i) for i in range(10)] + nltk.corpus.stopwords.words('portuguese')
-
-
-for i in range(0, len(corpus)):
-    corpus[i] = corpus[i].lower()
     corpus[i] = re.sub('[0-9]+', '', corpus[i])  # remove numbers
     corpus[i] = re.sub(r'[^\w\s]', '', corpus[i])  # remove punctuation
     corpus[i] = re.sub('\n', '', corpus[i])  # remove punctuation
 
-
+Mystopwords = Mystopwords + ['aa','anterior','carlos','comitê','conforme','copom','dia','dias','doze','entanto','hoje','luiz','membros',
+                             'mensal','monetária','otávio','pb','período','política','pp','quarto','relação','repectivamente','reunião','três',
+                             'trimestre','trimestres']
 # REMOVE STOPWORDS
 for i in range(0, len(corpus)):
     words = corpus[i].split(" ")
@@ -50,25 +43,22 @@ for i in range(0, len(corpus)):
     corpus[i] = ' '.join(words_new)
 
 count_vect = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}',
-                             ngram_range=(1, 3),
+                             ngram_range=(1, 1),
                              stop_words=Mystopwords,
                              #max_df = 10000,
-                             min_df=10,
+                             min_df=100,
                              max_features=1000)
 count_vect.fit(corpus)  # treina o objeto nos textos processados
 count_vect_dtm = count_vect.transform(corpus)
 count_vect_dtm.shape
-
-# Singular Value Decomposition (SVD)
-print("Singular Value Decomposition (SVD)...")
-U, s, Vh = linalg.svd(count_vect_dtm.todense(), full_matrices=False)
-print("U: ", U.shape, "\nS: ", s.shape, "\nVh: ", Vh.shape)
-
 vocab = np.array(count_vect.get_feature_names_out())
 
+# Singular Value Decomposition (SVD)
+print("\nSingular Value Decomposition (SVD)...")
+U, s, Vh = linalg.svd(count_vect_dtm.todense(), full_matrices=False)
+#print("U: ", U.shape, "\nS: ", s.shape, "\nVh: ", Vh.shape)
 
 num_top_words = 5
-
 
 def show_topics(a):
     def top_words(t): return [vocab[i]
@@ -77,11 +67,12 @@ def show_topics(a):
     return [' - '.join(t) for t in topic_words]
 
 
-print(show_topics(Vh[:10]))  # ten topics
+for topic in show_topics(Vh[:10]):
+    print(topic)
 
 # Truncated SVD
-print("Truncated SVD ...")
-Nr_topics = 5
+print("\nTruncated SVD ...")
+Nr_topics = 10
 svd_model = decomposition.TruncatedSVD(
     n_components=Nr_topics, algorithm='randomized', n_iter=100, random_state=122)
 svd_model.fit(count_vect_dtm)
@@ -94,18 +85,16 @@ for i, comp in enumerate(svd_model.components_):
     print("\nTopic "+str(i)+": ")
     for t in sorted_terms:
         print('- '+t[0], end=' ')
+print()
 
 # Non-negative Matrix Factorization (NMF)
-print("Non-negative Matrix Factorization (NMF)...")
-Nr_topics = 5
+print("\nNon-negative Matrix Factorization (NMF)...")
+Nr_topics = 10
 
 clf = decomposition.NMF(n_components=Nr_topics, random_state=1)
 
 W1 = clf.fit_transform(count_vect_dtm)
 H1 = clf.components_
-
-print(show_topics(H1))
-
 
 def get_nmf_topics(model, feat_names, num_topics):
     '''
@@ -127,15 +116,16 @@ print(get_nmf_topics(clf, vocab, Nr_topics))
 
 
 # Latent Dirichlet Analysis (LDA)
-print("Latent Dirichlet Analysis (LDA)...")
+print("\nLatent Dirichlet Analysis (LDA)...")
 
-for idx in range(len(corpus)):
-    corpus[idx] = [word for word in corpus[idx].split(' ') if word not in ['']]
+corpus2 = corpus.copy()
+for idx in range(len(corpus2)):
+    corpus2[idx] = [word for word in corpus2[idx].split(' ') if word not in ['']]
 
 
-Nr_topics = 5
-id2word = gensim.corpora.Dictionary(corpus)
-corpus_idx = [id2word.doc2bow(text) for text in corpus]
+Nr_topics = 10
+id2word = gensim.corpora.Dictionary(corpus2)
+corpus_idx = [id2word.doc2bow(text) for text in corpus2]
 
 lda = LdaModel(corpus=corpus_idx, id2word=id2word, num_topics=Nr_topics)
 
@@ -152,17 +142,22 @@ print(get_topics(lda, Nr_topics))
 
 
 # Latent Semantic Indeixing (LSI)
-print("Latent Semantic Indeixing (LSI)...")
+print("\nLatent Semantic Indeixing (LSI)...")
 lsi = LsiModel(corpus=corpus_idx, id2word=id2word, num_topics=Nr_topics)
 print(get_topics(lsi, Nr_topics))
 
 # Hierarchical Dirichlet process (HDP)
-print("Hierarchical Dirichlet process (HDP)...")
+print("\nHierarchical Dirichlet process (HDP)...")
 hdp = HdpModel(corpus=corpus_idx, id2word=id2word)
-print(hdp.show_topics())
+for topic in hdp.show_topics():
+    print("topic:",topic[0])
+    txt = topic[1]
+    txt = re.sub('[0-9]+', '', txt)
+    txt = re.sub(r'[^\w\s]', '', txt)
+    print(txt)
 
 # Topic Coherence
-print("Topic Coherence...")
+print("\nTopic Coherence...")
 
 lsitopics = [[word for word, prob in topic]
              for topicid, topic in lsi.show_topics(formatted=False)]
