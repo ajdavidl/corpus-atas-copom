@@ -97,20 +97,27 @@ trends <- function(words, date_min = as.Date("1998-01-01", format = "%Y-%m-%d"))
   aux$tot <- aux$tot / aux$total * 100
 
   ggplot(aux, aes(x = date, y = tot)) +
-    geom_line() +
+    geom_line(size = 1.75) +
     ggtitle(words[1]) +
     ylab("%") +
-    geom_smooth(method = "loess") +
+    geom_smooth(method = "loess", size = 1.75) +
     theme_bw() +
     scale_x_date(labels = date_format("%m-%Y"), date_breaks = "6 months") +
-    theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+    theme(axis.text.x = element_text(angle = 90, vjust = 0.1, hjust = 1),
+          text = element_text(size = 18))
 }
 
-trends("inflação")
+trends(c("inflação","ipca"))
 trends(c("preço","preços"))
 trends(c("câmbio", "dólar"))
 trends(c("pib", "atividade"))
-trends("incerteza")
+trends(c("incerteza","incertezas","incerto","incerta","crise","crises","recessão","recessões",
+         "dúvida","dúvidas","hesitação","hesitações","imprecisão","imprecisões","indecisão",
+         "indecisões","indefinição","indefinições","indeterminação","indeterminações",
+         "insegurança","inseguranças","interrogação","interrogações","inconsistência",
+         "inconsistências","desconfiança","desconfianças","piora"),date_min = as.Date("2015-01-01"))
+trends(c("recessão","recessões"))
+trends(c("crise","crises","recessão","recessões"))
 trends("guerra")
 trends(c("selic", "juros"))
 trends("taxa de juros")
@@ -120,6 +127,7 @@ trends("livres")
 trends(c("fiscal","dívida líquida","dívida bruta","superávit primário"))
 trends("política monetária")
 trends("hiato")
-trends(c("risco","riscos"))
+trends(c("risco","riscos"), date_min = as.Date("2015-01-01"))
 trends(c("energia","bandeira","bandeiras","energética","energético"))
 trends(c("focus","expectativa","expectativas"))
+trends(c("combustíveis","gasolina","petróleo","etanol"))
