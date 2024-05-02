@@ -1,40 +1,63 @@
 library(tm)
 library(dplyr)
 library(lubridate)
+library(tokenizers)
 library(stm) # Structural Topic Model
 
-# stop words --------------------------------------------------------------
+source("load_texts.R", encoding = "UTF-8")
 
-
-Mystopwords <- c("ainda", "ante", "p", "r", "sobre", "janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", "mês", "meses", "ano", "anos", as.character(0:9), as.character(1990:2023), tm::stopwords("pt"))
-Mystopwords <- c(Mystopwords, "inflação", "preço", "preços", "taxa", "comitê", "copom", "anterior", "política", "monetária", "economia", "relação", "doze", "membro", "cenário")
 # loading corpus ----------------------------------------------------------
+print("Loading files ...")
+df_orig <-return_data_frame()
+print(paste(as.character(dim(df_orig)[1]), "atas"))
 
-listAtas <- list.files(path = "../atas", pattern = ".txt", all.files = TRUE, full.names = TRUE)
+# stop words --------------------------------------------------------------
+Mystopwords <- c(Mystopwords, "inflação", "preço", "preços", "taxa", "comitê", 
+                 "copom", "anterior", "política", "monetária", "economia", 
+                 "relação", "doze", "membro", "cenário","trimestre","trimestres",
+                 "afinal","nível","ser","membros","reunião","partir","paulo",
+                 "primeiro","segundo")
 
-print(paste(length(listAtas), "atas"))
+# Configuration
+NrTopics = 20
+MaxIterations = 100
+STEM = FALSE
 
-listText <- c()
-for (ata in listAtas) {
-  lines <- readLines(con = ata, encoding = "UTF-8")
-  lines <- paste(lines, collapse = " ")
-  listText <- c(listText, lines)
+PARAGRAPHS <- TRUE
+
+if(PARAGRAPHS){
+  meeting <- df_orig$meeting[1]
+  selic <- df_orig$selic[1]
+  decision <- df_orig$decision[1]
+  text <- df_orig$text[1]
+  text <- tokenize_paragraphs(text, simplify = TRUE)
+  begin_date <- df_orig$begin_date[1]
+  end_date <- df_orig$end_date[1]
+  publish_date <- df_orig$publish_date[1]
+  df_par <- data.frame(meeting = meeting, selic = selic, decision = decision,
+                       text = text, begin_date = begin_date, end_date = end_date,
+                       publish_date = publish_date)
+  for (i in 2:dim(df_orig)[1]) {
+    meeting <- df_orig$meeting[i]
+    selic <- df_orig$selic[i]
+    decision <- df_orig$decision[i]
+    text <- df_orig$text[i]
+    text <- tokenize_paragraphs(text, simplify = TRUE)
+    begin_date <- df_orig$begin_date[i]
+    end_date <- df_orig$end_date[i]
+    publish_date <- df_orig$publish_date[i]
+    df_aux <- data.frame(meeting = meeting, selic = selic, decision = decision,
+                         text = text, begin_date = begin_date, end_date = end_date,
+                         publish_date = publish_date)
+    df_par <- rbind.data.frame(df_par, df_aux)
+  }
+  df <- df_par
+  print(paste(as.character(dim(df)[1]), "paragraphs"))
+}else{
+  df <- df_orig
 }
-print(paste(length(listText), "atas"))
-
-df <- read.csv2("../decisions.csv", sep = ",")
-df[df$meeting == 45 & df$decision == "keep", "meeting"] <- NA
-df <- df %>% na.omit()
-df <- df %>% arrange(meeting)
-
-df$text <- listText
-colnames(df) <- c("doc_id", "selic", "decision", "text")
-
-df_aux <- read.csv2("../copom_dates.csv", sep = ",")
-
-df$date <- as.Date(df_aux$publish_date) # df_aux is already sorted
-df$selic <- as.numeric(df$selic)
-rm(df_aux)
+df$doc_id <- 1:dim(df)[1]
+df$date <- df$publish_date
 
 # pre-processing ----------------------------------------------------------
 
@@ -60,7 +83,7 @@ df$text_clean <- docs$content
 # Ingest ------------------------------------------------------------------
 
 
-processed <- textProcessor(df$text_clean, metadata = df[, c("doc_id", "selic", "decision", "date")])
+processed <- textProcessor(df$text_clean, metadata = df[, c("doc_id", "selic", "decision", "date")],stem = STEM,)
 out <- prepDocuments(processed$documents, processed$vocab, processed$meta)
 docs <- out$documents
 vocab <- out$vocab
@@ -76,7 +99,7 @@ meta <- out$meta
 
 # Estimate ----------------------------------------------------------------
 
-model <- stm(documents = out$documents, vocab = out$vocab, K = 20, prevalence = ~ doc_id + selic + decision + year(date), max.em.its = 75, data = out$meta, init.type = "Spectral")
+model <- stm(documents = out$documents, vocab = out$vocab, K = NrTopics, prevalence = ~ doc_id + selic + decision + year(date), max.em.its = MaxIterations, data = out$meta, init.type = "Spectral")
 
 
 # Understand --------------------------------------------------------------
@@ -84,16 +107,17 @@ model <- stm(documents = out$documents, vocab = out$vocab, K = 20, prevalence = 
 
 print(labelTopics(model))
 
-thoughts6 <- findThoughts(model, texts = df$text, n = 1, topics = 6)$docs[[1]]
-thoughts18 <- findThoughts(model, texts = df$text, n = 1, topics = 18)$docs[[1]]
-par(mfrow = c(1, 2), mar = c(0.5, 0.5, 1, 0.5))
-plotQuote(thoughts6, width = 30, main = "Topic 6")
-plotQuote(thoughts18, width = 30, main = "Topic 18")
+for (i in 1:NrTopics) {
+  thoughts <- findThoughts(model, texts = df$text[meta$doc_id], n = 1, topics = i)$docs[[1]]
+  plotQuote(thoughts, width = 30, main = paste("Topic ",as.character(i)))
+}
 
 prep <- estimateEffect(~ doc_id + selic + decision + year(date), model, meta = out$meta, uncertainty = "Global")
 print(summary(prep))
-# summary(prep, topics = 1)
-# summary(prep, topics = 2)
+
+for (i in 1:NrTopics) {
+  print(summary(prep, topics = i))
+}
 
 
 # Visualize ---------------------------------------------------------------
