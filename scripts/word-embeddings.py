@@ -16,6 +16,12 @@ dfCorpus.text = dfCorpus.text.apply(lambda x : x.lower())
 corpus = dfCorpus.text.to_list()
 print(len(corpus), "atas")
 
+for i in range(0, len(corpus)):
+    corpus[i] = corpus[i].lower()
+    corpus[i] = re.sub('\n', '', corpus[i])  # remove newline character
+    corpus[i] = re.sub('[0-9]+', '', corpus[i])  # remove numbers
+    corpus[i] = re.sub(r'[^\w\s]', '', corpus[i])  # remove punctuation
+    corpus[i] = re.sub('\n', '', corpus[i])  # remove punctuation
 
 def display_pca_scatterplot(model, words=None, sample=0):
     if words == None:
@@ -106,6 +112,34 @@ D2Vsimilarity('juros')
 
 display_pca_scatterplot(model_D2V,
                         ['selic', 'inflação', 'ipca', 'juros', 'pib', 'dólar', 'câmbio'])
+
+
+# Doc2Vec heatmap
+length = 10
+x1 = int(dfCorpus.meeting.to_list()[-1])
+x0 = x1 - length
+matrix = np.zeros((length, length))
+for i in range(length):
+    for j in range(length):
+        matrix[i,j] = model_D2V.dv.distance( str(x0+i+1) , str(x0+j+1) )
+fig, ax = plt.subplots()
+im = ax.imshow(matrix)
+# Show all ticks and label them with the respective list entries
+ax.set_xticks(np.arange(length), labels=[str(x0+i+1) for i in range(length)])
+ax.set_yticks(np.arange(length), labels=[str(x0+i+1) for i in range(length)])
+# Rotate the tick labels and set their alignment.
+plt.setp(ax.get_xticklabels(), rotation=45, ha="right",
+         rotation_mode="anchor")
+# Loop over data dimensions and create text annotations.
+for i in range(length):
+    for j in range(length):
+        text = ax.text(j, i, round(matrix[i, j],1),
+                       ha="center", va="center", color="w")
+ax.set_title("Distance between minutes")
+fig.tight_layout()
+plt.show()
+
+
 
 # # FastText
 print('\n', "FastText")
