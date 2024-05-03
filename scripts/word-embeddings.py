@@ -20,8 +20,8 @@ for i in range(0, len(corpus)):
     corpus[i] = corpus[i].lower()
     corpus[i] = re.sub('\n', '', corpus[i])  # remove newline character
     corpus[i] = re.sub('[0-9]+', '', corpus[i])  # remove numbers
-    corpus[i] = re.sub(r'[^\w\s]', '', corpus[i])  # remove punctuation
-    corpus[i] = re.sub('\n', '', corpus[i])  # remove punctuation
+    corpus[i] = re.sub(r'[^\w\s]', ' ', corpus[i])  # remove punctuation
+    
 
 def display_pca_scatterplot(model, words=None, sample=0):
     if words == None:
@@ -46,13 +46,15 @@ def analogy(model, x1, x2, y1):
 
 
 # # Word2Vec
-print('\n', "Word2vec")
+print('\n', "Word2vec -----------------------------------------------")
 
 sentences = [word_tokenize(sent) for sent in corpus]
 model_W2V = Word2Vec(sentences, min_count=1)
 model_W2V.train(sentences, total_examples=len(sentences), epochs=100)
 
 analogy(model_W2V, 'ipca', 'inflação', 'selic')
+analogy(model_W2V, 'ipca', 'inflação', 'dólar')
+analogy(model_W2V, 'dólar', 'câmbio', 'selic')
 display_pca_scatterplot(model_W2V,
                         ['selic', 'inflação', 'ipca', 'juros', 'pib', 'dólar', 'câmbio'])
 
@@ -65,11 +67,20 @@ def W2Vsimilarity(word):
 
 
 W2Vsimilarity('atividade')
+W2Vsimilarity('desemprego')
+W2Vsimilarity('hiato')
+W2Vsimilarity('fiscal')
 W2Vsimilarity('ipca')
+W2Vsimilarity('inflação')
+W2Vsimilarity('administrados')
+W2Vsimilarity('livres')
 W2Vsimilarity('selic')
+W2Vsimilarity('juros')
+W2Vsimilarity('dólar')
+W2Vsimilarity('câmbio')
 
 # # Doc2Vec
-print('\n', "Doc2vec")
+print('\n', "Doc2vec -----------------------------------------------")
 tagged_data = [TaggedDocument(words=word_tokenize(_d.lower()), tags=[
                               str(i)]) for i, _d in enumerate(corpus, start=21)]
 
@@ -107,8 +118,21 @@ def D2Vsimilarity(word):
 
 
 analogy(model_D2V, 'ipca', 'inflação', 'selic')
+analogy(model_D2V, 'ipca', 'inflação', 'dólar')
+analogy(model_D2V, 'dólar', 'câmbio', 'selic')
+
+D2Vsimilarity('atividade')
+D2Vsimilarity('desemprego')
+D2Vsimilarity('hiato')
+D2Vsimilarity('fiscal')
 D2Vsimilarity('ipca')
+D2Vsimilarity('inflação')
+D2Vsimilarity('administrados')
+D2Vsimilarity('livres')
+D2Vsimilarity('selic')
 D2Vsimilarity('juros')
+D2Vsimilarity('dólar')
+D2Vsimilarity('câmbio')
 
 display_pca_scatterplot(model_D2V,
                         ['selic', 'inflação', 'ipca', 'juros', 'pib', 'dólar', 'câmbio'])
@@ -142,12 +166,12 @@ plt.show()
 
 
 # # FastText
-print('\n', "FastText")
+print('\n', "FastText -----------------------------------------------")
 model_FT = FastText(sentences, vector_size=100,
                     window=3, min_count=1, epochs=10)
 
 
-def FTsimilar(word):
+def FTsimilarity(word):
     print('\n', 'Similar to ', word)
     similars = model_FT.wv.most_similar(positive=[word])
     for word, sim in similars:
@@ -155,9 +179,21 @@ def FTsimilar(word):
 
 
 analogy(model_FT, 'ipca', 'inflação', 'selic')
-FTsimilar('inflação')
-FTsimilar('selic')
-FTsimilar('ipca')
+analogy(model_FT, 'ipca', 'inflação', 'dólar')
+analogy(model_FT, 'dólar', 'câmbio', 'selic')
+
+FTsimilarity('atividade')
+FTsimilarity('desemprego')
+FTsimilarity('hiato')
+FTsimilarity('fiscal')
+FTsimilarity('ipca')
+FTsimilarity('inflação')
+FTsimilarity('administrados')
+FTsimilarity('livres')
+FTsimilarity('selic')
+FTsimilarity('juros')
+FTsimilarity('dólar')
+FTsimilarity('câmbio')
 
 analogy(model_FT, 'selic', 'ipca', 'juros')
 
