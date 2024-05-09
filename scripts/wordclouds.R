@@ -1,6 +1,5 @@
 library(dplyr)
 library(tidytext)
-#library(tokenizers)
 library(tidyr)
 library(tm)
 library(wordcloud)
@@ -29,7 +28,10 @@ wordcloud(
 Mystopwords <- c(Mystopwords, "inflação", "preços", "taxa", "copom", "bilhões", "crescimento",
                  "bens","produção", "cenário", "política", "monetária", "período", "anterior",
                  "us","p.p","índice","mercado","comitê","atividade", "acordo", "mensal", "leva",
-                 "econômica","economia","taxas", "vista", "_","-","reunião","bem")
+                 "janeiro","fevereiro","março","abril","maio","junho","julho","agosto",
+                 "setembro","outubro","novembro","dezembro","econômica","economia","mês",
+                 "taxas", "vista", "_","-","reunião","bem","relação","primeiro","segundo",
+                 "terceiro","quarto","luiz","tal","dia","paulo","diz","vem")
 
 df2 <- df[,c("meeting","text","decision")]
 colnames(df2) <- c("doc_id","text","decision")
@@ -44,7 +46,6 @@ keep <- as.vector(keep$text)
 All <- list(lower, raise, keep)
 
 docs <- Corpus(VectorSource(All))
-#docs <- Corpus(DataframeSource(df2))
 toSpace <- content_transformer(function(x, pattern) gsub(pattern, " ", x))
 docs <- tm_map(docs, content_transformer(tolower))
 docs <- tm_map(docs, removeNumbers)
@@ -55,7 +56,7 @@ docs <- tm_map(docs, stripWhitespace)
 tdm <- TermDocumentMatrix(docs)
 tdm = removeSparseTerms(tdm, 0.98)
 tdm = as.matrix(tdm)
-colnames(tdm) <- c("lower", "raise", "keep")
+colnames(tdm) <- c("redução", "aumento", "manutenção")
 
-comparison.cloud(tdm, max.words = 100, random.order = FALSE, rot.per = 0, scale = c(2, 0.5), fixed.asp=T, title.size = 1)
-commonality.cloud(tdm, max.words = 100, random.order = FALSE, rot.per = 0, scale = c(3, 0.5))
+comparison.cloud(tdm, max.words = 500, random.order = FALSE, rot.per = 0, scale = c(2, 0.5), fixed.asp=T, title.size = 1)
+commonality.cloud(tdm, max.words = 300, random.order = FALSE, rot.per = 0, scale = c(2, 0.5))
