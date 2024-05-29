@@ -4,3 +4,6 @@
 .RData
 *.udpipe
 __pycache__
+node_modules
+package-lock.json
+scripts/*.html
