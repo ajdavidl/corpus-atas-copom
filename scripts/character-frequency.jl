@@ -10,7 +10,7 @@ using WordCloud
 listAtas = readdir("../atas");
 corpus = [];
 
-for i in 1:length(listAtas)
+for i in eachindex(listAtas)
     f = open("../atas/" * listAtas[i])
     txt = readlines(f)
     push!(corpus, txt)
