@@ -16,7 +16,7 @@ println("Number of stopwords: ", length(Mystopwords))
 listAtas = readdir("../atas");
 corpus = []
 
-for i in 1:length(listAtas)
+for i in eachindex(listAtas)
     f = open("../atas/" * listAtas[i])
     txt = readlines(f)
     push!(corpus, txt)
@@ -26,7 +26,7 @@ println(length(corpus), " atas")
 
 
 docs = []
-for i in 1:length(listAtas)
+for i in eachindex(listAtas)
     fd = FileDocument("../atas/" * listAtas[i])
     language!(fd, Languages.Portuguese())
     push!(docs, fd)
