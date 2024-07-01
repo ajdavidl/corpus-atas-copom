@@ -9,14 +9,17 @@ import xgboost
 from sklearn import model_selection, preprocessing, linear_model, naive_bayes, metrics, svm, tree, neural_network, neighbors, ensemble
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import GridSearchCV
-
 import matplotlib.pyplot as plt
+
+# CONFIG
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.max_colwidth', 200)
 pd.set_option('display.float_format', lambda x: '{:.3f}'.format(x))
-plt.rcParams["figure.figsize"] = (60, 30)
-plt.rcParams['figure.dpi'] = 90
-plt.rcParams.update({'font.size': 50})
+#plt.rcParams["figure.figsize"] = (60, 30)
+#plt.rcParams['figure.dpi'] = 90
+#plt.rcParams.update({'font.size': 50})
+
+LEMMATIZATION = False
 
 AtasFolder = "../atas"
 listAtas = os.listdir(AtasFolder)
@@ -49,7 +52,8 @@ Mystopwords = ['acordar', 'agora', 'ainda', 'aladi', 'alegrar', 'além', 'antar'
     ['le', 'luiz', 'luzir', 'mediante', 'meirelles', 'mercar', 'moraes', 'necessariamente', 'neto', 'of', 'oficiar', 'oliveira', 'onde', 'ora', 'parir', 'paulo', 'pelar', 'pesar', 'pilar', 'pois', 'primo', 'quadrar', 'reinar', 'res', 'resinar', 'reunião', 'ser', 'sob', 'sobre', 'somente', 'sr', 'tal', 'tais', 'tanto', 'thomson', 'tipo', 'todo', 'tony', 'usecheque', 'vasconcelos'] + \
     ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] + \
     ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte'] + \
-    ['aquela', 'aquelas', 'aquele', 'aqueles', 'àquela', 'àquelas', 'daquele', 'daqueles', 'daquela', 'daquelas', 'naquele', 'naqueles', 'naquela', 'naquelas', 'neste', 'nesta', 'nestes', 'nestas', 'nisto', 'nesse', 'nessa', 'nesses', 'nessas', 'nisso'] + \
+    ['aquela', 'aquelas', 'aquele', 'aqueles', 'àquela', 'àquelas', 'daquele', 'daqueles', 'daquela', 'daquelas', 'naquele', 'naqueles', 'naquela', 'naquelas', 'neste', 'nesta', 'nestes', 'nestas', 'nisto', 'nesse', 'nessa', 'nesses', 'nessas', 'nisso',
+    'desse', 'dessa', 'desses', 'dessas', 'disso','fins','meados','mencionado','modo'] + \
     ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro',
         'dezembro', 'mês', 'meses', 'ano', 'anos'] + [str(i) for i in range(10)] + nltk.corpus.stopwords.words('portuguese')
 
@@ -66,48 +70,50 @@ for i in range(len(corpus)):
     corpus[i] = re.sub('@', '', corpus[i])
     corpus[i] = re.sub('#', '', corpus[i])
 
-print('Lemmatization...')
-# large portuguese model
-nlp = spacy.load('pt_core_news_lg', disable=['parser', 'ner'])
+if LEMMATIZATION:
+    print('Lemmatization...')
+    # large portuguese model
+    nlp = spacy.load('pt_core_news_lg', disable=['parser', 'ner'])
 
-for i in range(len(corpus)):
-    doc = nlp(corpus[i])
-    corpus[i] = " ".join([token.lemma_ for token in doc])
+    for i in range(len(corpus)):
+        doc = nlp(corpus[i])
+        corpus[i] = " ".join([token.lemma_ for token in doc])
 
-# fix wrong lemmas
-for i in range(len(corpus)):
-    corpus[i] = re.sub("atar", "ata", corpus[i])
-    corpus[i] = re.sub("agregar", "agregado", corpus[i])
-    corpus[i] = re.sub("atuais", "atual", corpus[i])
-    corpus[i] = re.sub("barreirar", "barreira", corpus[i])
-    corpus[i] = re.sub("bolhar", "bolha", corpus[i])
-    corpus[i] = re.sub("comerciar", "comércio", corpus[i])
-    corpus[i] = re.sub("comer", "como", corpus[i])
-    corpus[i] = re.sub("conjuntar", "conjunto", corpus[i])
-    corpus[i] = re.sub("cifrar", "cifra", corpus[i])
-    corpus[i] = re.sub("curvar", "curva", corpus[i])
-    corpus[i] = re.sub("demandar", "demanda", corpus[i])
-    corpus[i] = re.sub("desalentar", "desalento", corpus[i])
-    corpus[i] = re.sub("marginar", "marginal", corpus[i])
-    corpus[i] = re.sub("mediano", "mediana", corpus[i])
-    corpus[i] = re.sub("mear", "meio", corpus[i])
-    corpus[i] = re.sub("mercar", "mercado", corpus[i])
-    corpus[i] = re.sub("meter", "meta", corpus[i])
-    corpus[i] = re.sub("ofertar", "oferta", corpus[i])
-    corpus[i] = re.sub("oitavar", "oitavo", corpus[i])
-    corpus[i] = re.sub("orar", "ora", corpus[i])
-    corpus[i] = re.sub("parir", "para", corpus[i])
-    corpus[i] = re.sub("picar", "pico", corpus[i])
-    corpus[i] = re.sub("queda", "quedo", corpus[i])
-    corpus[i] = re.sub("redar", "rede", corpus[i])
-    corpus[i] = re.sub("resultar", "resultado", corpus[i])
-    corpus[i] = re.sub("riscar", "risco", corpus[i])
-    corpus[i] = re.sub("segundar", "segundo", corpus[i])
-    corpus[i] = re.sub("trazido", "trazer", corpus[i])
-    corpus[i] = re.sub("votar", "voto", corpus[i])
+    # fix wrong lemmas
+    for i in range(len(corpus)):
+        corpus[i] = re.sub("atar", "ata", corpus[i])
+        corpus[i] = re.sub("agregar", "agregado", corpus[i])
+        corpus[i] = re.sub("atuais", "atual", corpus[i])
+        corpus[i] = re.sub("barreirar", "barreira", corpus[i])
+        corpus[i] = re.sub("bolhar", "bolha", corpus[i])
+        corpus[i] = re.sub("comerciar", "comércio", corpus[i])
+        corpus[i] = re.sub("comer", "como", corpus[i])
+        corpus[i] = re.sub("conjuntar", "conjunto", corpus[i])
+        corpus[i] = re.sub("cifrar", "cifra", corpus[i])
+        corpus[i] = re.sub("curvar", "curva", corpus[i])
+        corpus[i] = re.sub("demandar", "demanda", corpus[i])
+        corpus[i] = re.sub("desalentar", "desalento", corpus[i])
+        corpus[i] = re.sub("marginar", "marginal", corpus[i])
+        corpus[i] = re.sub("mediano", "mediana", corpus[i])
+        corpus[i] = re.sub("mear", "meio", corpus[i])
+        corpus[i] = re.sub("mercar", "mercado", corpus[i])
+        corpus[i] = re.sub("meter", "meta", corpus[i])
+        corpus[i] = re.sub("ofertar", "oferta", corpus[i])
+        corpus[i] = re.sub("oitavar", "oitavo", corpus[i])
+        corpus[i] = re.sub("orar", "ora", corpus[i])
+        corpus[i] = re.sub("parir", "para", corpus[i])
+        corpus[i] = re.sub("picar", "pico", corpus[i])
+        corpus[i] = re.sub("queda", "quedo", corpus[i])
+        corpus[i] = re.sub("redar", "rede", corpus[i])
+        corpus[i] = re.sub("resultar", "resultado", corpus[i])
+        corpus[i] = re.sub("riscar", "risco", corpus[i])
+        corpus[i] = re.sub("segundar", "segundo", corpus[i])
+        corpus[i] = re.sub("trazido", "trazer", corpus[i])
+        corpus[i] = re.sub("votar", "voto", corpus[i])
+    del doc, i, nlp
 
 dfCorpus["clean_corpus"] = corpus
-del corpus, doc, i, nlp
+del corpus
 
 
 print('Dataset preparation..')
@@ -227,9 +233,24 @@ parameters_ = {'criterion': ('gini', 'entropy'),
 print("\n", nome, " - TF-IDF VECTORS")
 DecisionTreeModel = train_model(
     DecisionTreeModel, X_train_tfidf, y_train, X_test_tfidf, y_test, parameters=parameters_)
-#tree.plot_tree(DecisionTreeModel, max_depth=3, feature_names=list_words, class_names=labels);
-#eli5.show_weights(DecisionTreeModel, top=10, target_names=labels, feature_names=list_words)
-#eli5.show_prediction(DecisionTreeModel, X_test[0][:1000], vec=tfidf_vect, target_names=labels)
+#tree.plot_tree(DecisionTreeModel, max_depth=2, feature_names=list_words, class_names=labels);
+#eli5.show_weights(DecisionTreeModel, top=10, target_names=labels, feature_names=list_words);
+#eli5.show_prediction(DecisionTreeModel, X_test[0][:1000], vec=tfidf_vect, target_names=labels);
+
+def f_importances(coef, names, nrWords, title):
+    imp, names = zip(*sorted(zip(coef, names), reverse=True))
+    plt.figure()
+    plt.barh(range(nrWords), imp[:nrWords], align='center')
+    plt.yticks(range(nrWords), names[:nrWords])
+    plt.title(title)
+    plt.xlabel("weight")
+    plt.ylabel("words")
+    plt.show()
+
+dt_importance = DecisionTreeModel.feature_importances_
+
+f_importances(dt_importance.tolist(), list_words, 10, "Decision Tree")
+
 
 print('Logistic regression...')
 # LOGISTIC REGRESSION
@@ -242,6 +263,11 @@ parameters_ = {'C': (0.5, 1.0),
 print("\n", nome, " - TF-IDF VECTORS")
 LogisticRegressionModel = train_model(
     LogisticRegressionModel, X_train_tfidf, y_train, X_test_tfidf, y_test, parameters=parameters_)
+
+f_importances(LogisticRegressionModel.coef_[0], list_words, 10, "Log. Regr. - "+labels[0])
+f_importances(LogisticRegressionModel.coef_[1], list_words, 10, "Log. Regr. - "+labels[1])
+f_importances(LogisticRegressionModel.coef_[2], list_words, 10, "Log. Regr. - "+labels[2])
+
 
 coefLogReg = pd.DataFrame({'words': list_words,
                            'keep': np.reshape(LogisticRegressionModel.coef_.tolist()[0], (LogisticRegressionModel.coef_.shape[1],)),
@@ -268,23 +294,12 @@ print("\n", nome, " - TF-IDF VECTORS")
 SVMModel = train_model(SVMModel, X_train_tfidf, y_train,
                        X_test_tfidf, y_test, parameters=parameters_)
 
-
-def f_importances(coef, names, nrWords, title):
-    imp, names = zip(*sorted(zip(coef, names), reverse=True))
-    plt.barh(range(nrWords), imp[:nrWords], align='center')
-    plt.yticks(range(nrWords), names[:nrWords])
-    plt.title(title)
-    plt.xlabel("weight")
-    plt.ylabel("words")
-    plt.show()
-
-
 f_importances(SVMModel.coef_[0].todense().tolist()
-              [0], list_words, 10, labels[0])
+              [0], list_words, 10, "SVM - "+labels[0])
 f_importances(SVMModel.coef_[1].todense().tolist()
-              [0], list_words, 10, labels[1])
+              [0], list_words, 10, "SVM - "+labels[1])
 f_importances(SVMModel.coef_[2].todense().tolist()
-              [0], list_words, 10, labels[2])
+              [0], list_words, 10, "SVM - "+labels[2])
 
 coefSVM = pd.DataFrame({'words': list_words,
                         'keep': np.reshape(SVMModel.coef_.todense().tolist()[0], (SVMModel.coef_.shape[1],)),
@@ -312,7 +327,6 @@ RandomForestModel = train_model(
 
 imp = pd.DataFrame(data=RandomForestModel.feature_importances_,
                    index=list_words, columns=['importance'])
-#imp.sort_values('importance', ascending=False)
 
 std = np.std([tree.feature_importances_ for tree in RandomForestModel.estimators_],
              axis=0)
@@ -402,6 +416,11 @@ parameters_ = None
 print("\n", nome, " - TF-IDF VECTORS")
 XGBoostModel = train_model(XGBoostModel, X_train_tfidf,
                            y_train, X_test_tfidf, y_test, parameters=parameters_)
+
+
+xgboost_importance = XGBoostModel.feature_importances_
+
+f_importances(xgboost_importance.tolist(), list_words, 10, "XGBoost")
 
 print("Multi-Layer Perceptron")
 nome = "MLPClassifier"
