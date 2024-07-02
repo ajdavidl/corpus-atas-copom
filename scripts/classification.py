@@ -9,7 +9,9 @@ import xgboost
 from sklearn import model_selection, preprocessing, linear_model, naive_bayes, metrics, svm, tree, neural_network, neighbors, ensemble
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import GridSearchCV
+from sklearn.inspection import permutation_importance
 import matplotlib.pyplot as plt
+from load_texts import *
 
 # CONFIG
 pd.set_option('display.max_columns', 500)
@@ -20,46 +22,27 @@ pd.set_option('display.float_format', lambda x: '{:.3f}'.format(x))
 #plt.rcParams.update({'font.size': 50})
 
 LEMMATIZATION = False
+PRINT = False
 
-AtasFolder = "../atas"
-listAtas = os.listdir(AtasFolder)
-corpus = []
-meeting = []
-for ata in listAtas:
-    meeting.append(int(re.search("[0-9]+", ata).group()))
-    with open(AtasFolder + "/" + ata, 'rt', encoding='utf-8') as f:
-        lines = f.readlines()
-        if lines:
-            lines = ' '.join(lines)
-            corpus.append(lines)
-
+print("Loading data...")
+dfCorpus = return_data_frame()
+corpus = dfCorpus.text.to_list()
 print(len(corpus), "atas")
-dfCorpus = pd.DataFrame(corpus, index=meeting, columns=["corpus"])
-del corpus, meeting
-
-decisions = pd.read_csv("../decisions.csv")
-decisions.index = np.int64(decisions.meeting.values)
-decisions = decisions["decision"]
-decisions = decisions.to_frame(name="decisions")
-decisions.value_counts()
-
-dfCorpus = dfCorpus.join(decisions)
-del decisions
 
 print('Cleaning data...')
 
-Mystopwords = ['acordar', 'agora', 'ainda', 'aladi', 'alegrar', 'além', 'antar', 'ante', 'anthero', 'antonio', 'apenas', 'apesar', 'apresentação', 'aquém', 'araújo', 'cada', 'capitar', 'carioca', 'carteiro', 'contra', 'corpus', 'corrêa', 'costa', 'daquela', 'demais', 'diante', 'edson', 'entanto', 'estar', 'estevar', 'então', 'feltrim', 'final', 'finar', 'geral', 'içar', 'ie', 'intuito'] + \
+Mystopwords = Mystopwords + ['acordar', 'agora', 'ainda', 'aladi', 'alegrar', 'além', 'antar', 'ante', 'anthero', 'antonio', 'apenas', 'apesar', 'apresentação', 'aquém', 'araújo', 'cada', 'capitar', 'carioca', 'carteiro', 'contra', 'corpus', 'corrêa', 'costa', 'daquela', 'demais', 'diante', 'edson', 'entanto', 'estar', 'estevar', 'então', 'feltrim', 'final', 'finar', 'geral', 'içar', 'ie', 'intuito'] + \
     ['le', 'luiz', 'luzir', 'mediante', 'meirelles', 'mercar', 'moraes', 'necessariamente', 'neto', 'of', 'oficiar', 'oliveira', 'onde', 'ora', 'parir', 'paulo', 'pelar', 'pesar', 'pilar', 'pois', 'primo', 'quadrar', 'reinar', 'res', 'resinar', 'reunião', 'ser', 'sob', 'sobre', 'somente', 'sr', 'tal', 'tais', 'tanto', 'thomson', 'tipo', 'todo', 'tony', 'usecheque', 'vasconcelos'] + \
     ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'] + \
     ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'catorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove', 'vinte'] + \
     ['aquela', 'aquelas', 'aquele', 'aqueles', 'àquela', 'àquelas', 'daquele', 'daqueles', 'daquela', 'daquelas', 'naquele', 'naqueles', 'naquela', 'naquelas', 'neste', 'nesta', 'nestes', 'nestas', 'nisto', 'nesse', 'nessa', 'nesses', 'nessas', 'nisso',
     'desse', 'dessa', 'desses', 'dessas', 'disso','fins','meados','mencionado','modo'] + \
     ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro',
-        'dezembro', 'mês', 'meses', 'ano', 'anos'] + [str(i) for i in range(10)] + nltk.corpus.stopwords.words('portuguese')
+        'dezembro', 'mês', 'meses', 'ano', 'anos']
 
+Mystopwords = set(Mystopwords)
 print("Number of stopwords: ", len(Mystopwords))
 
-corpus = dfCorpus.corpus.to_list()
 for i in range(len(corpus)):
     corpus[i] = corpus[i].lower()
     corpus[i] = re.sub('\n', ' ', corpus[i])  # remove newline
@@ -119,10 +102,10 @@ del corpus
 print('Dataset preparation..')
 
 # Divisão dos textos em um conjunto de treinamento e outro de validação
-X_train, X_test, y_train, y_test = model_selection.train_test_split(dfCorpus.clean_corpus.to_list(), dfCorpus.decisions.to_list(),
+X_train, X_test, y_train, y_test = model_selection.train_test_split(dfCorpus.clean_corpus.to_list(), dfCorpus.decision.to_list(),
                                                                     test_size=0.30,
                                                                     random_state=100,
-                                                                    stratify=dfCorpus.decisions.to_list())
+                                                                    stratify=dfCorpus.decision.to_list())
 print("Train:", len(X_train), len(y_train))
 print("Test:", len(X_test), len(y_test))
 
@@ -131,7 +114,7 @@ y_train_labels = y_train.copy()
 y_test_labels = y_test.copy()
 
 encoder = preprocessing.LabelEncoder()
-encoder.fit(dfCorpus.decisions)
+encoder.fit(dfCorpus.decision)
 y_train = encoder.transform(y_train)
 y_test = encoder.transform(y_test)
 labels = encoder.classes_
@@ -247,10 +230,9 @@ def f_importances(coef, names, nrWords, title):
     plt.ylabel("words")
     plt.show()
 
-dt_importance = DecisionTreeModel.feature_importances_
-
-f_importances(dt_importance.tolist(), list_words, 10, "Decision Tree")
-
+if PRINT:
+    dt_importance = DecisionTreeModel.feature_importances_
+    f_importances(dt_importance.tolist(), list_words, 10, "Decision Tree")
 
 print('Logistic regression...')
 # LOGISTIC REGRESSION
@@ -264,9 +246,10 @@ print("\n", nome, " - TF-IDF VECTORS")
 LogisticRegressionModel = train_model(
     LogisticRegressionModel, X_train_tfidf, y_train, X_test_tfidf, y_test, parameters=parameters_)
 
-f_importances(LogisticRegressionModel.coef_[0], list_words, 10, "Log. Regr. - "+labels[0])
-f_importances(LogisticRegressionModel.coef_[1], list_words, 10, "Log. Regr. - "+labels[1])
-f_importances(LogisticRegressionModel.coef_[2], list_words, 10, "Log. Regr. - "+labels[2])
+if PRINT:
+    f_importances(LogisticRegressionModel.coef_[0], list_words, 10, "Log. Regr. - "+labels[0])
+    f_importances(LogisticRegressionModel.coef_[1], list_words, 10, "Log. Regr. - "+labels[1])
+    f_importances(LogisticRegressionModel.coef_[2], list_words, 10, "Log. Regr. - "+labels[2])
 
 
 coefLogReg = pd.DataFrame({'words': list_words,
@@ -294,12 +277,10 @@ print("\n", nome, " - TF-IDF VECTORS")
 SVMModel = train_model(SVMModel, X_train_tfidf, y_train,
                        X_test_tfidf, y_test, parameters=parameters_)
 
-f_importances(SVMModel.coef_[0].todense().tolist()
-              [0], list_words, 10, "SVM - "+labels[0])
-f_importances(SVMModel.coef_[1].todense().tolist()
-              [0], list_words, 10, "SVM - "+labels[1])
-f_importances(SVMModel.coef_[2].todense().tolist()
-              [0], list_words, 10, "SVM - "+labels[2])
+if PRINT:
+    f_importances(SVMModel.coef_[0].todense().tolist()[0], list_words, 10, "SVM - "+labels[0])
+    f_importances(SVMModel.coef_[1].todense().tolist()[0], list_words, 10, "SVM - "+labels[1])
+    f_importances(SVMModel.coef_[2].todense().tolist()[0], list_words, 10, "SVM - "+labels[2])
 
 coefSVM = pd.DataFrame({'words': list_words,
                         'keep': np.reshape(SVMModel.coef_.todense().tolist()[0], (SVMModel.coef_.shape[1],)),
@@ -325,29 +306,30 @@ print("\n", nome, " - TF-IDF VECTORS")
 RandomForestModel = train_model(
     RandomForestModel, X_train_tfidf, y_train, X_test_tfidf, y_test, parameters=parameters_)
 
-imp = pd.DataFrame(data=RandomForestModel.feature_importances_,
-                   index=list_words, columns=['importance'])
+if PRINT:
+    imp = pd.DataFrame(data=RandomForestModel.feature_importances_,
+                    index=list_words, columns=['importance'])
 
-std = np.std([tree.feature_importances_ for tree in RandomForestModel.estimators_],
-             axis=0)
+    std = np.std([tree.feature_importances_ for tree in RandomForestModel.estimators_],
+                axis=0)
 
-indices = np.argsort(RandomForestModel.feature_importances_)[::-1]
+    indices = np.argsort(RandomForestModel.feature_importances_)[::-1]
 
-nr_words = 20
-indices = indices[:nr_words]
+    nr_words = 20
+    indices = indices[:nr_words]
 
-plt.rcParams.update({'font.size': 20})
+    plt.rcParams.update({'font.size': 20})
 
-plt.figure(figsize=(15, 10))
-plt.title("Random Forest - word importance")
-plt.bar(range(nr_words), RandomForestModel.feature_importances_[indices],
-        color="g", yerr=std[indices], align="center")
-plt.xticks(range(nr_words), pd.Index(list_words)[indices], rotation=75)
-plt.xlim([-1, nr_words])
-plt.show()
+    plt.figure(figsize=(15, 10))
+    plt.title("Random Forest - word importance")
+    plt.bar(range(nr_words), RandomForestModel.feature_importances_[indices],
+            color="g", yerr=std[indices], align="center")
+    plt.xticks(range(nr_words), pd.Index(list_words)[indices], rotation=75)
+    plt.xlim([-1, nr_words])
+    plt.show()
 
-#eli5.show_weights(RandomForestModel, top=10, target_names=labels, feature_names=list_words)
-#eli5.show_prediction(RandomForestModel, X_test[0][:1000], vec=tfidf_vect, target_names=labels, top=10)
+    #eli5.show_weights(RandomForestModel, top=10, target_names=labels, feature_names=list_words)
+    #eli5.show_prediction(RandomForestModel, X_test[0][:1000], vec=tfidf_vect, target_names=labels, top=10)
 
 print('Multinomial Naive Bayes...')
 # MULTINOMIAL NAIVE BAYES
@@ -384,6 +366,11 @@ print("\n", nome, " - TF-IDF VECTORS")
 KNeighbors = train_model(
     KNeighbors, X_train_tfidf, y_train, X_test_tfidf, y_test, parameters=parameters_)
 
+#if not PRINT:
+#    resultsKNN = permutation_importance(KNeighbors, X_train_tfidf.toarray() , y_train, scoring='accuracy')
+#    KNNimportance = resultsKNN.importances_mean
+#    f_importances(KNNimportance.tolist(), list_words, 10, "KNN")
+
 
 print("Stochastic Gradient Descent (SGD)")
 nome = "SGDClassifier"
@@ -418,9 +405,9 @@ XGBoostModel = train_model(XGBoostModel, X_train_tfidf,
                            y_train, X_test_tfidf, y_test, parameters=parameters_)
 
 
-xgboost_importance = XGBoostModel.feature_importances_
-
-f_importances(xgboost_importance.tolist(), list_words, 10, "XGBoost")
+if PRINT:
+    xgboost_importance = XGBoostModel.feature_importances_
+    f_importances(xgboost_importance.tolist(), list_words, 10, "XGBoost")
 
 print("Multi-Layer Perceptron")
 nome = "MLPClassifier"
