@@ -33,8 +33,8 @@ return_data_frame <- function(){
   return(df)
 }
 
-Mystopwords <- c("ainda", "ante", "após", "desde", "dessa", "dessas", "desse", "desses", "disso",
+Mystopwords <- c("ainda", "ante", "após", "desde", "dessa", "dessas", "desse", "desses", "disso","após",
                  "dez", "doze", "é", "enquanto", "p", "r", "respectivamente", "relação", "sobre", "isa",
-                 "janeiro", "fevereiro", "março", "abril", "maio", "junho", 
+                 "tanto","janeiro", "fevereiro", "março", "abril", "maio", "junho", 
                  "julho", "agosto", "setembro", "outubro", "novembro", "dezembro", 
                  "mês", "meses", "ano", "anos", as.character(0:9), tm::stopwords("pt"))
