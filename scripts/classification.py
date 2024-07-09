@@ -22,7 +22,9 @@ pd.set_option('display.float_format', lambda x: '{:.3f}'.format(x))
 #plt.rcParams.update({'font.size': 50})
 
 LEMMATIZATION = False
-PRINT = False
+PRINT = True
+FIXED_VOCAB = True #if true, it uses the fixed vocabulary in the 'vocab' list. if false, it uses the top words without stopwords.
+MEETING_AHEAD = True #if false, we use the text to classify the decision of the actual meeting. if false, we use the actual text to classify the decision of the next meeting.
 
 print("Loading data...")
 dfCorpus = return_data_frame()
@@ -42,6 +44,21 @@ Mystopwords = Mystopwords + ['acordar', 'agora', 'ainda', 'aladi', 'alegrar', 'a
 
 Mystopwords = set(Mystopwords)
 print("Number of stopwords: ", len(Mystopwords))
+
+vocab = ["desinflação","favorável","benigno","maior","caiu","alcançou","redução","aumentos","ajuste","abaixo","flexibilização","acima","queda","cresceu",
+"evolução","ganhos","recuou","elevados","expansão","riscos","recuperação","manter","retomada","avançou","manutenção","ajustes","cresceram","elevar","elevações",
+"apropriado","esperado","aperto","altista","altistas","alta","incertezas","ociosidade","continuidade","contracionista","expansionista","elevado","normalização","aumento",
+"desancoragem","menor","baixo","baixos","baixistas","baixista","crescimento","surpreenderam","elevação","risco","incerteza","recuo","avanço","apertado",
+"forte","fraco","surpresa","surpresas","negativo","positivo","estabilização","deletério","deletérios","reancoragem","convergência","restritivas","restritiva","adverso",
+"desinflacionário","inflacionário","desinflacionária","inflacionária","desafiador","fortes","fracos","ancoragem","manterá","interromper","resiliência","cautela","persistência",
+"cauteloso","desaceleração","aceleração","neutralidade","corte","cortes","custoso","desancoradas","ancoradas","guidance","cautelosa","incerto","reduzir","suavização",
+"lento","lenta","lentas","rápido","rápida","rápidas","serenidade","prejuízo","consistente","moderação","expandiu","esperada","sensíveis","evoluindo","tensões","tensão",
+"atenuação","dinâmico","dinâmica","afrouxamento","reversão","contínuo","fortalecimento","diminuir",#
+#"reduzem","compromisso","volátil","foward","atingiu","aumentou","pressões","realinhamento","depreciação","apreciação",
+#"persista","persiste","permanecer","estreita","redutor","conservadora","conservador","moderadamente","persistente",
+# "distorções","reverter","assimetria","atípica","neutro","menores","favoráveis","desfavorável","desfavoráveis","enfraquecimento"
+]
+print("Number of words in the fixed vocabulary: ", len(vocab))
 
 for i in range(len(corpus)):
     corpus[i] = corpus[i].lower()
@@ -102,10 +119,16 @@ del corpus
 print('Dataset preparation..')
 
 # Divisão dos textos em um conjunto de treinamento e outro de validação
-X_train, X_test, y_train, y_test = model_selection.train_test_split(dfCorpus.clean_corpus.to_list(), dfCorpus.decision.to_list(),
-                                                                    test_size=0.30,
-                                                                    random_state=100,
-                                                                    stratify=dfCorpus.decision.to_list())
+if MEETING_AHEAD:
+    X_train, X_test, y_train, y_test = model_selection.train_test_split(dfCorpus.clean_corpus.to_list()[:-1], dfCorpus.decision.to_list()[1:],
+                                                                        test_size=0.30,
+                                                                        random_state=100,
+                                                                        stratify=dfCorpus.decision.to_list()[1:])
+else:
+    X_train, X_test, y_train, y_test = model_selection.train_test_split(dfCorpus.clean_corpus.to_list(), dfCorpus.decision.to_list(),
+                                                                        test_size=0.30,
+                                                                        random_state=100,
+                                                                        stratify=dfCorpus.decision.to_list())
 print("Train:", len(X_train), len(y_train))
 print("Test:", len(X_test), len(y_test))
 
@@ -122,13 +145,19 @@ print('Labels:', labels)
 
 max_tokens = 2000
 # DTM-TF-IDF
-tfidf_vect = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}',
-                             stop_words=Mystopwords,
-                             max_df=0.8,
-                             min_df=0.1,
-                             #ngram_range=(1, 2),
-                             max_features=max_tokens)
+if FIXED_VOCAB:
+    tfidf_vect = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}',
+                                vocabulary=vocab
+                                )
+else:
+    tfidf_vect = TfidfVectorizer(analyzer='word', token_pattern=r'\w{1,}',
+                                stop_words=Mystopwords,
+                                max_df=0.8,
+                                min_df=0.1,
+                                #ngram_range=(1, 2),
+                                max_features=max_tokens)
 tfidf_vect.fit(X_train)
+
 
 print("tfidf:", len(tfidf_vect.get_feature_names_out()), " tokens")
 
@@ -228,6 +257,7 @@ def f_importances(coef, names, nrWords, title):
     plt.title(title)
     plt.xlabel("weight")
     plt.ylabel("words")
+    plt.gca().invert_yaxis()
     plt.show()
 
 if PRINT:
@@ -418,3 +448,4 @@ parameters_ = {'activation': ('relu', 'logistic')}
 print("\n", nome, " - TF-IDF VECTORS")
 MLPModel = train_model(MLPModel, X_train_tfidf,
                        y_train, X_test_tfidf, y_test, parameters=parameters_)
+
