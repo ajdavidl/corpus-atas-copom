@@ -1,6 +1,5 @@
 import nltk
 from nltk.collocations import *
-import os
 
 from load_texts import read_text_files
 
@@ -13,35 +12,65 @@ str_por = str_por.lower()
 
 tokens = nltk.wordpunct_tokenize(str_por)
 
+def print_collocations(finder):
+    """
+    finder : list of tuples
+    """
+    count = 1
+    for tup in finder:
+        print(count,")", sep='', end=' ')
+        for word in tup:
+            print(word, end=' ')
+        print()
+        count+=1
 
+freq = 100
+nr_coll = 100
 # BIGRAMS
-print("bigrams")
+print("\nBIGRAMS COLLOCATIONS")
 bigram_measures = nltk.collocations.BigramAssocMeasures()
 
+print("Bigrams - nbest - pmi")
 finder_bigram = BigramCollocationFinder.from_words(tokens)
-print(finder_bigram.nbest(bigram_measures.pmi, 10))
+print_collocations(finder_bigram.nbest(bigram_measures.pmi, nr_coll))
+print()
 
-finder_bigram.apply_freq_filter(3)
-print(finder_bigram.nbest(bigram_measures.pmi, 10))
+print("Bigrams - nbest - pmi - min freq:", freq)
+finder_bigram.apply_freq_filter(freq)
+print_collocations(finder_bigram.nbest(bigram_measures.pmi, nr_coll))
+print()
 
+print("Bigrams - score_ngrams - raw_freq - min freq:", freq)
 scored_bigram = finder_bigram.score_ngrams(bigram_measures.raw_freq)
-print(sorted(bigram for bigram, score in scored_bigram[:10]))
+print_collocations(sorted(bigram for bigram, score in scored_bigram[:nr_coll]))
+print()
 
+print("Bigrams - score_ngrams - pmi - min freq:", freq)
 scored_bigram = finder_bigram.score_ngrams(bigram_measures.pmi)
-print(sorted(bigram for bigram, score in scored_bigram[:10]))
+print_collocations(sorted(bigram for bigram, score in scored_bigram[:nr_coll]))
+print()
 
 #TRIGRAMS
-print("trigrams")
+print("\nTRIGRAMS COLLOCATIONS")
 trigram_measures = nltk.collocations.TrigramAssocMeasures()
 
+print("Trigrams - nbest - pmi")
 finder_trigram = TrigramCollocationFinder.from_words(tokens)
-print(finder_trigram.nbest(trigram_measures.pmi, 10))
+print_collocations(finder_trigram.nbest(trigram_measures.pmi, nr_coll))
+print()
 
-finder_trigram.apply_freq_filter(3)
-print(finder_trigram.nbest(trigram_measures.pmi, 10))
+print("Trigrams - nbest - pmi - min freq:", freq)
+finder_trigram.apply_freq_filter(freq)
+print_collocations(finder_trigram.nbest(trigram_measures.pmi, nr_coll))
+print()
 
+print("Trigrams - score_ngrams - raw_freq - min freq:", freq)
 scored_trigram = finder_trigram.score_ngrams(trigram_measures.raw_freq)
-print(sorted(trigram for trigram, score in scored_trigram[:10]))
+print_collocations(sorted(trigram for trigram, score in scored_trigram[:nr_coll]))
+print()
 
+print("Trigrams - score_ngrams - pmi - min freq:", freq)
 scored_trigram = finder_trigram.score_ngrams(trigram_measures.pmi)
-print(sorted(trigram for trigram, score in scored_trigram[:10]))
+print_collocations(sorted(trigram for trigram, score in scored_trigram[:nr_coll]))
+print()
+
