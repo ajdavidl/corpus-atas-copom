@@ -20,7 +20,9 @@ for i in range(0, len(corpus)):
     corpus[i] = corpus[i].lower()
     corpus[i] = re.sub('\n', '', corpus[i])  # remove newline character
 
-def frequencyPlot(listText, number_of_words=20, stopwords=None, ngramRange=(1, 1), vocabulary=None):
+dfCorpus['text_clean'] = corpus
+
+def frequencyPlot(listText, number_of_words=20, stopwords=None, ngramRange=(1, 1), vocabulary=None, title=None):
     count_vect = CountVectorizer(
         analyzer='word',
         stop_words=stopwords,
@@ -44,7 +46,10 @@ def frequencyPlot(listText, number_of_words=20, stopwords=None, ngramRange=(1, 1
     plt.yticks(yPos, objects)
     plt.xlabel('Frequency')
     plt.ylabel('Tokens')
-    plt.title('Frequency of tokens')
+    if title is None:
+        plt.title('Frequency of tokens')
+    else:
+        plt.title(title)
     plt.gca().invert_yaxis()
     plt.show()
 
@@ -80,3 +85,26 @@ frequencyPlot(corpus, numberOfWords, stopwords=None, ngramRange=(3, 3))
 
 print("Trigram frequencies without stop words")
 frequencyPlot(corpus, numberOfWords, stopwords=Mystopwords, ngramRange=(3, 3))
+
+Mystopwords = Mystopwords + ["preços","inflação","relação","taxa","copom","bilhões","doze","crescimento","cenário","atividade",
+"política","bens","produção","monetária","período","anterior","us","índice","mercado","comitê","reunião","trimestre","central",
+"respectivamente","banco","economia","dados","trajetória","juros","segundo","mensal","setor","econômica","2006","após","nível",
+"2012","comparação"]
+
+print("Word Frequency - raise")
+corpus_raise = dfCorpus[dfCorpus["decision"] == "raise"]['text_clean'].to_list()
+corpus_raise_joined = ' '.join(corpus_raise)
+frequencyPlot(corpus_raise, numberOfWords, stopwords=Mystopwords, ngramRange=(1, 1), title="Word Frequency - raise")
+wordcloudPlot(corpus_raise_joined, stopwords=Mystopwords)
+
+print("Word Frequency - keep")
+corpus_keep = dfCorpus[dfCorpus["decision"] == "keep"]['text_clean'].to_list()
+corpus_keep_joined = ' '.join(corpus_keep)
+frequencyPlot(corpus_keep, numberOfWords, stopwords=Mystopwords, ngramRange=(1, 1), title="Word Frequency - keep")
+wordcloudPlot(corpus_keep_joined, stopwords=Mystopwords)
+
+print("Word Frequency - lower")
+corpus_lower = dfCorpus[dfCorpus["decision"] == "lower"]['text_clean'].to_list()
+corpus_lower_joined = ' '.join(corpus_lower)
+frequencyPlot(corpus_lower, numberOfWords, stopwords=Mystopwords, ngramRange=(1, 1), title="Word Frequency - lower")
+wordcloudPlot(corpus_lower_joined, stopwords=Mystopwords)
