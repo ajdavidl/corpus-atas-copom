@@ -78,6 +78,10 @@ W2Vsimilarity('selic')
 W2Vsimilarity('juros')
 W2Vsimilarity('dólar')
 W2Vsimilarity('câmbio')
+W2Vsimilarity('aumento')
+W2Vsimilarity('elevar')
+W2Vsimilarity('flexibilização')
+W2Vsimilarity('manutenção')
 
 # # Doc2Vec
 print('\n', "Doc2vec -----------------------------------------------")
@@ -133,6 +137,9 @@ D2Vsimilarity('selic')
 D2Vsimilarity('juros')
 D2Vsimilarity('dólar')
 D2Vsimilarity('câmbio')
+D2Vsimilarity('elevar')
+D2Vsimilarity('flexibilização')
+D2Vsimilarity('manutenção')
 
 display_pca_scatterplot(model_D2V,
                         ['selic', 'inflação', 'ipca', 'juros', 'pib', 'dólar', 'câmbio'])
@@ -194,6 +201,10 @@ FTsimilarity('selic')
 FTsimilarity('juros')
 FTsimilarity('dólar')
 FTsimilarity('câmbio')
+FTsimilarity('elevar')
+FTsimilarity('aumento de juros')
+FTsimilarity('flexibilização')
+FTsimilarity('manutenção')
 
 analogy(model_FT, 'selic', 'ipca', 'juros')
 
